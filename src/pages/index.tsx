@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import HomeView from "./components/HomeView";
 
 export default function Home() {
-  return <div>sdsd</div>;
+  return <HomeView />;
 }
