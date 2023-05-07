@@ -18,10 +18,9 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
-import Diversity1OutlinedIcon from "@mui/icons-material/Diversity1Outlined";
 import RouteOutlinedIcon from "@mui/icons-material/RouteOutlined";
 import ConnectWithoutContactOutlinedIcon from "@mui/icons-material/ConnectWithoutContactOutlined";
-import PlayCircleOutlineOutlinedIcon from "@mui/icons-material/PlayCircleOutlineOutlined";
+import CelebrationOutlinedIcon from "@mui/icons-material/CelebrationOutlined";
 
 type Props = {};
 
@@ -43,13 +42,13 @@ const HomeView = (props: Props) => {
       name: "Journey",
       description: "Explore my path",
       onClick: () => console.log("xdxdxd"),
-      icon: Diversity1OutlinedIcon,
+      icon: RouteOutlinedIcon,
     },
     {
       name: "Passions",
       description: "Discover my passions",
       onClick: () => console.log("xdxdxd"),
-      icon: RouteOutlinedIcon,
+      icon: CelebrationOutlinedIcon,
     },
     {
       name: "Contact",
@@ -110,15 +109,10 @@ const HomeView = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6"
+                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#00bbf9]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
-                  <button
-                    className="text-sm font-medium leading-6 text-[#00bbf9]"
-                    onClick={() => router.push("/#contact")}
-                  >
-                    About
-                  </button>
+                  <span>About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
                       className="h-5 w-5 text-[#00bbf9]"
@@ -152,7 +146,7 @@ const HomeView = (props: Props) => {
                           >
                             <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                               <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#f72585]"
+                                className="h-6 w-6 text-gray-600 group-hover:text-[#00bbf9]"
                                 aria-hidden="true"
                               />
                             </div>
@@ -222,13 +216,31 @@ const HomeView = (props: Props) => {
                     style={{ cursor: "pointer" }}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Contact Us
+                    Story
+                  </button>
+                  <button
+                    style={{ cursor: "pointer" }}
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Journey
+                  </button>
+                  <button
+                    style={{ cursor: "pointer" }}
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Passions
+                  </button>
+                  <button
+                    style={{ cursor: "pointer" }}
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Contact
                   </button>
                   <a
                     href="https://www.shipmind.tech/"
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    ShipMind
+                    Work
                   </a>
                 </div>
               </div>
@@ -244,7 +256,10 @@ const HomeView = (props: Props) => {
             <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
               <div className="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg">
                 <h1 className="text-4xl md:text-3xl xl:text-4xl font-medium tracking-tight mb-12">
-                  Bora Özışık
+                  Bora Özışık{" "}
+                  <span className="font-mono xl:text-2xl text-1xl">
+                    (Full Stack Developer)
+                  </span>
                   <img
                     className="w-44 lg:ml-0 h-auto -mb-12"
                     src="/static/handDraw/handdraw-funUnderlineTiny.svg"
@@ -293,6 +308,95 @@ const HomeView = (props: Props) => {
         </div>
       </div>
       {/* // -------------------Hero----------------------  */}
+      {/* // -------------------Briefly About----------------------  */}
+      <section className="bg-gray-800">
+        <div className="container px-6 py-10 mx-auto">
+          <div className="text-center">
+            <h1 className="text-2xl font-semibold text-[#00bbf9] capitalize lg:text-3xl ">
+              Hello!
+            </h1>
+
+            <p className="max-w-lg mx-auto mt-4 text-gray-200">
+              I&apos;m a Full Stack Developer who wants to learn new things and
+              improve himself. I like teamwork, so I always want to be included
+              projects that help people&apos;s daily life. My main motivation is
+              communicate the people that carrying the same ideas with me and
+              prepare useful contents and products.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+            <div>
+              <img
+                className="relative z-10 object-cover w-full rounded-md h-96"
+                src="/static/images/software.jpg"
+                alt=""
+              />
+
+              <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow">
+                <Stack direction={"row"} alignItems={"center"}>
+                  <a
+                    href="#"
+                    className="font-semibold text-[#00bbf9] hover:underline  md:text-xl"
+                  >
+                    Nautilica Software Services
+                  </a>
+                  <img
+                    className="h-7 w-auto ml-2"
+                    src="/static/handDraw/handdraw-code.svg"
+                    alt=""
+                  />
+                </Stack>
+
+                <p className="mt-3 text-sm text-gray-200 md:text-sm">
+                  I am currently working as Full Stack Developer at Nautilica
+                  Software Services. We are working on a project called
+                  Shipmind, which started with the motto &quot;Simplest Way of
+                  Organizing your Freight&quot; with our team.
+                </p>
+
+                <p className="mt-3 text-sm text-[#f72585] ">
+                  Mar 2022 - Present
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <img
+                className="relative z-10 object-cover w-full rounded-md h-96"
+                src="/static/images/working.jpg"
+                alt=""
+              />
+
+              <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow ">
+                <Stack direction={"row"} alignItems={"center"}>
+                  <a
+                    href="#"
+                    className="font-semibold text-[#00bbf9] hover:underline md:text-xl"
+                  >
+                    Celal Bayar University
+                  </a>
+                  <img
+                    className="h-7 w-auto ml-2"
+                    src="/static/handDraw/handdraw-stickyNote.svg"
+                    alt=""
+                  />
+                </Stack>
+
+                <p className="mt-3 text-sm text-gray-200 md:text-sm">
+                  At the same time, I am currently a 3rd year student at the
+                  Department of Computer Engineering at Celal Bayar University.
+                  <br />
+                  <span>I work hard !</span>
+                </p>
+
+                <p className="mt-2 text-sm text-[#f72585]">2019 - Present</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* // -------------------Briefly About----------------------  */}
     </>
   );
 };
