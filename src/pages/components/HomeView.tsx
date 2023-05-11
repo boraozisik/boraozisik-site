@@ -277,15 +277,17 @@ const HomeView = (props: Props) => {
                     />
                   </Stack>
                 </h1>
-                <a
-                  className="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-[#00bbf9] text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-[#f72585] hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                  href="#!"
-                  role="button"
+                <button
+                  type="button"
+                  className="text-white bg-gradient-to-r from-[#00bbf9] to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                 >
-                  Get started
-                </a>
+                  My Projects
+                </button>
+                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#00bbf9] to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-cyan-200">
+                  <span className="relative px-5 py-2 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
+                    My Resume
+                  </span>
+                </button>
               </div>
             </div>
             <div className="md:mb-12 lg:mb-0">
@@ -456,7 +458,7 @@ const HomeView = (props: Props) => {
                     />
                   </svg>
                 </span>
-                Next Js-React
+                Next Js
               </li>
               <li className="flex items-start">
                 <span className="mr-1">
@@ -474,7 +476,7 @@ const HomeView = (props: Props) => {
                     />
                   </svg>
                 </span>
-                TypeScript
+                React - TypeScript
               </li>
               <li className="flex items-start">
                 <span className="mr-1">
@@ -772,6 +774,85 @@ const HomeView = (props: Props) => {
         </div>
       </div>
       {/* // -------------------Skills----------------------  */}
+      {/* // -------------------Languages----------------------  */}
+      <section className="text-gray-100 body-font bg-gray-800">
+        <div className="container px-5 py-24 mx-auto">
+          <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-[#00bbf9] mb-16">
+            <span className="relative inline-block">
+              <span className="relative text-[#00bbf9]">LANGUAGES</span>
+
+              <img
+                src="../static/handDraw/handdraw-doubleunderlinetiny.svg"
+                alt=""
+                className="w-32 mx-auto mt-1"
+              />
+            </span>
+          </h1>
+
+          <div className="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <img
+                src="/static/flags/tr-circle-flag.png"
+                alt=""
+                className="h-full w-full rounded-full"
+              />
+            </div>
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 className="text-[#00bbf9] text-lg title-font font-medium mb-2">
+                Turkish
+              </h2>
+              <p className="leading-relaxed text-base">
+                Turkish is my native language and also, since I live in Turkey,
+                I speak this language in my daily life.
+              </p>
+              <a className="mt-3 text-[#f72585] inline-flex items-center">
+                Native or bilingual proficiency
+              </a>
+            </div>
+          </div>
+          <div className="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 className="text-[#00bbf9] text-lg title-font font-medium mb-2">
+                English
+              </h2>
+              <p className="leading-relaxed text-base">
+                I have a very good command of the English language and I am very
+                confident in my English abilities.Also I&apos;m still constantly
+                trying to improve myself.
+              </p>
+              <a className="mt-3 text-[#f72585] inline-flex items-center">
+                Professional working proficiency
+              </a>
+            </div>
+            <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <img src="/static/flags/en-circle-flag.png" alt="" />
+            </div>
+          </div>
+          <div className="flex items-center lg:w-full mx-auto sm:flex-row flex-col">
+            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <img
+                src="/static/flags/ger-circle-flag.png"
+                alt=""
+                className="h-full w-full rounded-full"
+              />
+            </div>
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 className="text-[#00bbf9] text-lg title-font font-medium mb-2">
+                German
+              </h2>
+              <p className="leading-relaxed text-base">
+                I&apos;m in the process of studying German. It hasn&apos;t been
+                long since I started learning but I&apos;m working on improving
+                my German language skills.
+              </p>
+              <a className="mt-3 text-[#f72585]  inline-flex items-center">
+                Elementary proficiency
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* // -------------------Languages----------------------  */}
     </>
   );
 };
