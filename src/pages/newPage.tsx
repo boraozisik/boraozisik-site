@@ -3,7 +3,7 @@ import React from "react";
 type Props = {};
 
 const newPage = (props: Props) => {
-  return <div>newPage</div>;
+  return <div>newPagexx</div>;
 };
 
 export default newPage;
