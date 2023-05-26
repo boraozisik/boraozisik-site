@@ -42,7 +42,7 @@ const HomeView = (props: Props) => {
     {
       name: "Working Path",
       description: "Lets see my steps on working",
-      onClick: () => console.log("xdxdxd"),
+      onClick: () => router.push("/about#timeline"),
       icon: RouteOutlinedIcon,
     },
     {
@@ -303,8 +303,9 @@ const HomeView = (props: Props) => {
       </div>
       {/* // -------------------Hero----------------------  */}
       {/* // -------------------Briefly About----------------------  */}
-      <a href="#brabout" id={"brabout"}></a>
+
       <section className="bg-gray-800">
+        <a href="#brabout" id={"brabout"}></a>
         <div className="container px-6 py-10 mx-auto">
           <div className="text-center">
             <h1 className="text-2xl font-medium text-[#0077b6] capitalize lg:text-3xl ">

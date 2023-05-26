@@ -41,7 +41,7 @@ const About = (props: Props) => {
     {
       name: "Working Path",
       description: "Lets see my steps on working",
-      onClick: () => console.log("xdxdxd"),
+      onClick: () => router.push("/about#timeline"),
       icon: RouteOutlinedIcon,
     },
     {
@@ -294,11 +294,11 @@ const About = (props: Props) => {
                 </p>
                 <p className="max-w-lg mt-6 text-gray-500 text-justify font-medium">
                   By the middle of my second year, I realized that I wanted to
-                  put my skills into practice and work. Therefore, I started a
+                  put my skills into practice and work.Therefore, I started a
                   voluntary internship at &apos;Nautilica Software
                   Services&apos; company. During the six-month voluntary
                   internship, I developed myself towards becoming a Fullstack
-                  Developer. I gained expertise in various technologies,
+                  Developer.I gained expertise in various technologies,
                   including TypeScript, React, Next.js, Nest.js, PostgreSQL, and
                   GraphQL.
                 </p>
@@ -315,6 +315,113 @@ const About = (props: Props) => {
         </div>
       </section>
       {/* // -------------------Story----------------------  */}
+      {/* // -------------------Timeline----------------------  */}
+      <section>
+        <a href="#timeline" id={"timeline"}></a>
+        <div className="bg-gray-800 text-white py-8">
+          <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+            <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+              <p className="ml-2 text-[#0077b6] uppercase tracking-loose font-medium">
+                My Working Process
+              </p>
+              <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-medium">
+                Process of Work
+              </p>
+              <p className="text-sm md:text-base text-gray-50 mb-4 font-medium">
+                Here’s my guide to the school and business process. Go through
+                all the steps to know the exact process of my work.
+              </p>
+              <button
+                onClick={() => router.push("/#brabout")}
+                className="font-medium bg-transparent mr-auto hover:bg-[#0077b6] text-[#0077b6] hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-[#0077b6] hover:border-transparent"
+              >
+                Explore Now
+              </button>
+            </div>
+            <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
+              <div className="container mx-auto w-full h-full">
+                <div className="relative wrap overflow-hidden p-10 h-full">
+                  <div className="border-2-2 border-[#0077b6] absolute h-full border right-1/2 border-2 border-solid border-[#0077b6] rounded-1"></div>
+                  <div className="border-2-2 border-[#0077b6] absolute h-full border left-1/2 border-2 border-solid border-[#0077b6] rounded-1"></div>
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                      <p className="mb-3 text-base text-[#0077b6] font-medium">
+                        August, 2019
+                      </p>
+                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
+                        University Started
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium text-justify">
+                        I started preparatory class at Celal Bayar University
+                        and I started to improve my foreign languages.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1  w-5/12 px-1 py-4 text-left">
+                      <p className="mb-3 text-base text-[#0077b6] font-medium">
+                        September, 2020
+                      </p>
+                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
+                        C.eng Department Started
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium text-justify">
+                        I started my first year in Computer Engineering
+                        Department and this year, I started to be busy with
+                        school lessons and also my studies to improve myself.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                      <p className="mb-3 text-base text-[#0077b6] font-medium">
+                        February, 2022
+                      </p>
+                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
+                        Volunteer Internship
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium text-justify">
+                        I started to work as a Full Stack Developer intern at
+                        &apos;Nautilica Software Services&apos; and I gained
+                        expertise in various technologies, including TypeScript,
+                        React, Next.js, Nest.js, PostgreSQL, and GraphQL.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-5/12"></div>
+
+                    <div className="order-1  w-5/12 px-1 py-4">
+                      <p className="mb-3 text-base text-[#0077b6] font-medium">
+                        August, 2022
+                      </p>
+                      <h4 className="mb-3 font-bold  text-lg md:text-2xl text-left">
+                        Started to Work
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium text-justify">
+                        After a long internship period of 6 months, I was
+                        offered a job and I accepted it.Currently, while working
+                        at &apos;Nautilica Software Services&apos;, I continue
+                        to study at the Computer Engineering Department of Celal
+                        Bayar University.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="mx-auto -mt-24 lg:-mt-24 w-[24rem] h-[24rem]"
+                  src="../static/illustrations/rocket-maker.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* // -------------------Timeline----------------------  */}
     </>
   );
 };
