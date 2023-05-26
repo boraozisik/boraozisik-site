@@ -30,24 +30,18 @@ const HomeView = (props: Props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [top, setTop] = useState(true);
   const [isShowing, setIsShowing] = useState(false);
-  //When I'm not designing,I'm also passionate about
+  //When I'm not working,I'm also passionate about
 
   const about = [
     {
-      name: "Hometown",
-      description: "Explore my hometown",
-      onClick: () => console.log("xdxdxd"),
-      icon: LocationCityOutlinedIcon,
-    },
-    {
       name: "Story",
       description: "Learn about my way and see my thoughts",
-      onClick: () => console.log("xdxdxd"),
+      onClick: () => router.push("/about"),
       icon: AutoStoriesOutlinedIcon,
     },
     {
-      name: "Journey",
-      description: "Come see my path",
+      name: "Working Path",
+      description: "Lets see my steps on working",
       onClick: () => console.log("xdxdxd"),
       icon: RouteOutlinedIcon,
     },
@@ -116,7 +110,7 @@ const HomeView = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#0077b6]"
+                  className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 text-sm font-medium leading-6 text-[#0077b6]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
                   <span>About</span>
@@ -160,7 +154,7 @@ const HomeView = (props: Props) => {
                             <div>
                               <button
                                 onClick={item.onClick}
-                                className="font-semibold text-gray-900"
+                                className="font-medium text-gray-900"
                               >
                                 {item.name}
                                 <span className="absolute inset-0" />
@@ -215,37 +209,37 @@ const HomeView = (props: Props) => {
                 <div className="space-y-2 py-6">
                   <button
                     style={{ cursor: "pointer" }}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Home
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Story
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Journey
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Passions
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Contact
                   </button>
                   <a
                     href="https://www.shipmind.tech/"
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Work
                   </a>
@@ -313,11 +307,11 @@ const HomeView = (props: Props) => {
       <section className="bg-gray-800">
         <div className="container px-6 py-10 mx-auto">
           <div className="text-center">
-            <h1 className="text-2xl font-semibold text-[#0077b6] capitalize lg:text-3xl ">
+            <h1 className="text-2xl font-medium text-[#0077b6] capitalize lg:text-3xl ">
               Hello!
             </h1>
 
-            <p className="max-w-lg mx-auto mt-4 text-gray-200">
+            <p className="max-w-lg mx-auto mt-4 text-gray-200 font-medium">
               I&apos;m a Full Stack Developer who wants to learn new things and
               improve himself. I like teamwork, so I always want to be included
               projects that help people&apos;s daily life. My main motivation is
@@ -339,7 +333,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.shipmind.tech/"
                     target="_blank"
-                    className="font-semibold text-[#0077b6] hover:underline  md:text-xl"
+                    className="font-medium text-[#0077b6] hover:underline  md:text-xl"
                   >
                     Nautilica Software Services
                   </a>
@@ -350,14 +344,14 @@ const HomeView = (props: Props) => {
                   />
                 </Stack>
 
-                <p className="mt-3 text-sm text-gray-200 md:text-sm">
+                <p className="mt-3 text-sm text-gray-200 md:text-sm font-medium">
                   I am currently working as Full Stack Developer at Nautilica
                   Software Services. We are working on a project called
                   Shipmind, which started with the motto &quot;Simplest Way of
                   Organizing your Freight&quot; with our team.
                 </p>
 
-                <p className="mt-3 text-sm text-[#ff4081] ">
+                <p className="mt-3 text-sm text-[#ff4081] font-medium">
                   Mar 2022 - Present
                 </p>
               </div>
@@ -375,7 +369,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.mcbu.edu.tr/"
                     target="_blank"
-                    className="font-semibold text-[#0077b6] hover:underline md:text-xl"
+                    className="font-medium text-[#0077b6] hover:underline md:text-xl"
                   >
                     Celal Bayar University
                   </a>
@@ -386,14 +380,16 @@ const HomeView = (props: Props) => {
                   />
                 </Stack>
 
-                <p className="mt-3 text-sm text-gray-200 md:text-sm">
+                <p className="mt-3 text-sm text-gray-200 md:text-sm font-medium">
                   At the same time, I am currently a 3rd year student at the
                   Department of Computer Engineering at Celal Bayar University.
                   <br />
-                  <span>I work hard !</span>
+                  <span className="font-medium">I work hard !</span>
                 </p>
 
-                <p className="mt-2 text-sm text-[#ff4081]">2019 - Present</p>
+                <p className="mt-2 text-sm text-[#ff4081] font-medium">
+                  2019 - Present
+                </p>
               </div>
             </div>
           </div>
@@ -405,7 +401,7 @@ const HomeView = (props: Props) => {
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col mb-6 lg:flex-row md:mb-10">
           <div className="lg:w-1/2">
-            <h2 className="max-w-md mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none xl:max-w-lg">
+            <h2 className="max-w-md mb-6 font-medium text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none xl:max-w-lg">
               <span className="relative inline-block px-2">
                 <div className="absolute inset-0 transform -skew-x-12 bg-[#ff4081]" />
                 <span className="relative text-white">Skill</span>
@@ -424,7 +420,7 @@ const HomeView = (props: Props) => {
             </h2>
           </div>
           <div className="lg:w-1/2">
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-gray-700 md:text-lg font-medium">
               With my skills, I am confident in my ability to meet and exceed
               expectations.I am passionate about what I do and I am trying to
               improve myself day by day. Here you can have a look at my skills.
@@ -448,8 +444,8 @@ const HomeView = (props: Props) => {
                 />
               </svg>
             </div>
-            <h6 className="mb-2 font-semibold leading-5">Frontend</h6>
-            <p className="mb-3 text-sm text-gray-900">
+            <h6 className="mb-2 font-medium leading-5">Frontend</h6>
+            <p className="mb-3 text-sm text-gray-">
               Areas I have mastered in frontend
             </p>
             <ul className="mb-4 -ml-1 space-y-2">
@@ -536,7 +532,7 @@ const HomeView = (props: Props) => {
                 />
               </svg>
             </div>
-            <h6 className="mb-2 font-semibold leading-5">Backend</h6>
+            <h6 className="mb-2 font-medium leading-5">Backend</h6>
             <p className="mb-3 text-sm text-gray-900">
               Lets check my backend skills
             </p>
@@ -631,7 +627,7 @@ const HomeView = (props: Props) => {
                 />
               </svg>
             </div>
-            <h6 className="mb-2 font-semibold leading-5">
+            <h6 className="mb-2 font-medium leading-5">
               Programming Languages
             </h6>
             <p className="mb-3 text-sm text-gray-900">
@@ -721,7 +717,7 @@ const HomeView = (props: Props) => {
                 <path d="M8,19a3,3,0,0,1-3-3" fill="none" stroke="#0077b6" />
               </svg>
             </div>
-            <h6 className="mb-2 font-semibold leading-5">General</h6>
+            <h6 className="mb-2 font-medium leading-5">General</h6>
             <p className="mb-3 text-sm text-gray-900">
               Also I think I&apos;m good at these skills
             </p>
@@ -791,7 +787,9 @@ const HomeView = (props: Props) => {
         <div className="container px-5 py-24 mx-auto">
           <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-[#0077b6] mb-16">
             <span className="relative inline-block">
-              <span className="relative text-[#0077b6]">LANGUAGES</span>
+              <span className="relative text-[#0077b6] font-medium">
+                LANGUAGES
+              </span>
 
               <img
                 src="../static/handDraw/handdraw-doubleunderlinetiny.svg"
@@ -813,26 +811,26 @@ const HomeView = (props: Props) => {
               <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2">
                 Turkish
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base font-medium">
                 Turkish is my native language and also, since I live in Turkey,
                 I speak this language in my daily life.
               </p>
-              <a className="mt-3 text-[#ff4081] inline-flex items-center">
+              <a className="mt-3 text-[#ff4081] inline-flex items-center font-medium">
                 Native or bilingual proficiency
               </a>
             </div>
           </div>
           <div className="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2">
+              <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2 font-medium">
                 English
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base font-medium">
                 I have a very good command of the English language and I am very
                 confident in my English abilities.Also I&apos;m still constantly
                 trying to improve myself.
               </p>
-              <a className="mt-3 text-[#ff4081] inline-flex items-center">
+              <a className="mt-3 text-[#ff4081] inline-flex items-center font-medium">
                 Professional working proficiency
               </a>
             </div>
@@ -849,15 +847,15 @@ const HomeView = (props: Props) => {
               />
             </div>
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2">
+              <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2 font-medium">
                 German
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base font-medium">
                 I&apos;m in the process of studying German. It hasn&apos;t been
                 long since I started learning but I&apos;m working on improving
                 my German language skills.
               </p>
-              <a className="mt-3 text-[#ff4081]  inline-flex items-center">
+              <a className="mt-3 text-[#ff4081]  inline-flex items-center font-medium">
                 Elementary proficiency
               </a>
             </div>
@@ -887,13 +885,13 @@ const HomeView = (props: Props) => {
                       <path d="M0.802807 6.05619C0.869358 7.52032 2.16711 8.11928 2.83263 8.11928H5.16193C5.19521 8.11928 5.19521 8.11928 5.19521 8.11928C6.19348 8.05273 7.19175 7.38722 7.19175 6.05619V5.25757C8.28985 5.25757 10.8188 5.25757 11.9169 5.25757V6.05619C11.9169 7.38722 12.9152 8.05273 13.9135 8.11928H13.9467H16.2428C16.9083 8.11928 18.206 7.52032 18.2726 6.05619C18.2726 5.95636 18.2726 5.59033 18.2726 5.25757C18.2726 4.99136 18.2726 4.75843 18.2726 4.72516C18.2726 4.69188 18.2726 4.6586 18.2726 4.6586C18.1727 3.72688 17.84 2.96154 17.2743 2.36258L17.241 2.3293C16.4091 1.56396 15.4109 1.13138 14.6455 0.865169C12.416 0 9.62088 0 9.48778 0C7.52451 0.0332757 6.26003 0.199654 4.36331 0.865169C3.63125 1.0981 2.63297 1.53068 1.80108 2.29603L1.7678 2.3293C1.20212 2.92827 0.869359 3.69361 0.769531 4.62533C0.769531 4.6586 0.769531 4.69188 0.769531 4.69188C0.769531 4.75843 0.769531 4.95809 0.769531 5.22429C0.802807 5.52377 0.802807 5.92308 0.802807 6.05619ZM2.5997 3.12792C3.26521 2.52896 4.09711 2.16292 4.7959 1.89672C6.52624 1.26448 7.65761 1.13138 9.55433 1.0981C9.68743 1.0981 12.2829 1.13138 14.2795 1.89672C14.9783 2.16292 15.8102 2.49568 16.4757 3.12792C16.8417 3.52723 17.0746 4.05964 17.1412 4.69188C17.1412 4.79171 17.1412 4.95809 17.1412 5.22429C17.1412 5.55705 17.1412 5.92308 17.1412 6.02291C17.1079 6.78825 16.3759 6.95463 16.276 6.95463H13.98C13.6472 6.92135 13.1148 6.78825 13.1148 6.05619V4.69188C13.1148 4.42567 12.9485 4.22602 12.7155 4.12619C12.5159 4.05964 6.69262 4.05964 6.49296 4.12619C6.26003 4.19274 6.09365 4.42567 6.09365 4.69188V6.05619C6.09365 6.78825 5.56124 6.92135 5.22848 6.95463H2.93246C2.83263 6.95463 2.10056 6.78825 2.06729 6.02291C2.06729 5.92308 2.06729 5.55705 2.06729 5.22429C2.06729 4.95809 2.06729 4.82498 2.06729 4.72516C2.00073 4.05964 2.23366 3.52723 2.5997 3.12792Z" />
                     </svg>
                   </span>
-                  <span>+90 554 595 99 05</span>
+                  <span className="font-medium">+90 554 595 99 05</span>
                 </p>
               </div>
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-semibold hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
                   Quick Link
                 </h4>
                 <ul>
@@ -938,7 +936,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-semibold hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
                   About
                 </h4>
                 <ul>
@@ -972,7 +970,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-semibold hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
                   Business
                 </h4>
                 <ul>
@@ -991,7 +989,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-semibold hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
                   Contact Me On
                 </h4>
                 <div className="mb-6 flex items-center">
@@ -1007,9 +1005,9 @@ const HomeView = (props: Props) => {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </a>
@@ -1038,9 +1036,9 @@ const HomeView = (props: Props) => {
                       stroke="currentColor"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
@@ -1053,9 +1051,9 @@ const HomeView = (props: Props) => {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </a>
@@ -1086,8 +1084,8 @@ const HomeView = (props: Props) => {
                   y2="1.22829e-05"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#3056D3" stop-opacity="0.08" />
-                  <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                  <stop stopColor="#3056D3" stopOpacity="0.08" />
+                  <stop offset="1" stopColor="#C4C4C4" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -1113,8 +1111,8 @@ const HomeView = (props: Props) => {
                   y2="37.5"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#13C296" stop-opacity="0.31" />
-                  <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                  <stop stopColor="#13C296" stopOpacity="0.31" />
+                  <stop offset="1" stopColor="#C4C4C4" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
