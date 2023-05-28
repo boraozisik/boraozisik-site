@@ -48,7 +48,7 @@ const HomeView = (props: Props) => {
     {
       name: "Passions",
       description: "Discover my passions",
-      onClick: () => console.log("xdxdxd"),
+      onClick: () => router.push("/about#passions"),
       icon: CelebrationOutlinedIcon,
     },
     {
@@ -58,7 +58,9 @@ const HomeView = (props: Props) => {
       icon: ConnectWithoutContactOutlinedIcon,
     },
   ];
-
+  const handleMenuItem = (path: string | undefined) => {
+    if (path) router.push(path);
+  };
   useEffect(() => {
     const scrollHandler = () => {
       window.pageYOffset > 10 ? setTop(false) : setTop(true);
@@ -66,6 +68,24 @@ const HomeView = (props: Props) => {
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", scrollHandler);
   }, [top]);
+
+  const handleClickAboutUs = (
+    section: string | undefined,
+    isMobile: boolean
+  ) => {
+    if (isMobile) {
+      setMobileMenuOpen(false);
+      router.push(`/about#${section}`);
+    } else {
+      setIsShowing((isShowing) => !isShowing);
+
+      router.push(`/aboutUs#${section}`);
+    }
+  };
+  const handleClickMobileMenuItem = (section: string | undefined) => {
+    setMobileMenuOpen(false);
+    handleMenuItem(section);
+  };
 
   return (
     <>
@@ -209,40 +229,45 @@ const HomeView = (props: Props) => {
                 <div className="space-y-2 py-6">
                   <button
                     style={{ cursor: "pointer" }}
+                    onClick={() => handleClickMobileMenuItem("/")}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Home
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
+                    onClick={() => handleClickAboutUs("", true)}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Story
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
+                    onClick={() => handleClickAboutUs("timeline", true)}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Journey
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
+                    onClick={() => handleClickAboutUs("passions", true)}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Passions
                   </button>
                   <button
                     style={{ cursor: "pointer" }}
+                    onClick={() => handleClickAboutUs("contact", true)}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Contact
                   </button>
-                  <a
-                    href="https://www.shipmind.tech/"
+                  <button
+                    onClick={() => handleClickMobileMenuItem("/my-work")}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Work
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -329,7 +354,7 @@ const HomeView = (props: Props) => {
                 alt=""
               />
 
-              <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow">
+              <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow lg:h-[12rem]">
                 <Stack direction={"row"} alignItems={"center"}>
                   <a
                     href="https://www.shipmind.tech/"
@@ -365,7 +390,7 @@ const HomeView = (props: Props) => {
                 alt=""
               />
 
-              <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow ">
+              <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow lg:h-[12rem]">
                 <Stack direction={"row"} alignItems={"center"}>
                   <a
                     href="https://www.mcbu.edu.tr/"
@@ -785,7 +810,7 @@ const HomeView = (props: Props) => {
       {/* // -------------------Languages----------------------  */}
       <a href="#languages" id={"languages"}></a>
       <section className="text-gray-100 body-font bg-gray-800">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-12 mx-auto">
           <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-[#0077b6] mb-16">
             <span className="relative inline-block">
               <span className="relative text-[#0077b6] font-medium">
@@ -801,7 +826,7 @@ const HomeView = (props: Props) => {
           </h1>
 
           <div className="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <div className="sm:w-24 sm:h-24 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
               <img
                 src="/static/flags/tr-circle-flag.png"
                 alt=""
@@ -835,12 +860,12 @@ const HomeView = (props: Props) => {
                 Professional working proficiency
               </a>
             </div>
-            <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <div className="sm:w-24 sm:h-24 sm:order-none order-first h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
               <img src="/static/flags/en-circle-flag.png" alt="" />
             </div>
           </div>
           <div className="flex items-center lg:w-full mx-auto sm:flex-row flex-col">
-            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <div className="sm:w-24 sm:h-24 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
               <img
                 src="/static/flags/ger-circle-flag.png"
                 alt=""
@@ -942,27 +967,38 @@ const HomeView = (props: Props) => {
                 </h4>
                 <ul>
                   <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
-                      Hometown
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
+                    <a
+                      onClick={() => router.push("/about")}
+                      style={{ cursor: "pointer" }}
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                    >
                       Story
                     </a>
                   </li>
                   <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
+                    <a
+                      onClick={() => router.push("/about#timeline")}
+                      style={{ cursor: "pointer" }}
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                    >
                       Journey
                     </a>
                   </li>
                   <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
+                    <a
+                      onClick={() => router.push("/about#passions")}
+                      style={{ cursor: "pointer" }}
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                    >
                       Passions
                     </a>
                   </li>
                   <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
+                    <a
+                      onClick={() => router.push("/about#contact")}
+                      style={{ cursor: "pointer" }}
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                    >
                       Contact
                     </a>
                   </li>
