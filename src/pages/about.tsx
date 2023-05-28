@@ -282,7 +282,7 @@ const About = (props: Props) => {
           <div className="hidden w-3/4 min-h-screen bg-gray-100 lg:block"></div>
 
           <div className="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
-            <h1 className="text-2xl text-gray-800 capitalize lg:text-3xl lg:ml-16 font-medium">
+            <h1 className="text-2xl text-gray-800 capitalize lg:text-3xl lg:ml-16 font-medium mt-8">
               Embracing the Chapters of Life:{" "}
               <span className="text-[#0077b6]">My Story</span>
               <div className="-mt-4">
@@ -299,7 +299,7 @@ const About = (props: Props) => {
                 alt=""
               />
 
-              <div className="mt-8 lg:px-24 lg:mt-0">
+              <div className="mt-8 lg:-mt-8 lg:px-24 lg:mt-0">
                 <p className="max-w-lg text-gray-500 lg:text-justify font-medium">
                   I was born on November 7, 2000, in the city of Aydın, Turkey.
                   I attended primary school, middle school, and high school in
