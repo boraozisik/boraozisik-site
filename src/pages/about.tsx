@@ -488,8 +488,11 @@ const About = (props: Props) => {
                   At the same time, I am interested in traveling and seeing
                   historical and beautiful places. I recently visited Italy.
                 </p>
-                <button className="text-[#ff4081] inline-flex items-center">
-                  Learn More
+                <button
+                  className="text-[#ff4081] inline-flex items-center"
+                  onClick={() => router.push("/travel")}
+                >
+                  Explore More
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
@@ -520,8 +523,11 @@ const About = (props: Props) => {
                   I do mountaineering and nature sports with the &apos;Aydın
                   Doğa Sporları&apos; club, of which I am an active member.
                 </p>
-                <button className="text-[#ff4081] inline-flex items-center">
-                  Learn More
+                <button
+                  className="text-[#ff4081] inline-flex items-center"
+                  onClick={() => router.push("/naturesport")}
+                >
+                  Explore More
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
@@ -554,7 +560,7 @@ const About = (props: Props) => {
                   meets their many needs.
                 </p>
                 <button className="text-[#ff4081] inline-flex items-center">
-                  Learn More
+                  Explore More
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
@@ -588,7 +594,7 @@ const About = (props: Props) => {
                   make an effort to swim whenever I find the opportunity.
                 </p>
                 <button className="text-[#ff4081] inline-flex items-center">
-                  Learn More
+                  Explore More
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
@@ -620,7 +626,7 @@ const About = (props: Props) => {
                   books every day, unless there is a significant obstacle.
                 </p>
                 <button className="text-[#ff4081] inline-flex items-center">
-                  Learn More
+                  Explore More
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
@@ -653,7 +659,7 @@ const About = (props: Props) => {
                   there are also times when I enjoy listening to rap music.
                 </p>
                 <button className="text-[#ff4081] inline-flex items-center">
-                  Learn More
+                  Explore More
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"

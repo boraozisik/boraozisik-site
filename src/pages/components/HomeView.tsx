@@ -357,7 +357,7 @@ const HomeView = (props: Props) => {
               <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow lg:h-[12rem]">
                 <Stack direction={"row"} alignItems={"center"}>
                   <a
-                    href="https://www.shipmind.tech/"
+                    href="https://nautilica.com/"
                     target="_blank"
                     className="font-medium text-[#0077b6] hover:underline  md:text-xl"
                   >
