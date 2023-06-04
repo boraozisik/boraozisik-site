@@ -279,7 +279,7 @@ const About = (props: Props) => {
       <section className="bg-white mt-8 lg:mt-0">
         <div className="relative flex">
           <div className="min-h-screen lg:w-1/3"></div>
-          <div className="hidden w-3/4 min-h-screen bg-gray-100 lg:block"></div>
+          <div className="hidden w-3/4 min-h-screen bg-gray-100 lg:block lg:h-[48rem]"></div>
 
           <div className="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
             <h1 className="text-2xl text-gray-800 capitalize lg:text-3xl lg:ml-16 font-medium mt-8">
@@ -292,15 +292,15 @@ const About = (props: Props) => {
               </div>
             </h1>
 
-            <div className="mt-10 lg:mt-20 lg:flex lg:items-center">
+            <div className="mt-10 lg:flex lg:items-center">
               <img
                 className="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96 lg:ml-16"
                 src="/static/images/myStory-bg.jpg"
                 alt=""
               />
 
-              <div className="mt-8 lg:-mt-8 lg:px-24 lg:mt-0">
-                <p className="max-w-lg text-gray-500 lg:text-justify font-medium">
+              <div className="mt-8 lg:-mt-8 lg:px-40">
+                <p className="max-w-lg text-gray-500 lg:text-justify font-medium lg:mb-6">
                   I was born on November 7, 2000, in the city of Aydın, Turkey.
                   I attended primary school, middle school, and high school in
                   Aydın. I graduated from high school with a GPA of 96.24 and
@@ -308,7 +308,7 @@ const About = (props: Props) => {
                   entrance exam, I earned the opportunity to study Computer
                   Engineering at Celal Bayar University.
                 </p>
-                <p className="max-w-lg mt-6 text-gray-500 lg:text-justify font-medium">
+                <p className="max-w-lg  text-gray-500 lg:text-justify font-medium lg:mb-6">
                   I spent a year in preparatory school, improving my English
                   skills and also took the initiative to learn German. Once I
                   moved on to the first year of university, alongside my regular
@@ -318,7 +318,7 @@ const About = (props: Props) => {
                   path by taking courses to learn the Python language and
                   developed applications.
                 </p>
-                <p className="max-w-lg mt-6 text-gray-500 lg:text-justify font-medium">
+                <p className="max-w-lg text-gray-500 lg:text-justify font-medium lg:mb-6">
                   By the middle of my second year, I realized that I wanted to
                   put my skills into practice and work.Therefore, I started a
                   voluntary internship at &apos;Nautilica Software
@@ -328,7 +328,7 @@ const About = (props: Props) => {
                   including TypeScript, React, Next.js, Nest.js, PostgreSQL, and
                   GraphQL.
                 </p>
-                <p className="max-w-lg mt-6 text-gray-500 lg:text-justify font-medium">
+                <p className="max-w-lg text-gray-500 lg:text-justify font-medium">
                   After this six-month journey, I was offered a job at the same
                   company as a Full Stack Developer. Currently, I am working
                   while continuing my studies. Additionally, I am actively
@@ -559,7 +559,10 @@ const About = (props: Props) => {
                   that helps children and adults with leukemia and cancer and
                   meets their many needs.
                 </p>
-                <button className="text-[#ff4081] inline-flex items-center">
+                <button
+                  className="text-[#ff4081] inline-flex items-center"
+                  onClick={() => router.push("/losev")}
+                >
                   Explore More
                   <svg
                     className="w-4 h-4 ml-2"

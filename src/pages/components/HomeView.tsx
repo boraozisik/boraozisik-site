@@ -305,7 +305,7 @@ const HomeView = (props: Props) => {
                 </h1>
                 <button
                   type="button"
-                  className="text-white bg-[#0077b6]  hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  className="text-white bg-[#0077b6]  hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                 >
                   My Projects
                 </button>
@@ -337,7 +337,7 @@ const HomeView = (props: Props) => {
               Hello!
             </h1>
 
-            <p className="max-w-lg mx-auto mt-4 text-gray-200 font-medium">
+            <p className="mx-auto mt-4 text-gray-200 font-medium">
               I&apos;m a Full Stack Developer who wants to learn new things and
               improve himself. I like teamwork, so I always want to be included
               projects that help people&apos;s daily life. My main motivation is
@@ -892,7 +892,7 @@ const HomeView = (props: Props) => {
       {/* // -------------------Footer----------------------  */}
       <footer className="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
+          <div className=" flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
                 <p className="text-body-color mb-7 text-base">
@@ -901,7 +901,7 @@ const HomeView = (props: Props) => {
                 <p className="text-dark flex items-center text-sm font-medium hover:text-[#0077b6]">
                   <span className="text-primary mr-3">
                     <svg
-                      width="19"
+                      width="15"
                       height="21"
                       viewBox="0 0 19 21"
                       className="fill-current"
