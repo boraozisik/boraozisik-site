@@ -295,7 +295,7 @@ const About = (props: Props) => {
             <div className="mt-10 lg:flex lg:items-center">
               <img
                 className="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96 lg:ml-16"
-                src="/static/images/myStory-bg.jpg"
+                src="/static/images/my-story.jpg"
                 alt=""
               />
 
@@ -596,7 +596,10 @@ const About = (props: Props) => {
                   swimming abilities and I demonstrate a competitive spirit. I
                   make an effort to swim whenever I find the opportunity.
                 </p>
-                <button className="text-[#ff4081] inline-flex items-center">
+                <button
+                  className="text-[#ff4081] inline-flex items-center"
+                  onClick={() => router.push("/swimming")}
+                >
                   Explore More
                   <svg
                     className="w-4 h-4 ml-2"
