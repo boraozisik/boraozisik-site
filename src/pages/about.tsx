@@ -631,7 +631,10 @@ const About = (props: Props) => {
                   In addition, I love reading books. I make it a point to read
                   books every day, unless there is a significant obstacle.
                 </p>
-                <button className="text-[#ff4081] inline-flex items-center">
+                <button
+                  className="text-[#ff4081] inline-flex items-center"
+                  onClick={() => router.push("/books")}
+                >
                   Explore More
                   <svg
                     className="w-4 h-4 ml-2"
