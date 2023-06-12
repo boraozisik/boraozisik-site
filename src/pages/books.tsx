@@ -59,7 +59,7 @@ const Books = (props: Props) => {
     {
       field: "genre",
       headerName: "Genre",
-      type: "number",
+      // type: "number",
       flex: 1,
       editable: true,
     },
@@ -75,18 +75,146 @@ const Books = (props: Props) => {
   ];
 
   const rows = [
-    { id: 1, author: "Snow", name: "Jon", genre: 23 },
-    { id: 2, author: "Snow", name: "Jon", genre: 35 },
-    { id: 3, author: "Snow", name: "Jon", genre: 35 },
-    { id: 4, author: "Snow", name: "Jon", genre: 35 },
-    { id: 5, author: "Snow", name: "Jon", genre: 35 },
-    { id: 6, author: "Snow", name: "Jon", genre: 35 },
-    { id: 7, author: "Snow", name: "Jon", genre: 35 },
-    { id: 8, author: "Snow", name: "Jon", genre: 23 },
-    { id: 9, author: "Snow", name: "Jon", genre: 35 },
-    { id: 10, author: "Snow", name: "Jon", genre: 35 },
-    { id: 11, author: "Snow", name: "Jon", genre: 35 },
-    { id: 12, author: "Snow", name: "Jon", genre: 35 },
+    {
+      id: 1,
+      name: "Nutuk",
+      englishName: "Speech",
+      author: "Mustafa Kemal Atatürk",
+      genre: "History",
+    },
+    {
+      id: 2,
+      name: "Martin Eden",
+      englishName: "Martin Eden",
+      author: "Jack London",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 3,
+      name: "Suç ve Ceza",
+      englishName: "Crime and Punishment",
+      author: "Fyodor Mihayloviç Dostoyevski",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 4,
+      name: "İki Şehrin Hikâyesi",
+      englishName: "A Tale of Two Cities",
+      author: "Charles Dickens",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 5,
+      name: "Çankaya",
+      englishName: "Çankaya",
+      author: "Falih Rıfkı Atay",
+      genre: "History",
+    },
+    {
+      id: 6,
+      name: "Atatürk",
+      englishName: "Atatürk",
+      author: "Lord Kinross",
+      genre: "History",
+    },
+    {
+      id: 7,
+      name: "Gurur ve Önyargı",
+      englishName: "Pride and Prejudice",
+      author: "Jane Austen",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 8,
+      name: "Ezilenler",
+      englishName: "Humiliated and Insulted",
+      author: "Fyodor Mihayloviç Dostoyevski",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 9,
+      name: "Babalar ve Oğullar",
+      englishName: "Fathers and Sons",
+      author: "İvan Turgenyev",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 10,
+      name: "Bir İdam Mahkmunun Son Günü",
+      englishName: "The Last Day of a Condemned Man",
+      author: "Victor Hugo",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 11,
+      name: "Kumarbaz",
+      englishName: "The Gambler",
+      author: "Fyodor Mihayloviç Dostoyevski",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 12,
+      name: "Atatürk",
+      englishName: "Atatürk",
+      author: "İlber Ortaylı",
+      genre: "History",
+    },
+    {
+      id: 13,
+      name: "Atatürk Hakkında Hatıralar ve Belgeler",
+      englishName: "Memories and Documents About Atatürk",
+      author: "Afet İnan",
+      genre: "History",
+    },
+    {
+      id: 14,
+      name: "Yeraltından Notlar",
+      englishName: "Notes From The Underground ",
+      author: "Fyodor Mihayloviç Dostoyevski",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 15,
+      name: "İnsan Ne ile Yaşar?",
+      englishName: "What Men Live By",
+      author: "Lev Tolstoy",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 16,
+      name: "Yaban",
+      englishName: "The Stranger",
+      author: "Yakup Kadri Karaosmanoğlu",
+      genre: "Historical Fiction",
+    },
+    {
+      id: 17,
+      name: "Kiralık Konak",
+      englishName: "Mansion for Rent",
+      author: "Yakup Kadri Karaosmanoğlu",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 18,
+      name: "1984",
+      englishName: "1984",
+      author: "George Orwell",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 19,
+      name: "Serenad",
+      englishName: "Serenade for Nadia",
+      author: "Zülfü Livaneli",
+      genre: "Fiction / Novel",
+    },
+    {
+      id: 20,
+      name: "Simyacı",
+      englishName: "The Alchemist",
+      author: "Paulo Coelho",
+      genre: "Fiction / Novel",
+    },
   ];
   function CustomToolbar() {
     return (
@@ -96,7 +224,7 @@ const Books = (props: Props) => {
         <GridToolbarColumnsButton sx={{ color: "#0077b6" }} />
         <GridToolbarFilterButton sx={{ color: "#0077b6" }} />
         <GridToolbarDensitySelector sx={{ color: "#0077b6" }} />
-        <GridToolbarExport sx={{ color: "#0077b6" }} />
+        {/* <GridToolbarExport sx={{ color: "#0077b6" }} /> */}
 
         <GridToolbarQuickFilter sx={{ ml: "auto", width: "15%" }} />
       </GridToolbarContainer>
@@ -347,47 +475,49 @@ const Books = (props: Props) => {
       </header>
       {/* // -------------------Header----------------------  */}
       {/* // -------------------Desc----------------------  */}
-      <div className="py-24">
-        <div className="container m-auto px-6">
-          <div className="lg:flex justify-between items-center">
-            <div className="lg:w-6/12 lg:p-0 p-7">
-              <h1 className="text-4xl font-medium leading-tight mb-5 capitalize">
-                <span className="text-[#ff4081] underline">Reading:</span> The
-                artful lifestyle, the passionate pursuit.
-              </h1>
-              <p className="font-medium text-justify">
-                Reading books is not merely a hobby for me; it is a way of life
-                that I wholeheartedly embrace. The scent of fresh pages and the
-                gentle rustle as I turn them transport me to different worlds
-                and immerse me in diverse perspectives. With each book, I embark
-                on a journey of self-discovery and intellectual growth, savoring
-                the words that awaken my imagination and expand my horizons.
-                Reading is not just an activity; it is an integral part of who I
-                am, a lifelong passion that continually nourishes my soul and
-                inspires me to see the world through the eyes of countless
-                authors.
-              </p>
-              <p className="font-medium text-justify mt-8 underline">
-                Below, you can find a list of{" "}
-                <span className="text-[#0077b6] underline">
-                  all the books I have read.
-                </span>{" "}
-                Perhaps it can also be a source of inspiration for you!
-              </p>
-            </div>
-            <div className="lg:w-5/12 order-2">
-              <img
-                src="/static/images/books.jpg"
-                alt=""
-                className="rounded transform scale-100 perspective-1040 rotate-y-11 rotate-x-2 rotate-2"
-              />
+      <div>
+        <div className="py-24">
+          <div className="container m-auto px-6">
+            <div className="lg:flex justify-between items-center">
+              <div className="lg:w-6/12 lg:p-0 p-7">
+                <h1 className="text-4xl font-medium leading-tight mb-5 capitalize">
+                  <span className="text-[#ff4081] underline">Reading:</span> The
+                  artful lifestyle, the passionate pursuit.
+                </h1>
+                <p className="font-medium text-justify">
+                  Reading books is not merely a hobby for me; it is a way of
+                  life that I wholeheartedly embrace. The scent of fresh pages
+                  and the gentle rustle as I turn them transport me to different
+                  worlds and immerse me in diverse perspectives. With each book,
+                  I embark on a journey of self-discovery and intellectual
+                  growth, savoring the words that awaken my imagination and
+                  expand my horizons. Reading is not just an activity; it is an
+                  integral part of who I am, a lifelong passion that continually
+                  nourishes my soul and inspires me to see the world through the
+                  eyes of countless authors.
+                </p>
+              </div>
+              <div className="lg:w-5/12 order-2">
+                <img
+                  src="/static/images/books.jpg"
+                  alt=""
+                  className="rounded transform scale-100 perspective-1040 rotate-y-11 rotate-x-2 rotate-2"
+                />
+              </div>
             </div>
           </div>
         </div>
+        <p className="font-medium text-justify mt-8 underline lg:ml-8 mx-4">
+          ==&gt; Below, you can find a list of{" "}
+          <span className="text-[#0077b6] underline">
+            all the books I have read.
+          </span>{" "}
+          Perhaps it can also be a source of inspiration for you!
+        </p>
       </div>
       {/* // -------------------Desc----------------------  */}
       {/* // -------------------Table----------------------  */}
-      <Box sx={{ height: 600, width: "100%", mt: 4 }}>
+      <Box sx={{ height: 800, width: "95%", mt: 4, mx: "auto", mb: 2 }}>
         <DataGrid
           rows={rows}
           columns={columns}
@@ -395,14 +525,14 @@ const Books = (props: Props) => {
           initialState={{
             pagination: {
               paginationModel: {
-                pageSize: 10,
+                pageSize: 20,
               },
             },
           }}
           sx={{
             boxShadow: 5,
             border: 1,
-            borderColor: "#0077b6",
+            borderColor: "#D6EAF8",
             "& .MuiDataGrid-row:hover": {
               background: "#EBF5FB",
             },
