@@ -450,7 +450,7 @@ const About = (props: Props) => {
       </section>
       {/* // -------------------Timeline----------------------  */}
       {/* // -------------------Passions----------------------  */}
-      <section className="body-font text-gray-600">
+      <section className="body-font text-gray-600 bg-gray-100">
         <a href="#passions" id={"passions"}></a>
         <div className="container mx-auto px-5 py-24">
           <div className="mb-20 flex w-full flex-wrap">
@@ -689,7 +689,7 @@ const About = (props: Props) => {
       </section>
       {/* // -------------------Passions----------------------  */}
       {/* // -------------------Footer----------------------  */}
-      <footer className="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <footer className="relative z-10 bg-gray-100 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
