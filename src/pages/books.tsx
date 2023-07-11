@@ -935,6 +935,36 @@ const Books = (props: Props) => {
       author: "Virginia Boecker",
       genre: "Fantasy",
     },
+    {
+      name: "Uyumsuz",
+      englishName: "Divergent",
+      author: "Veronico Roth",
+      genre: "Sci-Fi",
+    },
+    {
+      name: "Kuralsız",
+      englishName: "Insurgent",
+      author: "Veronico Roth",
+      genre: "Sci-Fi",
+    },
+    {
+      name: "Yandaş",
+      englishName: "Allegiant",
+      author: "Veronico Roth",
+      genre: "Sci-Fi",
+    },
+    {
+      name: "Şu Çılgın Türkler",
+      englishName: "Those Crazy Turks",
+      author: "Turgut Özakman",
+      genre: "History",
+    },
+    {
+      name: "Diriliş - Çanakkale 1915",
+      englishName: "Resurrection - Çanakkale 1915",
+      author: "Turgut Özakman",
+      genre: "History",
+    },
   ];
   const rows = books.map((book: Book, index: number) => ({
     id: index,
