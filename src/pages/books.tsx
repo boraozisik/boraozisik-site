@@ -119,6 +119,12 @@ const Books = (props: Props) => {
       genre: "Biography",
     },
     {
+      name: "Hasan-Âli Yücel ve Türk Aydınlanması",
+      englishName: "Hasan-Âli Yücel ve Türk Aydınlanması",
+      author: "Celal Şengör",
+      genre: "History",
+    },
+    {
       name: "Gurur ve Önyargı",
       englishName: "Pride and Prejudice",
       author: "Jane Austen",
@@ -193,6 +199,18 @@ const Books = (props: Props) => {
     {
       name: "Serenad",
       englishName: "Serenade for Nadia",
+      author: "Zülfü Livaneli",
+      genre: "Fiction / Novel",
+    },
+    {
+      name: "Son Ada",
+      englishName: "Last Island",
+      author: "Zülfü Livaneli",
+      genre: "Fiction / Novel",
+    },
+    {
+      name: "Leyla'nın Evi",
+      englishName: "Leyla's House",
       author: "Zülfü Livaneli",
       genre: "Fiction / Novel",
     },
@@ -500,12 +518,6 @@ const Books = (props: Props) => {
       name: "Kiracı",
       englishName: "The Tenant",
       author: "Javier Cercas",
-      genre: "Fiction / Novel",
-    },
-    {
-      name: "Son Ada",
-      englishName: "Last Island",
-      author: "Zülfü Livaneli",
       genre: "Fiction / Novel",
     },
     {
@@ -1008,6 +1020,30 @@ const Books = (props: Props) => {
       genre: "Drama",
     },
     {
+      name: "Cerrah",
+      englishName: "Surgeon",
+      author: "Tess Gerritsen",
+      genre: "Drama",
+    },
+    {
+      name: "Çırak",
+      englishName: "The Apprentice",
+      author: "Tess Gerritsen",
+      genre: "Drama",
+    },
+    {
+      name: "Her Temas İz Bırakır",
+      englishName: "Her Temas İz Bırakır",
+      author: "Emrah Serbes",
+      genre: "Crime",
+    },
+    {
+      name: "Olasılıksız",
+      englishName: "Improbable",
+      author: "Adam Fawer",
+      genre: "Fiction",
+    },
+    {
       name: "Sherlock Holmes - Sır Perdesi Aralanıyor",
       englishName: "Sherlock Holmes - Sır Perdesi Aralanıyor",
       author: "Sir Arthur Conan Doyle",
@@ -1068,6 +1104,12 @@ const Books = (props: Props) => {
       genre: "Fiction",
     },
     {
+      name: "Mahzen",
+      englishName: "Collision",
+      author: "Jeff Abbott",
+      genre: "Drama",
+    },
+    {
       name: "Kayıp Gül",
       englishName: "Kayıp Gül",
       author: "Serdar Özkan",
@@ -1084,6 +1126,36 @@ const Books = (props: Props) => {
       englishName: "Ekim Yağmurları",
       author: "Serdar Özkan",
       genre: "Emotional Fiction",
+    },
+    {
+      name: "Beyoğlu'nun En Güzel Abisi",
+      englishName: "Beyoğlu'nun En Güzel Abisi",
+      author: "Ahmet Ümit",
+      genre: "Crime",
+    },
+    {
+      name: "Bir Ses Böler Geceyi",
+      englishName: "Bir Ses Böler Geceyi",
+      author: "Ahmet Ümit",
+      genre: "Fiction",
+    },
+    {
+      name: "Telepati",
+      englishName: "Multiverse",
+      author: "Leonardo Patrignani",
+      genre: "Fiction",
+    },
+    {
+      name: "Hafıza",
+      englishName: "Memory",
+      author: "Leonardo Patrignani",
+      genre: "Fiction",
+    },
+    {
+      name: "Ateş Hırsızı",
+      englishName: "The Fire Thief",
+      author: "Terry Deary",
+      genre: "Fantasy",
     },
   ];
   const rows = books.map((book: Book, index: number) => ({
