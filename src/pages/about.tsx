@@ -667,7 +667,10 @@ const About = (props: Props) => {
                   and brings me calmness. I mostly listen to rock music, but
                   there are also times when I enjoy listening to rap music.
                 </p>
-                <button className="text-[#ff4081] inline-flex items-center">
+                <button
+                  className="text-[#ff4081] inline-flex items-center"
+                  onClick={() => router.push("/music")}
+                >
                   Explore More
                   <svg
                     className="w-4 h-4 ml-2"
