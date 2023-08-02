@@ -54,7 +54,7 @@ const HomeView = (props: Props) => {
     {
       name: "Contact",
       description: "Connect me anytime",
-      onClick: () => console.log("xdxdxd"),
+      onClick: () => router.push("/about#contact"),
       icon: ConnectWithoutContactOutlinedIcon,
     },
   ];
@@ -305,9 +305,10 @@ const HomeView = (props: Props) => {
                 </h1>
                 <button
                   type="button"
+                  onClick={() => router.push("/about")}
                   className="text-white bg-[#0077b6]  hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                 >
-                  My Projects
+                  About
                 </button>
                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#ff4081] to-blue-300  hover:text-white  focus:ring-4 focus:outline-none focus:ring-pink-200">
                   <span className="relative px-5 py-2 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
@@ -1083,7 +1084,11 @@ const HomeView = (props: Props) => {
                       />
                     </svg>
                   </a>
-                  <a className="text-dark hover:bg-[#0077b6] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                  <a
+                    href="https://www.instagram.com/borazsk_/"
+                    target="_blank"
+                    className="text-dark hover:bg-[#0077b6] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  >
                     <svg
                       className="w-5 h-5"
                       fill="currentColor"
