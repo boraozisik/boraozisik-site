@@ -113,7 +113,7 @@ const Travel = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -123,18 +123,18 @@ const Travel = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#0077b6]"
+                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
                   <span>About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   ) : (
                     <ChevronDownIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   )}
@@ -160,7 +160,7 @@ const Travel = (props: Props) => {
                           >
                             <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                               <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#0077b6]"
+                                className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
                                 aria-hidden="true"
                               />
                             </div>
@@ -185,8 +185,8 @@ const Travel = (props: Props) => {
               </Popover>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
-              onClick={() => router.push("/#contact")}
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              onClick={() => router.push("/work")}
             >
               Work
             </button>
@@ -273,9 +273,9 @@ const Travel = (props: Props) => {
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="flex w-full mb-20 flex-wrap">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-800 lg:w-1/3 lg:mb-0 mb-4">
-              Travel <span className="text-[#ff4081] py-4">far</span>, travel{" "}
-              <span className="text-[#ff4081] py-4">wide</span>, travel{" "}
-              <span className="text-[#ff4081] py-4">deep</span>. Find myself.
+              Travel <span className="text-[#8cbeef] py-4">far</span>, travel{" "}
+              <span className="text-[#8cbeef] py-4">wide</span>, travel{" "}
+              <span className="text-[#8cbeef] py-4">deep</span>. Find myself.
             </h1>
             <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-justify font-medium">
               From the breathtaking landscapes to the vibrant cultures, I

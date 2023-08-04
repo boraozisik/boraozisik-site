@@ -114,7 +114,7 @@ const Music = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -124,18 +124,18 @@ const Music = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 text-sm font-medium leading-6 text-[#0077b6]"
+                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
                   <span>About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   ) : (
                     <ChevronDownIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   )}
@@ -161,7 +161,7 @@ const Music = (props: Props) => {
                           >
                             <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                               <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#0077b6]"
+                                className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
                                 aria-hidden="true"
                               />
                             </div>
@@ -186,8 +186,8 @@ const Music = (props: Props) => {
               </Popover>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
-              onClick={() => router.push("/#contact")}
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              onClick={() => router.push("/work")}
             >
               Work
             </button>
@@ -273,8 +273,8 @@ const Music = (props: Props) => {
       <section className="bg-gray-800 py-16">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-medium capitalize lg:text-3xl text-white">
-            Ears <span className="text-[#ff4081]">Attuned</span>, Soul{" "}
-            <span className="text-[#ff4081]">Ignited:</span> A Lifelong Melody.
+            Ears <span className="text-[#fde047]">Attuned</span>, Soul{" "}
+            <span className="text-[#fde047]">Ignited:</span> A Lifelong Melody.
           </h1>
 
           <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
@@ -316,11 +316,11 @@ const Music = (props: Props) => {
           <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-medium text-center capitalize lg:text-3xl text-white">
               Here you can check my{" "}
-              <span className="text-[#ff4081]">favorite</span> artists
+              <span className="text-[#fde047]">favorite</span> artists
             </h1>
 
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/queen-avatar.png"
@@ -332,7 +332,7 @@ const Music = (props: Props) => {
                 </h1>
               </div>
 
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/travis-scott-avatar.jpg"
@@ -344,7 +344,7 @@ const Music = (props: Props) => {
                 </h1>
               </div>
 
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/bon-jovi-avatar.jpg"
@@ -355,7 +355,7 @@ const Music = (props: Props) => {
                   Bon Jovi
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/pilli-bebek-avatar.jpg"
@@ -366,7 +366,7 @@ const Music = (props: Props) => {
                   Pilli Bebek
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/depeche-mode-avatar.png"
@@ -377,7 +377,7 @@ const Music = (props: Props) => {
                   Depeche Mode
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/alphaville-avatar.png"
@@ -388,7 +388,7 @@ const Music = (props: Props) => {
                   Alphaville
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/sebnem-ferah-avatar.jpg"
@@ -399,7 +399,7 @@ const Music = (props: Props) => {
                   Şebnem Ferah
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#0077b6] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/linkin-park-avatar.jpg"

@@ -113,7 +113,7 @@ const Losev = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -123,18 +123,18 @@ const Losev = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#0077b6]"
+                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
                   <span>About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   ) : (
                     <ChevronDownIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   )}
@@ -160,7 +160,7 @@ const Losev = (props: Props) => {
                           >
                             <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                               <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#0077b6]"
+                                className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
                                 aria-hidden="true"
                               />
                             </div>
@@ -185,8 +185,8 @@ const Losev = (props: Props) => {
               </Popover>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
-              onClick={() => router.push("/#contact")}
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              onClick={() => router.push("/work")}
             >
               Work
             </button>
@@ -270,7 +270,7 @@ const Losev = (props: Props) => {
       {/* // -------------------Header----------------------  */}
       <section className="bg-gray-800">
         <div className="container px-6 py-20 mx-auto">
-          <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl text-[#ff4081] underline">
+          <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl text-[#fde047] underline">
             Lösev
           </h1>
           <p className="font-medium text-white text-justify mx-auto max-w-lg mt-8">
@@ -286,7 +286,7 @@ const Losev = (props: Props) => {
                 <h2 className="mt-4 text-xl font-semibold capitalize text-white">
                   Tangerine Harvesting Event
                 </h2>
-                <p className="mt-2 text-lg tracking-wider text-blue-400 ">
+                <p className="mt-2 text-lg tracking-wider text-yellow-400 ">
                   İzmir
                 </p>
               </div>
@@ -297,7 +297,7 @@ const Losev = (props: Props) => {
                 <h2 className="mt-4 text-xl font-semibold capitalize text-white">
                   Karşıyaka Çarşı Caravan
                 </h2>
-                <p className="mt-2 text-lg tracking-wider text-blue-400 ">
+                <p className="mt-2 text-lg tracking-wider text-yellow-400 ">
                   İzmir
                 </p>
               </div>
@@ -308,7 +308,7 @@ const Losev = (props: Props) => {
                 <h2 className="mt-4 text-xl font-semibold  capitalize text-white">
                   Hilltown AVM
                 </h2>
-                <p className="mt-2 text-lg tracking-wider text-blue-400 ">
+                <p className="mt-2 text-lg tracking-wider text-yellow-400 ">
                   İzmir
                 </p>
               </div>
@@ -319,7 +319,7 @@ const Losev = (props: Props) => {
                 <h2 className="mt-4 text-xl font-semibold  capitalize text-white">
                   Karşıyaka Çarşı Caravan
                 </h2>
-                <p className="mt-2 text-lg tracking-wider text-blue-400 ">
+                <p className="mt-2 text-lg tracking-wider text-yellow-400 ">
                   İzmir
                 </p>
               </div>

@@ -120,7 +120,7 @@ const HomeView = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -130,18 +130,18 @@ const HomeView = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 text-sm font-medium leading-6 text-[#0077b6]"
+                  className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
                   <span>About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   ) : (
                     <ChevronDownIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   )}
@@ -167,7 +167,7 @@ const HomeView = (props: Props) => {
                           >
                             <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                               <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#0077b6]"
+                                className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
                                 aria-hidden="true"
                               />
                             </div>
@@ -192,8 +192,8 @@ const HomeView = (props: Props) => {
               </Popover>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
-              onClick={() => router.push("/#contact")}
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              onClick={() => router.push("/work")}
             >
               Work
             </button>
@@ -276,7 +276,7 @@ const HomeView = (props: Props) => {
       </header>
       {/* // -------------------Header----------------------  */}
       {/* // -------------------Hero----------------------  */}
-      <div className="px-6 py-20 md:px-12 text-gray-800 text-center lg:text-left bg-gray-100">
+      {/* <div className="px-6 py-20 md:px-12 text-gray-800 text-center lg:text-left bg-gray-100">
         <div className="container mx-auto xl:px-32">
           <div className="grid lg:grid-cols-2 flex items-center">
             <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
@@ -293,7 +293,7 @@ const HomeView = (props: Props) => {
                   />
                   <br />
                   <Stack direction={"row"} alignItems={"center"}>
-                    <span className="text-[#0077b6]">
+                    <span className="text-[#8cbeef]">
                       Empowering myself and others to reach new heights.{" "}
                     </span>
                     <img
@@ -306,11 +306,11 @@ const HomeView = (props: Props) => {
                 <button
                   type="button"
                   onClick={() => router.push("/about")}
-                  className="text-white bg-[#0077b6]  hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  className="text-white bg-[#8cbeef]  hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                 >
                   About
                 </button>
-                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#ff4081] to-blue-300  hover:text-white  focus:ring-4 focus:outline-none focus:ring-pink-200">
+                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#fde047] to-blue-300  hover:text-white  focus:ring-4 focus:outline-none focus:ring-pink-200">
                   <span className="relative px-5 py-2 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
                     My Resume
                   </span>
@@ -326,7 +326,80 @@ const HomeView = (props: Props) => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="bg-white">
+        <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+              <div>
+                <p className="text-base font-medium tracking-wider text-[#8cbeef] uppercase">
+                  Full Stack Developer
+                </p>
+                <h1 className="mt-4 text-4xl font-bold text-gray-800 lg:mt-8 sm:text-6xl xl:text-8xl">
+                  Bora Özışık
+                </h1>
+                <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+                  Empowering myself and others to reach new heights.
+                </p>
+
+                <a
+                  onClick={() => router.push("/about")}
+                  title=""
+                  className="inline-flex items-center px-6 py-4 mt-8 font-medium text-white transition-all duration-200 bg-[#8cbeef]  rounded-full lg:mt-16 hover:bg-blue-400 focus:bg-blue-400"
+                  role="button"
+                >
+                  About
+                  <svg
+                    className="w-6 h-6 ml-8 -mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
+                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  title=""
+                  className="ml-4 inline-flex items-center px-6 py-4 mt-8 font-medium text-black transition-all duration-200 bg-[#fde047] rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                  role="button"
+                >
+                  My Resume
+                  <svg
+                    className="w-6 h-6 ml-8 -mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
+                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div>
+                <img
+                  className="w-full"
+                  src="/static/images/my-image-hero.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
+
       {/* // -------------------Hero----------------------  */}
       {/* // -------------------Briefly About----------------------  */}
 
@@ -334,7 +407,7 @@ const HomeView = (props: Props) => {
         <a href="#brabout" id={"brabout"}></a>
         <div className="container px-6 py-10 mx-auto">
           <div className="text-center">
-            <h1 className="text-2xl font-medium text-[#0077b6] capitalize lg:text-3xl ">
+            <h1 className="text-2xl font-medium text-[#8cbeef] capitalize lg:text-3xl ">
               Hello!
             </h1>
 
@@ -351,18 +424,18 @@ const HomeView = (props: Props) => {
             <div>
               <img
                 className="relative z-10 object-cover w-full rounded-md h-96"
-                src="/static/images/software.jpg"
+                src="/static/images/shipmind-logo.PNG"
                 alt=""
               />
 
               <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-gray-900 rounded-md shadow lg:h-[12rem]">
                 <Stack direction={"row"} alignItems={"center"}>
                   <a
-                    href="https://nautilica.com/"
+                    href="https://www.shipmind.tech/"
                     target="_blank"
-                    className="font-medium text-[#0077b6] hover:underline  md:text-xl"
+                    className="font-medium text-[#8cbeef] hover:underline  md:text-xl"
                   >
-                    Nautilica Software Services
+                    ShipMind
                   </a>
                   <img
                     className="h-7 w-auto ml-2"
@@ -378,7 +451,7 @@ const HomeView = (props: Props) => {
                   Organizing your Freight&quot; with our team.
                 </p>
 
-                <p className="mt-3 text-sm text-[#ff4081] font-medium">
+                <p className="mt-3 text-sm text-[#fde047] font-medium">
                   Mar 2022 - Present
                 </p>
               </div>
@@ -387,7 +460,7 @@ const HomeView = (props: Props) => {
             <div>
               <img
                 className="relative z-10 object-cover w-full rounded-md h-96"
-                src="/static/images/working.jpg"
+                src="/static/images/cbü.png"
                 alt=""
               />
 
@@ -396,7 +469,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.mcbu.edu.tr/"
                     target="_blank"
-                    className="font-medium text-[#0077b6] hover:underline md:text-xl"
+                    className="font-medium text-[#8cbeef] hover:underline md:text-xl"
                   >
                     Celal Bayar University
                   </a>
@@ -414,7 +487,7 @@ const HomeView = (props: Props) => {
                   <span className="font-medium">I work hard !</span>
                 </p>
 
-                <p className="mt-2 text-sm text-[#ff4081] font-medium">
+                <p className="mt-2 text-sm text-[#fde047] font-medium">
                   2019 - Present
                 </p>
               </div>
@@ -431,7 +504,7 @@ const HomeView = (props: Props) => {
             <div className="lg:w-1/2">
               <h2 className="max-w-md mb-6 font-medium text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none xl:max-w-lg">
                 <span className="relative inline-block px-2">
-                  <div className="absolute inset-0 transform -skew-x-12 bg-[#ff4081]" />
+                  <div className="absolute inset-0 transform -skew-x-12 bg-[#8cbeef]" />
                   <span className="relative text-white">Skill</span>
                 </span>{" "}
                 and{" "}
@@ -465,10 +538,10 @@ const HomeView = (props: Props) => {
                   strokeWidth="2"
                   viewBox="0 0 24 24"
                 >
-                  <circle cx="11" cy="13" fill="none" r="9" stroke="#0077b6" />
+                  <circle cx="11" cy="13" fill="none" r="9" stroke="#8cbeef" />
                   <path
                     d=" M21.955,18.005c1.089,2.145,1.378,3.816,0.622,4.572C20.92,24.234,14.799,20.799,9,15S-0.234,3.08,1.423,1.423 C2.18,0.666,3.853,0.956,6,2.047"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                     fill="none"
                   />
                 </svg>
@@ -482,7 +555,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -500,7 +573,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -518,7 +591,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -545,19 +618,19 @@ const HomeView = (props: Props) => {
                     d="M2,10C2,5.029,6.47,1,12,1c5.379,0,10,4.029,10,9S15.712,23,12,23C8.212,23,2,14.971,2,10Z"
                     fill="none"
                     strokeWidth="2"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                   <path
                     d="M5,9a6.529,6.529,0,0,1,4.393,1.607C10.705,11.92,10,15,10,15a6.59,6.59,0,0,1-3.436-1.564C5.022,11.894,5,9,5,9Z"
                     fill="none"
                     strokeWidth="1.5"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                   <path
                     d="M19,9a6.523,6.523,0,0,0-4.392,1.608C13.3,11.92,14,15,14,15a6.59,6.59,0,0,0,3.436-1.564C18.978,11.894,19,9,19,9Z"
                     fill="none"
                     strokeWidth="1.5"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                 </svg>
               </div>
@@ -570,7 +643,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -588,7 +661,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -606,7 +679,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -633,7 +706,7 @@ const HomeView = (props: Props) => {
                   <path
                     d="M8.291,18.709,4.182,22.818c-.419.419-1.43.086-2.258-.742s-1.161-1.839-.742-2.258l4.11-4.11"
                     fill="none"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                   <ellipse
                     cx="19.078"
@@ -641,18 +714,18 @@ const HomeView = (props: Props) => {
                     fill="none"
                     rx="2.5"
                     ry="4.95"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                     transform="translate(2.107 14.932) rotate(-45)"
                   />
                   <path
                     d="M9.185,9.815,5.3,13.7c-.7.7-.143,2.382,1.238,3.762S9.6,19.4,10.3,18.7l3.885-3.885"
                     fill="none"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                   <path
                     d="M15.578,1.422,9.422,7.578c-.976.976-.2,3.335,1.732,5.268s4.292,2.708,5.268,1.732l6.156-6.156"
                     fill="none"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                 </svg>
               </div>
@@ -667,7 +740,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -685,7 +758,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -703,7 +776,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -730,20 +803,20 @@ const HomeView = (props: Props) => {
                   <path
                     d="M8,13l3,3,9.379-9.379a2.122,2.122,0,0,0,0-3h0a2.122,2.122,0,0,0-3,0Z"
                     fill="none"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                   <polyline
                     fill="none"
                     points="10 11 10 6 6 2 3 5 7 9"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
                   <polyline
                     fill="none"
                     points="15 12 15 17 19 21 22 18 18 14"
-                    stroke="#0077b6"
+                    stroke="#8cbeef"
                   />
-                  <path d="M8,23a7,7,0,0,1-7-7" fill="none" stroke="#0077b6" />
-                  <path d="M8,19a3,3,0,0,1-3-3" fill="none" stroke="#0077b6" />
+                  <path d="M8,23a7,7,0,0,1-7-7" fill="none" stroke="#8cbeef" />
+                  <path d="M8,19a3,3,0,0,1-3-3" fill="none" stroke="#8cbeef" />
                 </svg>
               </div>
               <h6 className="mb-2 font-medium leading-5">General</h6>
@@ -755,7 +828,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -773,7 +846,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -791,7 +864,7 @@ const HomeView = (props: Props) => {
                   <span className="mr-1">
                     <svg
                       className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#0077b6"
+                      stroke="#8cbeef"
                       viewBox="0 0 52 52"
                     >
                       <polygon
@@ -815,9 +888,9 @@ const HomeView = (props: Props) => {
       <a href="#languages" id={"languages"}></a>
       <section className="text-gray-100 body-font bg-gray-800">
         <div className="container px-5 py-12 mx-auto">
-          <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-[#0077b6] mb-16">
+          <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-[#8cbeef] mb-16">
             <span className="relative inline-block">
-              <span className="relative text-[#0077b6] font-medium">
+              <span className="relative text-[#8cbeef] font-medium">
                 LANGUAGES
               </span>
 
@@ -838,21 +911,21 @@ const HomeView = (props: Props) => {
               />
             </div>
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2">
+              <h2 className="text-[#8cbeef] text-lg title-font font-medium mb-2">
                 Turkish
               </h2>
               <p className="leading-relaxed text-base font-medium">
                 Turkish is my native language and also, since I live in Turkey,
                 I speak this language in my daily life.
               </p>
-              <a className="mt-3 text-[#ff4081] inline-flex items-center font-medium">
+              <a className="mt-3 text-[#fde047] inline-flex items-center font-medium">
                 Native or bilingual proficiency
               </a>
             </div>
           </div>
           <div className="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2 font-medium">
+              <h2 className="text-[#8cbeef] text-lg title-font font-medium mb-2 font-medium">
                 English
               </h2>
               <p className="leading-relaxed text-base font-medium">
@@ -860,7 +933,7 @@ const HomeView = (props: Props) => {
                 confident in my English abilities.Also I&apos;m still constantly
                 trying to improve myself.
               </p>
-              <a className="mt-3 text-[#ff4081] inline-flex items-center font-medium">
+              <a className="mt-3 text-[#fde047] inline-flex items-center font-medium">
                 Professional working proficiency
               </a>
             </div>
@@ -877,7 +950,7 @@ const HomeView = (props: Props) => {
               />
             </div>
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#0077b6] text-lg title-font font-medium mb-2 font-medium">
+              <h2 className="text-[#8cbeef] text-lg title-font font-medium mb-2 font-medium">
                 German
               </h2>
               <p className="leading-relaxed text-base font-medium">
@@ -885,7 +958,7 @@ const HomeView = (props: Props) => {
                 long since I started learning but I&apos;m working on improving
                 my German language skills.
               </p>
-              <a className="mt-3 text-[#ff4081]  inline-flex items-center font-medium">
+              <a className="mt-3 text-[#fde047]  inline-flex items-center font-medium">
                 Elementary proficiency
               </a>
             </div>
@@ -902,7 +975,7 @@ const HomeView = (props: Props) => {
                 <p className="text-body-color mb-7 text-base">
                   Designing the Extraordinary, Every Step of the Way.
                 </p>
-                <p className="text-dark flex items-center text-sm font-medium hover:text-[#0077b6]">
+                <p className="text-dark flex items-center text-sm font-medium hover:text-[#8cbeef]">
                   <span className="text-primary mr-3">
                     <svg
                       width="15"
@@ -921,7 +994,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
                   Quick Link
                 </h4>
                 <ul>
@@ -966,7 +1039,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
                   About
                 </h4>
                 <ul>
@@ -1011,7 +1084,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
                   Business
                 </h4>
                 <ul>
@@ -1030,14 +1103,14 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#0077b6]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
                   Contact Me On
                 </h4>
                 <div className="mb-6 flex items-center">
                   <a
                     href="https://github.com/boraozisik"
                     target="_blank"
-                    className="text-dark hover:bg-[#0077b6] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -1055,7 +1128,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.linkedin.com/in/boraozisik/"
                     target="_blank"
-                    className="text-dark hover:bg-[#0077b6] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="14"
@@ -1068,7 +1141,7 @@ const HomeView = (props: Props) => {
                   </a>
                   <a
                     href={"mailto:ozisikbora@gmail.com"}
-                    className="text-dark hover:bg-[#0077b6] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       fill="none"
@@ -1087,7 +1160,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.instagram.com/borazsk_/"
                     target="_blank"
-                    className="text-dark hover:bg-[#0077b6] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -1118,7 +1191,7 @@ const HomeView = (props: Props) => {
             >
               <path
                 d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
-                fill="#0077b6"
+                fill="#8cbeef"
               />
               <defs>
                 <linearGradient
@@ -1145,7 +1218,7 @@ const HomeView = (props: Props) => {
             >
               <path
                 d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-                fill="#ff4081"
+                fill="#fde047"
               />
               <defs>
                 <linearGradient

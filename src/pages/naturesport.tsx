@@ -113,7 +113,7 @@ const NatureSport = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -123,18 +123,18 @@ const NatureSport = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#0077b6]"
+                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
                   <span>About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   ) : (
                     <ChevronDownIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   )}
@@ -160,7 +160,7 @@ const NatureSport = (props: Props) => {
                           >
                             <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                               <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#0077b6]"
+                                className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
                                 aria-hidden="true"
                               />
                             </div>
@@ -185,8 +185,8 @@ const NatureSport = (props: Props) => {
               </Popover>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
-              onClick={() => router.push("/#contact")}
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              onClick={() => router.push("/work")}
             >
               Work
             </button>
@@ -290,8 +290,8 @@ const NatureSport = (props: Props) => {
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none">
               Nature&apos;s therapy:
               <br className="hidden md:block" /> I find{" "}
-              <span className="inline-block text-[#ff4081] py-4">solace</span>{" "}
-              and <span className="inline-block text-[#ff4081]">strength</span>{" "}
+              <span className="inline-block text-[#8cbeef] py-4">solace</span>{" "}
+              and <span className="inline-block text-[#8cbeef]">strength</span>{" "}
               through outdoor adventures.
             </h2>
             <p className="pr-5 mb-5 text-justify text-gray-600 md:text-lg font-medium">

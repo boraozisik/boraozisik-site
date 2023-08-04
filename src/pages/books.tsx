@@ -1170,10 +1170,10 @@ const Books = (props: Props) => {
       <GridToolbarContainer
         sx={{ display: "flex", justifyContent: "left", height: 50 }}
       >
-        <GridToolbarColumnsButton sx={{ color: "#0077b6" }} />
-        <GridToolbarFilterButton sx={{ color: "#0077b6" }} />
-        <GridToolbarDensitySelector sx={{ color: "#0077b6" }} />
-        {/* <GridToolbarExport sx={{ color: "#0077b6" }} /> */}
+        <GridToolbarColumnsButton sx={{ color: "#8cbeef" }} />
+        <GridToolbarFilterButton sx={{ color: "#8cbeef" }} />
+        <GridToolbarDensitySelector sx={{ color: "#8cbeef" }} />
+        {/* <GridToolbarExport sx={{ color: "#8cbeef" }} /> */}
 
         <GridToolbarQuickFilter sx={{ ml: "auto", width: "15%" }} />
       </GridToolbarContainer>
@@ -1268,7 +1268,7 @@ const Books = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -1278,18 +1278,18 @@ const Books = (props: Props) => {
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
               <Popover className="relative">
                 <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#0077b6]"
+                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
                   <span>About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   ) : (
                     <ChevronDownIcon
-                      className="h-5 w-5 text-[#0077b6]"
+                      className="h-5 w-5 text-[#8cbeef]"
                       aria-hidden="true"
                     />
                   )}
@@ -1315,7 +1315,7 @@ const Books = (props: Props) => {
                           >
                             <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                               <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#0077b6]"
+                                className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
                                 aria-hidden="true"
                               />
                             </div>
@@ -1340,8 +1340,8 @@ const Books = (props: Props) => {
               </Popover>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#0077b6] hover:text-[#ff4081] "
-              onClick={() => router.push("/#contact")}
+              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              onClick={() => router.push("/work")}
             >
               Work
             </button>
@@ -1430,7 +1430,7 @@ const Books = (props: Props) => {
             <div className="lg:flex justify-between items-center">
               <div className="lg:w-6/12 lg:p-0 p-7">
                 <h1 className="text-4xl font-medium leading-tight mb-5 capitalize">
-                  <span className="text-[#ff4081] underline">Reading:</span> The
+                  <span className="text-[#fde047] underline">Reading:</span> The
                   artful lifestyle, the passionate pursuit.
                 </h1>
                 <p className="font-medium text-justify">
@@ -1458,7 +1458,7 @@ const Books = (props: Props) => {
         </div>
         <p className="font-medium text-justify mt-8 underline lg:ml-8 mx-4">
           ==&gt; Below, you can find a list of{" "}
-          <span className="text-[#0077b6] underline">
+          <span className="text-[#8cbeef] underline">
             all the books I have read.
           </span>{" "}
           Perhaps it can also be a source of inspiration for you!
@@ -1486,7 +1486,7 @@ const Books = (props: Props) => {
               background: "#EBF5FB",
             },
             "& .MuiDataGrid-cell:hover": {
-              color: "#0077b6",
+              color: "#8cbeef",
             },
             ".MuiDataGrid-columnHeader": {
               backgroundColor: "#D6EAF8",
@@ -1494,7 +1494,7 @@ const Books = (props: Props) => {
               fontWeight: "bold",
             },
             ".MuiDataGrid-columnSeparator": {
-              color: "#0077b6",
+              color: "#8cbeef",
             },
           }}
           pageSizeOptions={[10, 20, 50, 100]}
