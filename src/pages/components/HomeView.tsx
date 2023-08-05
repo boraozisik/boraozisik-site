@@ -120,7 +120,7 @@ const HomeView = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047]"
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -133,7 +133,7 @@ const HomeView = (props: Props) => {
                   className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
-                  <span>About</span>
+                  <span className="text-blue-400 ">About</span>
                   {isShowing === true ? (
                     <ChevronUpIcon
                       className="h-5 w-5 text-[#8cbeef]"
@@ -192,7 +192,7 @@ const HomeView = (props: Props) => {
               </Popover>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047] "
               onClick={() => router.push("/work")}
             >
               Work
@@ -263,7 +263,7 @@ const HomeView = (props: Props) => {
                     Contact
                   </button>
                   <button
-                    onClick={() => handleClickMobileMenuItem("/my-work")}
+                    onClick={() => handleClickMobileMenuItem("/work")}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Work

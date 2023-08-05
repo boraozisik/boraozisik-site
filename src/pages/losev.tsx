@@ -256,7 +256,7 @@ const Losev = (props: Props) => {
                     Contact
                   </button>
                   <button
-                    onClick={() => handleClickMobileMenuItem("/my-work")}
+                    onClick={() => handleClickMobileMenuItem("/work")}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Work
