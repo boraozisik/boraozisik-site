@@ -101,6 +101,38 @@ const Books = (props: Props) => {
       genre: "Fiction / Novel",
     },
     {
+      name: "Sapiens - Hayvanlardan Tanrılara İnsan Türünün Kısa Bir Tarihi",
+      englishName: "Sapiens: A Brief History of Humankind",
+      author: "Yuval Noah Harari",
+      genre: "Non-Fiction",
+    },
+    {
+      name: "Hasan Ali Yücel ve Türk Aydınlanması",
+      englishName: "Hasan Ali Yücel ve Türk Aydınlanması",
+      author: "A. M. Celal Şengör",
+      genre: "Non-Fiction",
+    },
+    {
+      name: "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
+      englishName:
+        "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
+      author: "Ilber Ortaylı",
+      genre: "History",
+    },
+    {
+      name: "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
+      englishName:
+        "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
+      author: "Ilber Ortaylı",
+      genre: "History",
+    },
+    {
+      name: "Prens",
+      englishName: "The Prince",
+      author: "Niccola Machiavelli",
+      genre: "Non-Fiction",
+    },
+    {
       name: "Iki Şehrin Hikâyesi",
       englishName: "A Tale of Two Cities",
       author: "Charles Dickens",
@@ -117,12 +149,6 @@ const Books = (props: Props) => {
       englishName: "Atatürk",
       author: "Lord Kinross",
       genre: "Biography",
-    },
-    {
-      name: "Hasan-Âli Yücel ve Türk Aydınlanması",
-      englishName: "Hasan-Âli Yücel ve Türk Aydınlanması",
-      author: "Celal Şengör",
-      genre: "History",
     },
     {
       name: "Gurur ve Önyargı",

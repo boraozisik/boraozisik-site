@@ -365,12 +365,12 @@ const HomeView = (props: Props) => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  onClick={() => router.push("/work")}
                   title=""
                   className="ml-4 inline-flex items-center px-6 py-4 mt-8 font-medium text-black transition-all duration-200 bg-[#fde047] rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                   role="button"
                 >
-                  My Resume
+                  My Work
                   <svg
                     className="w-6 h-6 ml-8 -mr-2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +387,6 @@ const HomeView = (props: Props) => {
                   </svg>
                 </a>
               </div>
-
               <div>
                 <img
                   className="w-full"
@@ -1089,7 +1088,11 @@ const HomeView = (props: Props) => {
                 </h4>
                 <ul>
                   <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
+                    <a
+                      onClick={() => router.push("/work")}
+                      style={{ cursor: "pointer" }}
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                    >
                       My Projects
                     </a>
                   </li>
