@@ -113,6 +113,12 @@ const Books = (props: Props) => {
       genre: "Non-Fiction",
     },
     {
+      name: "Prens",
+      englishName: "The Prince",
+      author: "Niccola Machiavelli",
+      genre: "Non-Fiction",
+    },
+    {
       name: "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
       englishName:
         "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
@@ -125,12 +131,6 @@ const Books = (props: Props) => {
         "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
       author: "Ilber Ortaylı",
       genre: "History",
-    },
-    {
-      name: "Prens",
-      englishName: "The Prince",
-      author: "Niccola Machiavelli",
-      genre: "Non-Fiction",
     },
     {
       name: "Iki Şehrin Hikâyesi",
