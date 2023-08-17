@@ -113,7 +113,7 @@ const Swimming = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047] "
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -121,71 +121,68 @@ const Swimming = (props: Props) => {
             </button>
 
             <ClickAwayListener onClickAway={() => setIsShowing(false)}>
-              <Popover className="relative">
-                <Popover.Button
-                  className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-sm font-medium leading-6 text-[#8cbeef]"
+              <div className="relative text-center">
+                <button
+                  className="flex items-center justify-center gap-x-1 text-sm font-medium leading-6 text-[#8cbeef] focus:outline-none"
                   onClick={() => setIsShowing((isShowing) => !isShowing)}
                 >
-                  <span>About</span>
-                  {isShowing === true ? (
-                    <ChevronUpIcon
-                      className="h-5 w-5 text-[#8cbeef]"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <ChevronDownIcon
-                      className="h-5 w-5 text-[#8cbeef]"
-                      aria-hidden="true"
-                    />
-                  )}
-                </Popover.Button>
+                  <span className="text-blue-400">About</span>
+                  <span className="ml-1">
+                    {isShowing ? (
+                      <ChevronUpIcon
+                        className="h-5 w-5 text-blue-400"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <ChevronDownIcon
+                        className="h-5 w-5 text-blue-400"
+                        aria-hidden="true"
+                      />
+                    )}
+                  </span>
+                </button>
 
                 <Transition
                   show={isShowing}
                   as={Fragment}
                   enter="transition ease-out duration-200"
-                  enterFrom="opacity-0 translate-y-1"
-                  enterTo="opacity-100 translate-y-0"
+                  enterFrom="opacity-0 transform -translate-x-1/2 scale-95"
+                  enterTo="opacity-100 transform translate-x-0 scale-100"
                   leave="transition ease-in duration-150"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 translate-y-1"
+                  leaveFrom="opacity-100 transform translate-x-0 scale-100"
+                  leaveTo="opacity-0 transform -translate-x-1/2 scale-95"
                 >
-                  <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-3/4 px-4">
-                    <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-                      <div className="p-4">
-                        {about.map((item) => (
-                          <div
-                            key={item.name}
-                            className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
-                          >
-                            <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                              <item.icon
-                                className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
-                                aria-hidden="true"
-                              />
-                            </div>
-                            <div>
-                              <button
-                                onClick={item.onClick}
-                                className="font-medium text-gray-900"
-                              >
-                                {item.name}
-                                <span className="absolute inset-0" />
-                              </button>
-                              <p className="mt-1 text-gray-600">
-                                {item.description}
-                              </p>
-                            </div>
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[280px] rounded-lg bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+                    <div className="p-4">
+                      {about.map((item) => (
+                        <button
+                          key={item.name}
+                          onClick={item.onClick}
+                          className="group w-full flex items-start gap-x-4 p-2 rounded-lg hover:bg-gray-50 focus:outline-none text-left"
+                        >
+                          <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg group-hover:bg-white">
+                            <item.icon
+                              className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
+                              aria-hidden="true"
+                            />
                           </div>
-                        ))}
-                      </div>
+                          <div className="flex-1">
+                            <p className="font-medium text-gray-900">
+                              {item.name}
+                            </p>
+                            <p className="mt-1 text-gray-600">
+                              {item.description}
+                            </p>
+                          </div>
+                        </button>
+                      ))}
                     </div>
-                  </Popover.Panel>
+                  </div>
                 </Transition>
-              </Popover>
+              </div>
             </ClickAwayListener>
             <button
-              className="text-sm font-medium leading-6 text-[#8cbeef] hover:text-[#fde047] "
+              className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047] "
               onClick={() => router.push("/work")}
             >
               Work
