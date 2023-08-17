@@ -1471,9 +1471,9 @@ const Books = (props: Props) => {
               </div>
               <div className="lg:w-5/12 order-2">
                 <img
-                  src="/static/images/books.jpg"
+                  src="/static/images/rb-cover.jpg"
                   alt=""
-                  className="rounded transform scale-100 perspective-1040 rotate-y-11 rotate-x-2 rotate-2"
+                  className="rounded transform scale-100 perspective-1040 rotate-y-11 rotate-x-2 rotate-2 h-[40rem]"
                 />
               </div>
             </div>

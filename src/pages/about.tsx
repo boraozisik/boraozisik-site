@@ -344,7 +344,7 @@ const About = (props: Props) => {
         <div className="bg-gray-800 text-white py-8">
           <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
             <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-              <p className="ml-2 text-[#fde047] uppercase tracking-loose font-medium">
+              <p className="ml-2 text-[#8cbeef]  uppercase tracking-loose font-medium">
                 My Working Process
               </p>
               <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-medium">
@@ -356,7 +356,7 @@ const About = (props: Props) => {
               </p>
               <button
                 onClick={() => router.push("/#brabout")}
-                className="font-medium bg-transparent mr-auto hover:bg-[#fde047] text-[#fde047] hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-[#fde047] hover:border-transparent"
+                className="font-medium bg-transparent mr-auto hover:bg-[#8cbeef] text-[#8cbeef]  hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-[#8cbeef] hover:border-transparent"
               >
                 Explore Now
               </button>
@@ -364,12 +364,12 @@ const About = (props: Props) => {
             <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
               <div className="container mx-auto w-full h-full">
                 <div className="relative wrap overflow-hidden p-10 h-full">
-                  <div className="border-2-2 border-[#fde047] absolute h-full border right-1/2 border-2 border-solid border-[#fde047] rounded-1"></div>
-                  <div className="border-2-2 border-[#fde047] absolute h-full border left-1/2 border-2 border-solid border-[#fde047] rounded-1"></div>
+                  <div className="border-2-2 border-[#8cbeef] absolute h-full border right-1/2 border-2 border-solid border-[#8cbeef] rounded-1"></div>
+                  <div className="border-2-2 border-[#8cbeef] absolute h-full border left-1/2 border-2 border-solid border-[#8cbeef] rounded-1"></div>
                   <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
-                      <p className="mb-3 text-base text-[#fde047] font-medium">
+                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
                         August, 2019
                       </p>
                       <h4 className="mb-3 font-bold text-lg md:text-2xl">
@@ -384,7 +384,7 @@ const About = (props: Props) => {
                   <div className="mb-8 flex justify-between items-center w-full right-timeline">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1  w-5/12 px-1 py-4 text-left">
-                      <p className="mb-3 text-base text-[#fde047] font-medium">
+                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
                         September, 2020
                       </p>
                       <h4 className="mb-3 font-bold text-lg md:text-2xl">
@@ -401,7 +401,7 @@ const About = (props: Props) => {
                   <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
-                      <p className="mb-3 text-base text-[#fde047] font-medium">
+                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
                         February, 2022
                       </p>
                       <h4 className="mb-3 font-bold text-lg md:text-2xl">
@@ -420,7 +420,7 @@ const About = (props: Props) => {
                     <div className="order-1 w-5/12"></div>
 
                     <div className="order-1  w-5/12 px-1 py-4">
-                      <p className="mb-3 text-base text-[#fde047] font-medium">
+                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
                         August, 2022
                       </p>
                       <h4 className="mb-3 font-bold  text-lg md:text-2xl text-left">
@@ -617,7 +617,7 @@ const About = (props: Props) => {
               <div className="rounded-lg bg-gray-100 p-6 lg:h-[30rem]">
                 <img
                   className="mb-6 h-64 w-full rounded object-cover object-center"
-                  src="/static/images/reading-book.jpg"
+                  src="/static/images/passions-rb.jpg"
                   alt="content"
                 />
 
@@ -693,7 +693,7 @@ const About = (props: Props) => {
         <a href="#contact" id={"contact"}></a>
         <div className="container px-6 py-12 mx-auto">
           <div>
-            <p className="font-medium text-xl text-[#fde047]">Contact me</p>
+            <p className="font-medium text-xl text-[#8cbeef]">Contact me</p>
 
             <h1 className="mt-2 text-2xl font-medium md:text-3xl text-white">
               I’d love to hear from you
@@ -709,7 +709,7 @@ const About = (props: Props) => {
             <div className="p-4 rounded-lg  md:p-6 bg-gray-700">
               <a
                 href={"mailto:ozisikbora@gmail.com"}
-                className="inline-block p-3 text-[#fde047] rounded-lg  bg-gray-600"
+                className="inline-block p-3 text-[#8cbeef] rounded-lg  bg-gray-600"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -732,7 +732,7 @@ const About = (props: Props) => {
                 Reach to me on my mail.
               </p>
               <a href={"mailto:ozisikbora@gmail.com"}>
-                <p className="mt-2 text-sm text-[#fde047]">
+                <p className="mt-2 text-sm text-[#8cbeef]">
                   ozisikbora@gmail.com
                 </p>
               </a>
@@ -740,7 +740,7 @@ const About = (props: Props) => {
             <div className="p-4 rounded-lg  md:p-6 bg-gray-700">
               <a
                 href="tel:0554-595-99-05"
-                className="inline-block p-3 text-[#fde047] rounded-lg bg-gray-600"
+                className="inline-block p-3 text-[#8cbeef] rounded-lg bg-gray-600"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -761,14 +761,14 @@ const About = (props: Props) => {
               <h2 className="mt-4 text-base font-medium text-white">Call me</h2>
               <p className="mt-2 text-sm text-gray-400">Every day 24/7</p>
               <a href="tel:0554-595-99-05">
-                <p className="mt-2 text-sm text-[#fde047]">+90 554 595 99 05</p>
+                <p className="mt-2 text-sm text-[#8cbeef]">+90 554 595 99 05</p>
               </a>
             </div>
             <div className="p-4 rounded-lg md:p-6 bg-gray-700">
               <a
                 href="https://www.linkedin.com/in/boraozisik/"
                 target="_blank"
-                className="inline-block p-3 text-[#fde047] rounded-lg bg-gray-600"
+                className="inline-block p-3 text-[#8cbeef] rounded-lg bg-gray-600"
               >
                 <svg
                   width="20"
@@ -787,7 +787,7 @@ const About = (props: Props) => {
                 You can also check and chat to me on LinkedIn.
               </p>
               <a href="https://www.linkedin.com/in/boraozisik/" target="_blank">
-                <p className="mt-2 text-sm text-[#fde047]">Lets explore</p>
+                <p className="mt-2 text-sm text-[#8cbeef]">Lets explore</p>
               </a>
             </div>
 
@@ -795,7 +795,7 @@ const About = (props: Props) => {
               <a
                 href="https://www.instagram.com/borazsk_/"
                 target="_blank"
-                className="inline-block p-3 text-[#fde047] rounded-lg bg-gray-600"
+                className="inline-block p-3 text-[#8cbeef] rounded-lg bg-gray-600"
               >
                 <svg
                   className="w-5 h-5"
@@ -818,7 +818,7 @@ const About = (props: Props) => {
                 Get to know the me outside of work as well.
               </p>
               <a href="https://www.instagram.com/borazsk_/" target="_blank">
-                <p className="mt-2 text-sm text-[#fde047]">
+                <p className="mt-2 text-sm text-[#8cbeef]">
                   Follow me and message to me
                 </p>
               </a>

@@ -313,7 +313,7 @@ const Swimming = (props: Props) => {
         <div className="relative lg:-mt-8">
           <img
             className="object-cover w-full sm:h-86"
-            src="/static/images/swimming-bg.jpg"
+            src="/static/images/swimming-cover.jpg"
             alt=""
           />
           <div className="absolute inset-0 bg-gray-900 bg-opacity-50" />
