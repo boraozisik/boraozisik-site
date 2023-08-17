@@ -1453,7 +1453,7 @@ const Books = (props: Props) => {
             <div className="lg:flex justify-between items-center">
               <div className="lg:w-6/12 lg:p-0 p-7">
                 <h1 className="text-4xl font-medium leading-tight mb-5 capitalize">
-                  <span className="text-[#fde047] underline">Reading:</span> The
+                  <span className="text-[#8cbeef] underline">Reading:</span> The
                   artful lifestyle, the passionate pursuit.
                 </h1>
                 <p className="font-medium text-justify">
