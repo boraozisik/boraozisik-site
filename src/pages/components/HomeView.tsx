@@ -274,59 +274,8 @@ const HomeView = (props: Props) => {
       </header>
       {/* // -------------------Header----------------------  */}
       {/* // -------------------Hero----------------------  */}
-      {/* <div className="px-6 py-20 md:px-12 text-gray-800 text-center lg:text-left bg-gray-100">
-        <div className="container mx-auto xl:px-32">
-          <div className="grid lg:grid-cols-2 flex items-center">
-            <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
-              <div className="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg">
-                <h1 className="text-4xl md:text-3xl xl:text-4xl font-medium text-gray-700 tracking-tight mb-12">
-                  Bora Özışık{" "}
-                  <span className="font-mono xl:text-2xl text-1xl">
-                    (Full Stack Developer)
-                  </span>
-                  <img
-                    className="w-44 lg:ml-0 h-auto -mb-12"
-                    src="/static/handDraw/handdraw-funUnderlineTiny.svg"
-                    alt=""
-                  />
-                  <br />
-                  <Stack direction={"row"} alignItems={"center"}>
-                    <span className="text-[#8cbeef]">
-                      Empowering myself and others to reach new heights.{" "}
-                    </span>
-                    <img
-                      className="h-12 w-auto -mb-28"
-                      src="/static/handDraw/handdrawHeart.svg"
-                      alt=""
-                    />
-                  </Stack>
-                </h1>
-                <button
-                  type="button"
-                  onClick={() => router.push("/about")}
-                  className="text-white bg-[#8cbeef]  hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                >
-                  About
-                </button>
-                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#fde047] to-blue-300  hover:text-white  focus:ring-4 focus:outline-none focus:ring-pink-200">
-                  <span className="relative px-5 py-2 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
-                    My Resume
-                  </span>
-                </button>
-              </div>
-            </div>
-            <div className="md:mb-12 lg:mb-0">
-              <img
-                src="/static/images/my-image-hero.jpg"
-                className="w-full rounded-lg shadow-lg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="bg-white">
-        <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+        <section className="bg-[#FCF8F1] bg-opacity-30 py-20  lg:py-24">
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
               <div>
