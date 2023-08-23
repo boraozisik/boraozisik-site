@@ -102,8 +102,8 @@ const HomeView = (props: Props) => {
           <div className="flex lg:flex-1">
             <button onClick={() => router.push("/")} className="-m-1.5 p-1.5">
               <img
-                className="md:h-9 sm: h-8 w-auto"
-                src="/static/logos/main-logo.svg"
+                className="h-12 w-auto"
+                src="/static/logos/boraozisik-header-logo.png"
                 alt=""
               />
             </button>

@@ -102,8 +102,8 @@ const About = (props: Props) => {
           <div className="flex lg:flex-1">
             <button onClick={() => router.push("/")} className="-m-1.5 p-1.5">
               <img
-                className="md:h-9 sm: h-8 w-auto"
-                src="/static/logos/main-logo.svg"
+                className="h-12 w-auto"
+                src="/static/logos/boraozisik-header-logo.png"
                 alt=""
               />
             </button>
@@ -120,7 +120,7 @@ const About = (props: Props) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <button
-              className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047] "
+              className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047]"
               style={{ cursor: "pointer" }}
               onClick={() => router.push("/")}
             >
@@ -188,6 +188,7 @@ const About = (props: Props) => {
                 </Transition>
               </div>
             </ClickAwayListener>
+
             <button
               className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047] "
               onClick={() => router.push("/work")}
