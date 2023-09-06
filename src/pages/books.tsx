@@ -107,6 +107,13 @@ const Books = (props: Props) => {
       genre: "Non-Fiction",
     },
     {
+      name: "Devlet-i Aliyye - Osmanlı İmparatorluğu Üzerine Araştırmalar 1",
+      englishName:
+        "Devlet-i Aliyye - Osmanlı İmparatorluğu Üzerine Araştırmalar 1",
+      author: "Halil İnalcık",
+      genre: "History",
+    },
+    {
       name: "Hasan Ali Yücel ve Türk Aydınlanması",
       englishName: "Hasan Ali Yücel ve Türk Aydınlanması",
       author: "A. M. Celal Şengör",
@@ -551,6 +558,12 @@ const Books = (props: Props) => {
       englishName: "And Then There Were None",
       author: "Agatha Christie",
       genre: "Fiction / Novel",
+    },
+    {
+      name: "Gece Yarısı Kütüphanesi",
+      englishName: "The Midnight Library",
+      author: "Matt Haig",
+      genre: "Fantastic Fiction",
     },
     {
       name: "Harry Potter ve Felsefe Taşı",
