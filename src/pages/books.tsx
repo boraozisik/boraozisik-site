@@ -107,6 +107,12 @@ const Books = (props: Props) => {
       genre: "Non-Fiction",
     },
     {
+      name: "Timurlenk - Bozkırların Son Göçebe Fatihi",
+      englishName: "The Rise and Rule of Tamerlane",
+      author: "Beatrice Forbes Manz",
+      genre: "History",
+    },
+    {
       name: "Devlet-i Aliyye - Osmanlı İmparatorluğu Üzerine Araştırmalar 1",
       englishName:
         "Devlet-i Aliyye - Osmanlı İmparatorluğu Üzerine Araştırmalar 1",
@@ -138,6 +144,12 @@ const Books = (props: Props) => {
         "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
       author: "Ilber Ortaylı",
       genre: "History",
+    },
+    {
+      name: "Bir Ömür Nasıl Yaşanır?",
+      englishName: "Bir Ömür Nasıl Yaşanır?",
+      author: "Ilber Ortaylı",
+      genre: "Self İmprovement",
     },
     {
       name: "Iki Şehrin Hikâyesi",
