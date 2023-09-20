@@ -158,12 +158,6 @@ const Books = (props: Props) => {
       genre: "Self İmprovement",
     },
     {
-      name: "Iki Şehrin Hikâyesi",
-      englishName: "A Tale of Two Cities",
-      author: "Charles Dickens",
-      genre: "Fiction / Novel",
-    },
-    {
       name: "Çankaya",
       englishName: "Çankaya",
       author: "Falih Rıfkı Atay",
@@ -174,6 +168,12 @@ const Books = (props: Props) => {
       englishName: "Atatürk",
       author: "Lord Kinross",
       genre: "Biography",
+    },
+    {
+      name: "Iki Şehrin Hikâyesi",
+      englishName: "A Tale of Two Cities",
+      author: "Charles Dickens",
+      genre: "Fiction / Novel",
     },
     {
       name: "Gurur ve Önyargı",
