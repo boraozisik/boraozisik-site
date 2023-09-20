@@ -152,6 +152,12 @@ const Books = (props: Props) => {
       genre: "Self İmprovement",
     },
     {
+      name: "İnsan Geleceğini Nasıl Kurar?",
+      englishName: "İnsan Geleceğini Nasıl Kurar?",
+      author: "Ilber Ortaylı",
+      genre: "Self İmprovement",
+    },
+    {
       name: "Iki Şehrin Hikâyesi",
       englishName: "A Tale of Two Cities",
       author: "Charles Dickens",
