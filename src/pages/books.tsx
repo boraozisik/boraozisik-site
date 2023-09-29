@@ -113,9 +113,14 @@ const Books = (props: Props) => {
       genre: "History",
     },
     {
-      name: "Devlet-i Aliyye - Osmanlı İmparatorluğu Üzerine Araştırmalar 1",
-      englishName:
-        "Devlet-i Aliyye - Osmanlı İmparatorluğu Üzerine Araştırmalar 1",
+      name: "Devlet-i Aliyye 1 - Klasik Dönem",
+      englishName: "Devlet-i Aliyye 1 - Klasik Dönem",
+      author: "Halil İnalcık",
+      genre: "History",
+    },
+    {
+      name: "Devlet-i Aliyye 2 - Bozuluş ve Kargaşa Dönemi",
+      englishName: "Devlet-i Aliyye 2 - Bozuluş ve Kargaşa Dönemi",
       author: "Halil İnalcık",
       genre: "History",
     },

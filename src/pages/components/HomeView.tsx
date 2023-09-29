@@ -379,7 +379,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.shipmind.tech/"
                     target="_blank"
-                    className="font-medium text-[#8cbeef] hover:underline  md:text-xl"
+                    className="font-medium text-[#8cbeef] hover:underline  md:text-xl underline"
                   >
                     ShipMind
                   </a>
@@ -415,7 +415,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.mcbu.edu.tr/"
                     target="_blank"
-                    className="font-medium text-[#8cbeef] hover:underline md:text-xl"
+                    className="font-medium text-[#8cbeef] hover:underline md:text-xl underline"
                   >
                     Celal Bayar University
                   </a>
