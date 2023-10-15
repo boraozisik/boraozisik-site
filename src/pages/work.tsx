@@ -419,16 +419,20 @@ const Work = (props: Props) => {
               <img
                 role="presentation"
                 className="object-cover w-full rounded h-44 bg-gray-500"
-                src="/static/images/github-work.jpg"
+                src="/static/images/redux-dog-images-pic.PNG"
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-medium group-hover:underline group-focus:underline text-gray-200">
-                  Pirate Game
+                  Redux Dog Images
                 </h3>
                 <span className="text-xs text-gray-400">February 19, 2022</span>
                 <p className="text-gray-200 text-justify">
-                  A pirate game with using swing.In this game a pirate ship
-                  trying to hit an enemy pirate with cannonballs.
+                  This application takes input from the user about dog breeds
+                  and their sub-breeds, and then displays images of the selected
+                  breed and sub-breeds based on the user&apos;s input quantity.
+                  The purpose of developing this application is to improve my
+                  knowledge of Redux and explore the appearance of different dog
+                  breeds.
                 </p>
               </div>
             </a>

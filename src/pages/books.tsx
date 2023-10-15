@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   ClickAwayListener,
+  Grid,
   Stack,
   Typography,
 } from "@mui/material";
@@ -86,25 +87,7 @@ const Books = (props: Props) => {
       name: "Nutuk",
       englishName: "Speech",
       author: "Mustafa Kemal Atatürk",
-      genre: "Address",
-    },
-    {
-      name: "Martin Eden",
-      englishName: "Martin Eden",
-      author: "Jack London",
-      genre: "Fiction / Novel",
-    },
-    {
-      name: "Suç ve Ceza",
-      englishName: "Crime and Punishment",
-      author: "Fyodor Mihayloviç Dostoyevski",
-      genre: "Fiction / Novel",
-    },
-    {
-      name: "Sapiens - Hayvanlardan Tanrılara İnsan Türünün Kısa Bir Tarihi",
-      englishName: "Sapiens: A Brief History of Humankind",
-      author: "Yuval Noah Harari",
-      genre: "Non-Fiction",
+      genre: "Speech",
     },
     {
       name: "Timurlenk - Bozkırların Son Göçebe Fatihi",
@@ -125,10 +108,36 @@ const Books = (props: Props) => {
       genre: "History",
     },
     {
-      name: "Hasan Ali Yücel ve Türk Aydınlanması",
-      englishName: "Hasan Ali Yücel ve Türk Aydınlanması",
-      author: "A. M. Celal Şengör",
-      genre: "Non-Fiction",
+      name: "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
+      englishName:
+        "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
+      author: "İlber Ortaylı",
+      genre: "History",
+    },
+    {
+      name: "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
+      englishName:
+        "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
+      author: "İlber Ortaylı",
+      genre: "History",
+    },
+    {
+      name: "Moğolların Gizli Tarihçesi",
+      englishName: "Moğolların Gizli Tarihçesi",
+      author: "Mehmet Levent Kaya",
+      genre: "History",
+    },
+    {
+      name: "Moğol Kanunları",
+      englishName: "Moğol Kanunları",
+      author: "Curt Alinge",
+      genre: "History",
+    },
+    {
+      name: "Semerkant",
+      englishName: "Samarkand",
+      author: "Amin Maalouf",
+      genre: "Historical Fiction",
     },
     {
       name: "Prens",
@@ -137,29 +146,27 @@ const Books = (props: Props) => {
       genre: "Non-Fiction",
     },
     {
-      name: "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
-      englishName:
-        "Türklerin Tarihi - Orta Asya'nın Bozkırlarından Avrupa'nın Kapılarına",
-      author: "Ilber Ortaylı",
-      genre: "History",
+      name: "Senin Cahilliğin Benim Yaşamımı Etkiliyor",
+      englishName: "Senin Cahilliğin Benim Yaşamımı Etkiliyor",
+      author: "A. M. Celal Şengör",
+      genre: "Self İmprovement",
     },
     {
-      name: "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
-      englishName:
-        "Türklerin Tarihi 2 - Anadolu'nun Bozkırlarından Avrupa'nın İçlerine",
-      author: "Ilber Ortaylı",
-      genre: "History",
+      name: "Hasan Ali Yücel ve Türk Aydınlanması",
+      englishName: "Hasan Ali Yücel ve Türk Aydınlanması",
+      author: "A. M. Celal Şengör",
+      genre: "Non-Fiction",
     },
     {
       name: "Bir Ömür Nasıl Yaşanır?",
       englishName: "Bir Ömür Nasıl Yaşanır?",
-      author: "Ilber Ortaylı",
+      author: "İlber Ortaylı",
       genre: "Self İmprovement",
     },
     {
       name: "İnsan Geleceğini Nasıl Kurar?",
       englishName: "İnsan Geleceğini Nasıl Kurar?",
-      author: "Ilber Ortaylı",
+      author: "İlber Ortaylı",
       genre: "Self İmprovement",
     },
     {
@@ -173,6 +180,24 @@ const Books = (props: Props) => {
       englishName: "Atatürk",
       author: "Lord Kinross",
       genre: "Biography",
+    },
+    {
+      name: "Martin Eden",
+      englishName: "Martin Eden",
+      author: "Jack London",
+      genre: "Fiction / Novel",
+    },
+    {
+      name: "Suç ve Ceza",
+      englishName: "Crime and Punishment",
+      author: "Fyodor Mihayloviç Dostoyevski",
+      genre: "Fiction / Novel",
+    },
+    {
+      name: "Sapiens - Hayvanlardan Tanrılara İnsan Türünün Kısa Bir Tarihi",
+      englishName: "Sapiens: A Brief History of Humankind",
+      author: "Yuval Noah Harari",
+      genre: "Non-Fiction",
     },
     {
       name: "Iki Şehrin Hikâyesi",
@@ -213,7 +238,7 @@ const Books = (props: Props) => {
     {
       name: "Atatürk",
       englishName: "Atatürk",
-      author: "Ilber Ortaylı",
+      author: "İlber Ortaylı",
       genre: "Biography",
     },
     {
@@ -1221,7 +1246,7 @@ const Books = (props: Props) => {
     },
   ];
   const rows = books.map((book: Book, index: number) => ({
-    id: index,
+    id: index + 1,
     name: book.name,
     englishName: book.englishName,
     author: book.author,
@@ -1510,57 +1535,56 @@ const Books = (props: Props) => {
                 <img
                   src="/static/images/rb-cover.jpg"
                   alt=""
-                  className="rounded transform scale-100 perspective-1040 rotate-y-11 rotate-x-2 rotate-2 h-[40rem]"
+                  className="rounded transform scale-100 perspective-1040 h-[40rem]"
                 />
               </div>
             </div>
           </div>
         </div>
-        <p className="font-medium text-justify mt-8 underline lg:ml-8 mx-4">
-          ==&gt; Below, you can find a list of{" "}
-          <span className="text-[#8cbeef] underline">
-            all the books I have read.
-          </span>{" "}
-          Perhaps it can also be a source of inspiration for you!
+        <p className="font-medium text-justify mt-8 lg:ml-8 mx-4">
+          ==&gt; Here is my <span className="text-[#ff4081] ">Bookshelf.</span>{" "}
+          You can examine it as you wish!
         </p>
       </div>
       {/* // -------------------Desc----------------------  */}
       {/* // -------------------Table----------------------  */}
-      <Box sx={{ height: 800, width: "95%", mt: 4, mx: "auto", mb: 2 }}>
-        <DataGrid
-          rows={rows}
-          columns={columns}
-          components={{ Toolbar: CustomToolbar }}
-          initialState={{
-            pagination: {
-              paginationModel: {
-                pageSize: 20,
+      <Grid container padding={2}>
+        <Grid item xs={12}>
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            components={{ Toolbar: CustomToolbar }}
+            initialState={{
+              pagination: {
+                paginationModel: {
+                  pageSize: 20,
+                },
               },
-            },
-          }}
-          sx={{
-            boxShadow: 5,
-            border: 1,
-            borderColor: "#D6EAF8",
-            "& .MuiDataGrid-row:hover": {
-              background: "#EBF5FB",
-            },
-            "& .MuiDataGrid-cell:hover": {
-              color: "#8cbeef",
-            },
-            ".MuiDataGrid-columnHeader": {
-              backgroundColor: "#D6EAF8",
-              color: "#ff4081",
-              fontWeight: "bold",
-            },
-            ".MuiDataGrid-columnSeparator": {
-              color: "#8cbeef",
-            },
-          }}
-          pageSizeOptions={[10, 20, 50, 100]}
-          disableRowSelectionOnClick
-        />
-      </Box>
+            }}
+            sx={{
+              boxShadow: 5,
+              border: 1,
+              borderColor: "#D6EAF8",
+              "& .MuiDataGrid-row:hover": {
+                background: "#EBF5FB",
+              },
+              "& .MuiDataGrid-cell:hover": {
+                color: "#8cbeef",
+              },
+              ".MuiDataGrid-columnHeader": {
+                backgroundColor: "#D6EAF8",
+                color: "#ff4081",
+                fontWeight: "bold",
+              },
+              ".MuiDataGrid-columnSeparator": {
+                color: "#8cbeef",
+              },
+            }}
+            pageSizeOptions={[10, 20, 50, 100]}
+            disableRowSelectionOnClick
+          />
+        </Grid>
+      </Grid>
       {/* // -------------------Table----------------------  */}
     </>
   );
