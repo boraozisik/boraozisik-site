@@ -412,7 +412,7 @@ const Work = (props: Props) => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="https://github.com/boraozisik/PirateGame"
+              href="https://github.com/boraozisik/redux-dog-images"
               target="_blank"
               className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900  sm:block lg:w-[22rem]"
             >
