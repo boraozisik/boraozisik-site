@@ -110,6 +110,12 @@ const Books = (props: Props) => {
       genre: "History",
     },
     {
+      name: "Zeytindağı",
+      englishName: "Zeytindağı",
+      author: "Falih Rıfkı Atay",
+      genre: "History",
+    },
+    {
       name: "Semerkant",
       englishName: "Samarkand",
       author: "Amin Maalouf",
@@ -132,6 +138,12 @@ const Books = (props: Props) => {
       englishName: "Hasan Ali Yücel ve Türk Aydınlanması",
       author: "A. M. Celal Şengör",
       genre: "Non-Fiction",
+    },
+    {
+      name: "Dikkate Değer Mevzular",
+      englishName: "Dikkate Değer Mevzular",
+      author: "A. M. Celal Şengör",
+      genre: "Research-Review",
     },
     {
       name: "Bir Ömür Nasıl Yaşanır?",
