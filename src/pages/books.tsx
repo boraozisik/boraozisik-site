@@ -1300,7 +1300,7 @@ const Books = (props: Props) => {
       </div>
       {/* // -------------------Desc----------------------  */}
       {/* // -------------------Table----------------------  */}
-      <Grid container padding={2}>
+      {/* <Grid container padding={2}>
         <Grid item xs={12}>
           <DataGrid
             rows={rows}
@@ -1336,7 +1336,7 @@ const Books = (props: Props) => {
             disableRowSelectionOnClick
           />
         </Grid>
-      </Grid>
+      </Grid> */}
       {/* // -------------------Table----------------------  */}
     </>
   );
