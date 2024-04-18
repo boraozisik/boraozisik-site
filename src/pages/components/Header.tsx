@@ -142,7 +142,7 @@ const AppHeader = (props: Props) => {
                 leaveFrom="opacity-100 transform translate-x-0 scale-100"
                 leaveTo="opacity-0 transform -translate-x-1/2 scale-95"
               >
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[280px] rounded-lg bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+                <div className="absolute top-full left-50 transform -translate-x-1/2 mt-3 w-[270px] rounded-lg bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
                   <div className="p-4">
                     {about.map((item) => (
                       <button

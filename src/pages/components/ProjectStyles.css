@@ -1,0 +1,20 @@
+.animated-image {
+  width: 30rem;
+  max-width: 400px;
+  background: linear-gradient(270deg, #b78bf14b, #8cbeef);
+  height: 330px;
+  border: 0.5rem solid #2e4053;
+  box-shadow: var(--customBoxShadowForImage);
+  object-fit: cover;
+  animation: borderTransition 6s ease-in-out infinite;
+}
+
+@keyframes borderTransition {
+  0%,
+  100% {
+    border-radius: 60% 60% 70% 50%/75% 55% 60% 50%;
+  }
+  50% {
+    border-radius: 50% 60% 65% 50%/50% 70% 50% 70%;
+  }
+}

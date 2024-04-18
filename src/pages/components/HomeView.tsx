@@ -15,71 +15,74 @@ const HomeView = (props: Props) => {
       {/* // -------------------Hero----------------------  */}
       <div className="bg-white">
         <section className="bg-[#FCF8F1] bg-opacity-30 py-20  lg:py-24">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-              <div>
-                <p className="text-base font-medium tracking-wider text-[#8cbeef] uppercase">
-                  Full Stack Developer
-                </p>
-                <h1 className="mt-4 text-4xl font-bold text-gray-800 lg:mt-8 sm:text-6xl xl:text-8xl">
-                  Bora Özışık
-                </h1>
-                <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
-                  Empowering myself and others to reach new heights.
-                </p>
-
-                <a
-                  onClick={() => router.push("/about")}
-                  title=""
-                  className="inline-flex items-center px-6 py-4 mt-8 font-medium text-white transition-all duration-200 bg-[#8cbeef]  rounded-full lg:mt-16 hover:bg-blue-400 focus:bg-blue-400"
-                  role="button"
-                >
-                  About
-                  <svg
-                    className="w-6 h-6 ml-8 -mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  onClick={() => router.push("/work")}
-                  title=""
-                  className="ml-4 inline-flex items-center px-6 py-4 mt-8 font-medium text-black transition-all duration-200 bg-[#fde047] rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
-                  role="button"
-                >
-                  My Work
-                  <svg
-                    className="w-6 h-6 ml-8 -mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <div>
-                <img
+          <div className="grid items-center grid-cols-1 lg:grid-cols-2 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div>
+              <img
+                className="animated-image"
+                src="/static/images/my-hero-img.png"
+                alt=""
+              />
+              {/* <img
                   className="w-full"
                   src="/static/images/my-image-hero.jpg"
                   alt=""
-                />
-              </div>
+                /> */}
+            </div>
+            <div>
+              <p className="text-base font-medium tracking-wider text-[#8cbeef] uppercase">
+                Full Stack Developer
+              </p>
+              <h1 className="mt-4 text-4xl font-bold text-gray-700 lg:mt-8 sm:text-6xl xl:text-6xl">
+                Bora Özışık
+              </h1>
+              <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+                Empowering myself and others to reach new heights.
+              </p>
+
+              <a
+                onClick={() => router.push("/about")}
+                title=""
+                className="inline-flex items-center px-6 py-4 mt-8 font-medium text-white transition-all duration-200 bg-[#8cbeef]  rounded-full lg:mt-16 hover:bg-blue-400 focus:bg-blue-400"
+                role="button"
+              >
+                About
+                <svg
+                  className="w-6 h-6 ml-8 -mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+              <a
+                onClick={() => router.push("/work")}
+                title=""
+                className="ml-4 inline-flex items-center px-6 py-4 mt-8 font-medium text-black transition-all duration-200 bg-[#fde047] rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                role="button"
+              >
+                My Work
+                <svg
+                  className="w-6 h-6 ml-8 -mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </section>

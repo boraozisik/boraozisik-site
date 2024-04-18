@@ -1293,10 +1293,10 @@ const Books = (props: Props) => {
             </div>
           </div>
         </div>
-        <p className="font-medium text-justify mt-8 lg:ml-8 mx-4">
+        {/* <p className="font-medium text-justify mt-8 lg:ml-8 mx-4">
           ==&gt; Here is my <span className="text-[#ff4081] ">Bookshelf.</span>{" "}
           You can examine it as you wish!
-        </p>
+        </p> */}
       </div>
       {/* // -------------------Desc----------------------  */}
       {/* // -------------------Table----------------------  */}
