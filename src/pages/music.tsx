@@ -63,12 +63,12 @@ const Music = (props: Props) => {
               <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
-                  src="/static/images/queen-avatar.png"
+                  src="/static/images/metallica-avatar.jpeg"
                   alt=""
                 />
 
                 <h1 className="mt-4 text-2xl font-medium  capitalize text-white group-hover:text-white">
-                  Queen
+                  Metallica
                 </h1>
               </div>
 
@@ -141,12 +141,12 @@ const Music = (props: Props) => {
               <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
-                  src="/static/images/pilli-bebek-avatar.jpg"
+                  src="/static/images/queen-avatar.png"
                   alt=""
                 />
 
                 <h1 className="mt-4 text-2xl font-medium  capitalize text-white group-hover:text-white">
-                  Pilli Bebek
+                  Queen
                 </h1>
               </div>
             </div>

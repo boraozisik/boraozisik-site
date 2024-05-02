@@ -13,7 +13,7 @@ const HomeView = (props: Props) => {
       <AppHeader />
       {/* // -------------------Header----------------------  */}
       {/* // -------------------Hero----------------------  */}
-      <div className="bg-white">
+      <div className="bg-white mt-16">
         <section className="bg-[#FCF8F1] bg-opacity-30 py-20  lg:py-24">
           <div className="grid items-center grid-cols-1 lg:grid-cols-2 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div>
@@ -96,7 +96,7 @@ const HomeView = (props: Props) => {
         <div className="container px-6 py-10 mx-auto">
           <div className="text-center">
             <h1 className="text-2xl font-medium text-[#8cbeef] capitalize lg:text-3xl ">
-              Hello!
+              Greetings...
             </h1>
 
             <p className="mx-auto mt-4 text-gray-200 font-medium">
@@ -133,10 +133,9 @@ const HomeView = (props: Props) => {
                 </Stack>
 
                 <p className="mt-3 text-sm text-gray-200 md:text-sm font-medium">
-                  I am currently working as Full Stack Developer at Nautilica
-                  Software Services. We are working on a project called
-                  Shipmind, which started with the motto &quot;Simplest Way of
-                  Organizing your Freight&quot; with our team.
+                  I am currently working as Full Stack Developer at ShipMind
+                  which started with the motto &quot;Simplest Way of Organizing
+                  your Freight&quot;.
                 </p>
 
                 <p className="mt-3 text-sm text-[#fde047] font-medium">
@@ -169,10 +168,8 @@ const HomeView = (props: Props) => {
                 </Stack>
 
                 <p className="mt-3 text-sm text-gray-200 md:text-sm font-medium">
-                  At the same time, I am currently a 3rd year student at the
-                  Department of Computer Engineering at Celal Bayar University.
-                  <br />
-                  <span className="font-medium">I work hard !</span>
+                  At the same time, I am currently a 4th year student at the
+                  Department of Computer Engineering.
                 </p>
 
                 <p className="mt-2 text-sm text-[#fde047] font-medium">
@@ -208,366 +205,70 @@ const HomeView = (props: Props) => {
                 working together...
               </h2>
             </div>
-            <div className="lg:w-1/2">
+            {/* <div className="lg:w-1/2">
               <p className="text-base text-gray-700 md:text-lg font-medium">
                 With my skills, I am confident in my ability to meet and exceed
                 expectations.I am passionate about what I do and I am trying to
                 improve myself day by day. Here you can have a look at my
                 skills.
               </p>
-            </div>
+            </div> */}
           </div>
-          <div className="grid gap-8 row-gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-7 h-7 text-deep-purple-accent-400"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="11" cy="13" fill="none" r="9" stroke="#8cbeef" />
-                  <path
-                    d=" M21.955,18.005c1.089,2.145,1.378,3.816,0.622,4.572C20.92,24.234,14.799,20.799,9,15S-0.234,3.08,1.423,1.423 C2.18,0.666,3.853,0.956,6,2.047"
-                    stroke="#8cbeef"
+          <div className="grid gap-8 row-gap-10 sm:grid-cols-2 lg:grid-cols-2">
+            <fieldset className="text-xl max-w-sm border-4 border-[#8cbeef] rounded-lg p-2">
+              <legend className="px-2 text-xl font-semibold underline decoration-[#fde047] decoration-2">
+                Hard Skills
+              </legend>
+              <div className="flex flex-col gap-2 px-2 text-md font-serif">
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     fill="none"
-                  />
-                </svg>
-              </div>
-              <h6 className="mb-2 font-medium leading-5">Frontend</h6>
-              <p className="mb-3 text-sm text-gray-">
-                Areas I have mastered in frontend
-              </p>
-              <ul className="mb-4 -ml-1 space-y-2">
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Next Js
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  React - TypeScript
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  GraphQL
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-7 h-7 text-deep-purple-accent-400"
-                  viewBox="0 0 24 24"
-                  strokeLinecap="round"
-                >
-                  <path
-                    d="M2,10C2,5.029,6.47,1,12,1c5.379,0,10,4.029,10,9S15.712,23,12,23C8.212,23,2,14.971,2,10Z"
-                    fill="none"
-                    strokeWidth="2"
-                    stroke="#8cbeef"
-                  />
-                  <path
-                    d="M5,9a6.529,6.529,0,0,1,4.393,1.607C10.705,11.92,10,15,10,15a6.59,6.59,0,0,1-3.436-1.564C5.022,11.894,5,9,5,9Z"
-                    fill="none"
+                    viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#8cbeef"
-                  />
-                  <path
-                    d="M19,9a6.523,6.523,0,0,0-4.392,1.608C13.3,11.92,14,15,14,15a6.59,6.59,0,0,0,3.436-1.564C18.978,11.894,19,9,19,9Z"
-                    fill="none"
-                    strokeWidth="1.5"
-                    stroke="#8cbeef"
-                  />
-                </svg>
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#fde047] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">NextJS</a>
+                </div>
+                <hr />
+
+                <a href="#">React - TypeScript</a>
+                <hr />
+                <a href="#">NestJS</a>
+                <hr />
+                <a href="#">GraphQL</a>
+                <hr />
+                <a href="#">PostgreSQL</a>
+                <hr />
+                <a href="#">Tailwind CSS - Material UI</a>
               </div>
-              <h6 className="mb-2 font-medium leading-5">Backend</h6>
-              <p className="mb-3 text-sm text-gray-900">
-                Lets check my backend skills
-              </p>
-              <ul className="mb-4 -ml-1 space-y-2">
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Nest Js
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  PostgreSQL
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  GraphQL
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-7 h-7 text-deep-purple-accent-400"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.291,18.709,4.182,22.818c-.419.419-1.43.086-2.258-.742s-1.161-1.839-.742-2.258l4.11-4.11"
-                    fill="none"
-                    stroke="#8cbeef"
-                  />
-                  <ellipse
-                    cx="19.078"
-                    cy="4.922"
-                    fill="none"
-                    rx="2.5"
-                    ry="4.95"
-                    stroke="#8cbeef"
-                    transform="translate(2.107 14.932) rotate(-45)"
-                  />
-                  <path
-                    d="M9.185,9.815,5.3,13.7c-.7.7-.143,2.382,1.238,3.762S9.6,19.4,10.3,18.7l3.885-3.885"
-                    fill="none"
-                    stroke="#8cbeef"
-                  />
-                  <path
-                    d="M15.578,1.422,9.422,7.578c-.976.976-.2,3.335,1.732,5.268s4.292,2.708,5.268,1.732l6.156-6.156"
-                    fill="none"
-                    stroke="#8cbeef"
-                  />
-                </svg>
+            </fieldset>
+            <fieldset className="text-xl max-w-sm border-4 border-[#8cbeef] rounded-lg p-2">
+              <legend className="px-2 text-xl font-semibold underline decoration-[#fde047] decoration-2">
+                Soft Skills
+              </legend>
+              <div className="flex flex-col gap-2 px-2 text-md font-serif">
+                <a href="#">Teamwork</a>
+                <hr />
+                <a href="#">Problem Solving</a>
+                <hr />
+                <a href="#">Algorithms</a>
+                <hr />
+                <a href="#">Communication</a>
+                <hr />
+                <a href="#">Collaboration</a>
+                <hr />
+                <a href="#">Negotiation</a>
               </div>
-              <h6 className="mb-2 font-medium leading-5">
-                Programming Languages
-              </h6>
-              <p className="mb-3 text-sm text-gray-900">
-                PL&apos;s ​​I know, starting from the best
-              </p>
-              <ul className="mb-4 -ml-1 space-y-2">
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  TypeScript
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Java
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Python
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  className="w-7 h-7 text-deep-purple-accent-400"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8,13l3,3,9.379-9.379a2.122,2.122,0,0,0,0-3h0a2.122,2.122,0,0,0-3,0Z"
-                    fill="none"
-                    stroke="#8cbeef"
-                  />
-                  <polyline
-                    fill="none"
-                    points="10 11 10 6 6 2 3 5 7 9"
-                    stroke="#8cbeef"
-                  />
-                  <polyline
-                    fill="none"
-                    points="15 12 15 17 19 21 22 18 18 14"
-                    stroke="#8cbeef"
-                  />
-                  <path d="M8,23a7,7,0,0,1-7-7" fill="none" stroke="#8cbeef" />
-                  <path d="M8,19a3,3,0,0,1-3-3" fill="none" stroke="#8cbeef" />
-                </svg>
-              </div>
-              <h6 className="mb-2 font-medium leading-5">General</h6>
-              <p className="mb-3 text-sm text-gray-900">
-                Also I think I&apos;m good at these skills
-              </p>
-              <ul className="mb-4 -ml-1 space-y-2">
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Teamwork
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Algorithms
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="#8cbeef"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Problem Solving
-                </li>
-              </ul>
-            </div>
+            </fieldset>
           </div>
         </div>
       </div>
