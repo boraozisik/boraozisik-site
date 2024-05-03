@@ -4,10 +4,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 import CelebrationOutlinedIcon from "@mui/icons-material/CelebrationOutlined";
 import ConnectWithoutContactOutlinedIcon from "@mui/icons-material/ConnectWithoutContactOutlined";
-import RouteOutlinedIcon from "@mui/icons-material/RouteOutlined";
 import { ClickAwayListener } from "@mui/material";
 import { useRouter } from "next/router";
-import React, { Fragment, useState, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 type Props = {};
 
@@ -19,15 +18,9 @@ const AppHeader = (props: Props) => {
   const about = [
     {
       name: "Story",
-      description: "Learn about my way and see my thoughts",
+      description: "Learn about my way",
       onClick: () => router.push("/about"),
       icon: AutoStoriesOutlinedIcon,
-    },
-    {
-      name: "Working Path",
-      description: "Lets see my steps on working",
-      onClick: () => router.push("/about#timeline"),
-      icon: RouteOutlinedIcon,
     },
     {
       name: "Passions",
@@ -103,7 +96,7 @@ const AppHeader = (props: Props) => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           <button
-            className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047]"
+            className="text-sm font-medium leading-6 text-[#89ABE3] hover:text-[#EA738D]"
             style={{ cursor: "pointer" }}
             onClick={() => router.push("/")}
           >
@@ -113,19 +106,19 @@ const AppHeader = (props: Props) => {
           <ClickAwayListener onClickAway={() => setIsShowing(false)}>
             <div className="relative text-center">
               <button
-                className="flex items-center justify-center gap-x-1 text-sm font-medium leading-6 text-[#8cbeef] focus:outline-none"
+                className="flex items-center justify-center gap-x-1 text-sm font-medium leading-6 text-[#89ABE3] focus:outline-none"
                 onClick={() => setIsShowing((isShowing) => !isShowing)}
               >
-                <span className="text-blue-400">About</span>
+                <span className="text-[#89ABE3]">About</span>
                 <span className="ml-1">
                   {isShowing ? (
                     <ChevronUpIcon
-                      className="h-5 w-5 text-blue-400"
+                      className="h-5 w-5 text-[#89ABE3]"
                       aria-hidden="true"
                     />
                   ) : (
                     <ChevronDownIcon
-                      className="h-5 w-5 text-blue-400"
+                      className="h-5 w-5 text-[#89ABE3]"
                       aria-hidden="true"
                     />
                   )}
@@ -152,7 +145,7 @@ const AppHeader = (props: Props) => {
                       >
                         <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-[#8cbeef]"
+                            className="h-6 w-6 text-gray-600 group-hover:text-[#89ABE3]"
                             aria-hidden="true"
                           />
                         </div>
@@ -173,7 +166,7 @@ const AppHeader = (props: Props) => {
           </ClickAwayListener>
 
           <button
-            className="text-sm font-medium leading-6 text-blue-400 hover:text-[#fde047] "
+            className="text-sm font-medium leading-6 text-[#89ABE3] hover:text-[#EA738D] "
             onClick={() => router.push("/work")}
           >
             Work
@@ -221,13 +214,6 @@ const AppHeader = (props: Props) => {
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Story
-                </button>
-                <button
-                  style={{ cursor: "pointer" }}
-                  onClick={() => handleClickAboutUs("timeline", true)}
-                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Journey
                 </button>
                 <button
                   style={{ cursor: "pointer" }}

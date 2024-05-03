@@ -1,7 +1,7 @@
 .animated-image {
   width: 30rem;
   max-width: 400px;
-  background: linear-gradient(270deg, #b78bf14b, #8cbeef);
+  background: linear-gradient(270deg, #ea738d, #8cbeef);
   height: 330px;
   border: 0.5rem solid #2e4053;
   box-shadow: var(--customBoxShadowForImage);

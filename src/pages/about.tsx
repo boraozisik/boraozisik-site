@@ -20,11 +20,11 @@ const About = (props: Props) => {
           <div className="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
             <h1 className="text-2xl text-gray-800 capitalize lg:text-3xl lg:ml-16 font-medium mt-8">
               Embracing the Chapters of Life:{" "}
-              <span className="text-[#8cbeef]">My Story</span>
+              <span className="text-[#89ABE3]">My Story</span>
               <div className="-mt-4">
-                <span className="inline-block w-40 h-1 bg-[#8cbeef] rounded-full"></span>
-                <span className="inline-block w-3 h-1 ml-1 bg-[#8cbeef] rounded-full"></span>
-                <span className="inline-block w-1 h-1 ml-1 bg-[#8cbeef] rounded-full"></span>
+                <span className="inline-block w-40 h-1 bg-[#89ABE3] rounded-full"></span>
+                <span className="inline-block w-3 h-1 ml-1 bg-[#89ABE3] rounded-full"></span>
+                <span className="inline-block w-1 h-1 ml-1 bg-[#89ABE3] rounded-full"></span>
               </div>
             </h1>
 
@@ -77,114 +77,7 @@ const About = (props: Props) => {
         </div>
       </section>
       {/* // -------------------Story----------------------  */}
-      {/* // -------------------Timeline----------------------  */}
-      <section>
-        <a href="#timeline" id={"timeline"}></a>
-        <div className="bg-gray-800 text-white py-8">
-          <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
-            <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-              <p className="ml-2 text-[#8cbeef]  uppercase tracking-loose font-medium">
-                My Working Process
-              </p>
-              <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-medium">
-                Process of Work
-              </p>
-              <p className="text-sm md:text-base text-gray-50 mb-4 font-medium">
-                Here’s my guide to the school and business process. Go through
-                all the steps to know the exact process of my work.
-              </p>
-              <button
-                onClick={() => router.push("/#brabout")}
-                className="font-medium bg-transparent mr-auto hover:bg-[#8cbeef] text-[#8cbeef]  hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-[#8cbeef] hover:border-transparent"
-              >
-                Explore Now
-              </button>
-            </div>
-            <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
-              <div className="container mx-auto w-full h-full">
-                <div className="relative wrap overflow-hidden p-10 h-full">
-                  <div className="border-2-2 border-[#8cbeef] absolute h-full border right-1/2 border-2 border-solid border-[#8cbeef] rounded-1"></div>
-                  <div className="border-2-2 border-[#8cbeef] absolute h-full border left-1/2 border-2 border-solid border-[#8cbeef] rounded-1"></div>
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
-                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
-                        August, 2019
-                      </p>
-                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
-                        University Started
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-justify">
-                        I started preparatory class at Celal Bayar University
-                        and I started to improve my foreign languages.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1  w-5/12 px-1 py-4 text-left">
-                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
-                        September, 2020
-                      </p>
-                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
-                        Comp. Eng. Department Started
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-justify">
-                        I started my first year in Computer Engineering
-                        Department and this year, I started to be busy with
-                        school lessons and also my extra study to improve
-                        myself.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
-                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
-                        February, 2022
-                      </p>
-                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
-                        Volunteer Internship
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-justify">
-                        I started to work as a Full Stack Developer Intern at
-                        &apos;Nautilica Software Services&apos; and I gained
-                        expertise in various technologies, including TypeScript,
-                        React, Next.js, Nest.js, PostgreSQL, and GraphQL.
-                      </p>
-                    </div>
-                  </div>
 
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-5/12"></div>
-
-                    <div className="order-1  w-5/12 px-1 py-4">
-                      <p className="mb-3 text-base text-[#8cbeef] font-medium">
-                        August, 2022
-                      </p>
-                      <h4 className="mb-3 font-bold  text-lg md:text-2xl text-left">
-                        Started to Work
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-justify">
-                        After a long internship period of 6 months, I was
-                        offered a job and I happily and willingly accepted this
-                        job.Currently, while working at &apos;Nautilica Software
-                        Services&apos;, I continue to study at the Computer
-                        Engineering Department of Celal Bayar University.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className="mx-auto -mt-24 lg:-mt-24 w-[24rem] h-[24rem]"
-                  src="../static/illustrations/rocket-maker.svg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* // -------------------Timeline----------------------  */}
       {/* // -------------------Passions----------------------  */}
       <section className="body-font text-gray-600 bg-gray-100">
         <a href="#passions" id={"passions"}></a>
@@ -193,9 +86,9 @@ const About = (props: Props) => {
             <div className="mb-6 w-full lg:mb-0 lg:w-1/2">
               <h1 className="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">
                 Beyond the Office:{" "}
-                <span className="text-[#8cbeef]">My Passions</span>
+                <span className="text-[#89ABE3]">My Passions</span>
               </h1>
-              <div className="h-1 w-20 rounded bg-[#8cbeef]"></div>
+              <div className="h-1 w-20 rounded bg-[#89ABE3]"></div>
             </div>
             <p className="w-full leading-relaxed text-gray-500 lg:w-1/2 lg:text-justify font-medium">
               Beyond the confines of the office, I am a vibrant soul fueled by
@@ -225,14 +118,14 @@ const About = (props: Props) => {
                   historical and beautiful places. I recently visited Italy.
                 </p>
                 <button
-                  className="text-[#8cbeef] inline-flex items-center font-medium"
+                  className="text-[#89ABE3] inline-flex items-center font-medium"
                   onClick={() => router.push("/travel")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#8cbeef"
+                    stroke="#89ABE3"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -260,14 +153,14 @@ const About = (props: Props) => {
                   Doğa Sporları&apos; club, of which I am an active member.
                 </p>
                 <button
-                  className="text-[#8cbeef] inline-flex items-center font-medium"
+                  className="text-[#89ABE3] inline-flex items-center font-medium"
                   onClick={() => router.push("/naturesport")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#8cbeef"
+                    stroke="#89ABE3"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -296,14 +189,14 @@ const About = (props: Props) => {
                   meets their many needs.
                 </p>
                 <button
-                  className="text-[#8cbeef] inline-flex items-center font-medium"
+                  className="text-[#89ABE3] inline-flex items-center font-medium"
                   onClick={() => router.push("/losev")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#8cbeef"
+                    stroke="#89ABE3"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -333,14 +226,14 @@ const About = (props: Props) => {
                   make an effort to swim whenever I find the opportunity.
                 </p>
                 <button
-                  className="text-[#8cbeef] inline-flex items-center font-medium"
+                  className="text-[#89ABE3] inline-flex items-center font-medium"
                   onClick={() => router.push("/swimming")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#8cbeef"
+                    stroke="#89ABE3"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -368,14 +261,14 @@ const About = (props: Props) => {
                   books every day, unless there is a significant obstacle.
                 </p>
                 <button
-                  className="text-[#8cbeef] inline-flex items-center font-medium"
+                  className="text-[#89ABE3] inline-flex items-center font-medium"
                   onClick={() => router.push("/books")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#8cbeef"
+                    stroke="#89ABE3"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -404,14 +297,14 @@ const About = (props: Props) => {
                   there are also times when I enjoy listening to rap music.
                 </p>
                 <button
-                  className="text-[#8cbeef] inline-flex items-center font-medium"
+                  className="text-[#89ABE3] inline-flex items-center font-medium"
                   onClick={() => router.push("/music")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#8cbeef"
+                    stroke="#89ABE3"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -432,7 +325,7 @@ const About = (props: Props) => {
         <a href="#contact" id={"contact"}></a>
         <div className="container px-6 py-12 mx-auto">
           <div>
-            <p className="font-medium text-xl text-[#8cbeef]">Contact me</p>
+            <p className="font-medium text-xl text-[#89ABE3]">Contact me</p>
 
             <h1 className="mt-2 text-2xl font-medium md:text-3xl text-white">
               I’d love to hear from you
@@ -448,7 +341,7 @@ const About = (props: Props) => {
             <div className="p-4 rounded-lg  md:p-6 bg-gray-700">
               <a
                 href={"mailto:ozisikbora@gmail.com"}
-                className="inline-block p-3 text-[#8cbeef] rounded-lg  bg-gray-600"
+                className="inline-block p-3 text-[#89ABE3] rounded-lg  bg-gray-600"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -471,7 +364,7 @@ const About = (props: Props) => {
                 Reach to me on my mail.
               </p>
               <a href={"mailto:ozisikbora@gmail.com"}>
-                <p className="mt-2 text-sm text-[#8cbeef]">
+                <p className="mt-2 text-sm text-[#89ABE3]">
                   ozisikbora@gmail.com
                 </p>
               </a>
@@ -479,7 +372,7 @@ const About = (props: Props) => {
             <div className="p-4 rounded-lg  md:p-6 bg-gray-700">
               <a
                 href="tel:0554-595-99-05"
-                className="inline-block p-3 text-[#8cbeef] rounded-lg bg-gray-600"
+                className="inline-block p-3 text-[#89ABE3] rounded-lg bg-gray-600"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -500,14 +393,14 @@ const About = (props: Props) => {
               <h2 className="mt-4 text-base font-medium text-white">Call me</h2>
               <p className="mt-2 text-sm text-gray-400">Every day 24/7</p>
               <a href="tel:0554-595-99-05">
-                <p className="mt-2 text-sm text-[#8cbeef]">+90 554 595 99 05</p>
+                <p className="mt-2 text-sm text-[#89ABE3]">+90 554 595 99 05</p>
               </a>
             </div>
             <div className="p-4 rounded-lg md:p-6 bg-gray-700">
               <a
                 href="https://www.linkedin.com/in/boraozisik/"
                 target="_blank"
-                className="inline-block p-3 text-[#8cbeef] rounded-lg bg-gray-600"
+                className="inline-block p-3 text-[#89ABE3] rounded-lg bg-gray-600"
               >
                 <svg
                   width="20"
@@ -526,7 +419,7 @@ const About = (props: Props) => {
                 You can also check and chat to me on LinkedIn.
               </p>
               <a href="https://www.linkedin.com/in/boraozisik/" target="_blank">
-                <p className="mt-2 text-sm text-[#8cbeef]">Lets explore</p>
+                <p className="mt-2 text-sm text-[#89ABE3]">Lets explore</p>
               </a>
             </div>
 
@@ -534,7 +427,7 @@ const About = (props: Props) => {
               <a
                 href="https://www.instagram.com/borazsk_/"
                 target="_blank"
-                className="inline-block p-3 text-[#8cbeef] rounded-lg bg-gray-600"
+                className="inline-block p-3 text-[#89ABE3] rounded-lg bg-gray-600"
               >
                 <svg
                   className="w-5 h-5"
@@ -557,7 +450,7 @@ const About = (props: Props) => {
                 Get to know the me outside of work as well.
               </p>
               <a href="https://www.instagram.com/borazsk_/" target="_blank">
-                <p className="mt-2 text-sm text-[#8cbeef]">
+                <p className="mt-2 text-sm text-[#89ABE3]">
                   Follow me and message to me
                 </p>
               </a>
@@ -575,7 +468,7 @@ const About = (props: Props) => {
                 <p className="text-body-color mb-7 text-base">
                   Designing the Extraordinary, Every Step of the Way.
                 </p>
-                <p className="text-dark flex items-center text-sm font-medium hover:text-[#8cbeef]">
+                <p className="text-dark flex items-center text-sm font-medium hover:text-[#89ABE3]">
                   <span className="text-primary mr-3">
                     <svg
                       width="19"
@@ -594,7 +487,7 @@ const About = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Quick Link
                 </h4>
                 <ul>
@@ -639,7 +532,7 @@ const About = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   About
                 </h4>
                 <ul>
@@ -684,7 +577,7 @@ const About = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Business
                 </h4>
                 <ul>
@@ -703,14 +596,14 @@ const About = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Contact Me On
                 </h4>
                 <div className="mb-6 flex items-center">
                   <a
                     href="https://github.com/boraozisik"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -728,7 +621,7 @@ const About = (props: Props) => {
                   <a
                     href="https://www.linkedin.com/in/boraozisik/"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="14"
@@ -741,7 +634,7 @@ const About = (props: Props) => {
                   </a>
                   <a
                     href={"mailto:ozisikbora@gmail.com"}
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       fill="none"
@@ -760,7 +653,7 @@ const About = (props: Props) => {
                   <a
                     href="https://www.instagram.com/borazsk_/"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -791,7 +684,7 @@ const About = (props: Props) => {
             >
               <path
                 d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
-                fill="#8cbeef"
+                fill="#89ABE3"
               />
               <defs>
                 <linearGradient
@@ -818,7 +711,7 @@ const About = (props: Props) => {
             >
               <path
                 d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-                fill="#fde047"
+                fill="#EA738D"
               />
               <defs>
                 <linearGradient

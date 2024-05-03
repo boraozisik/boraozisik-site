@@ -30,8 +30,8 @@ const NatureSport = (props: Props) => {
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none">
               Nature&apos;s therapy:
               <br className="hidden md:block" /> I find{" "}
-              <span className="inline-block text-[#8cbeef] py-4">solace</span>{" "}
-              and <span className="inline-block text-[#8cbeef]">strength</span>{" "}
+              <span className="inline-block text-[#89ABE3] py-4">solace</span>{" "}
+              and <span className="inline-block text-[#89ABE3]">strength</span>{" "}
               through outdoor adventures.
             </h2>
             <p className="pr-5 mb-5 text-justify text-gray-600 md:text-lg font-medium">

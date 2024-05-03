@@ -13,8 +13,8 @@ const Music = (props: Props) => {
       <section className="bg-gray-800 py-16">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-medium capitalize lg:text-3xl text-white">
-            Ears <span className="text-[#fde047]">Attuned</span>, Soul{" "}
-            <span className="text-[#fde047]">Ignited:</span> A Lifelong Melody.
+            Ears <span className="text-[#EA738D]">Attuned</span>, Soul{" "}
+            <span className="text-[#EA738D]">Ignited:</span> A Lifelong Melody.
           </h1>
 
           <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
@@ -56,11 +56,11 @@ const Music = (props: Props) => {
           <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-medium text-center capitalize lg:text-3xl text-white">
               Here you can check my{" "}
-              <span className="text-[#fde047]">favorite</span> artists
+              <span className="text-[#EA738D]">favorite</span> artists
             </h1>
 
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/metallica-avatar.jpeg"
@@ -72,7 +72,7 @@ const Music = (props: Props) => {
                 </h1>
               </div>
 
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/travis-scott-avatar.jpg"
@@ -83,7 +83,7 @@ const Music = (props: Props) => {
                   Travis Scott
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/bon-jovi-avatar.jpg"
@@ -94,7 +94,7 @@ const Music = (props: Props) => {
                   Bon Jovi
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/rammstein-logo.png"
@@ -105,7 +105,7 @@ const Music = (props: Props) => {
                   Rammstein
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/depeche-mode-avatar.png"
@@ -116,7 +116,7 @@ const Music = (props: Props) => {
                   Depeche Mode
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/alphaville-avatar.png"
@@ -127,7 +127,7 @@ const Music = (props: Props) => {
                   Alphaville
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/sebnem-ferah-avatar.jpg"
@@ -138,7 +138,7 @@ const Music = (props: Props) => {
                   Şebnem Ferah
                 </h1>
               </div>
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#8cbeef] rounded-xl">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#89ABE3] rounded-xl">
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                   src="/static/images/queen-avatar.png"

@@ -16,7 +16,7 @@ const Swimming = (props: Props) => {
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
-                  fill="#fde047"
+                  fill="#EA738D"
                   className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
                 >
                   <defs>
@@ -39,7 +39,7 @@ const Swimming = (props: Props) => {
                 <span className="relative">Swimming</span>
               </span>{" "}
               is not just a skill, it&apos;s a{" "}
-              <span className="text-[#8cbeef]">way of life</span> for me.
+              <span className="text-[#89ABE3]">way of life</span> for me.
             </h2>
             <p className="mx-auto font-medium text-gray-900">
               Swimming is not simply a hobby or sport for me. It is my calling

@@ -10,7 +10,7 @@ const Losev = (props: Props) => {
       {/* // -------------------Header----------------------  */}
       <section className="bg-gray-800">
         <div className="container px-6 py-20 mx-auto">
-          <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl text-[#fde047] underline">
+          <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl text-[#EA738D] underline">
             Lösev
           </h1>
           <p className="font-medium text-white text-justify mx-auto max-w-lg mt-8">

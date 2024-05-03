@@ -1245,10 +1245,10 @@ const Books = (props: Props) => {
       <GridToolbarContainer
         sx={{ display: "flex", justifyContent: "left", height: 50 }}
       >
-        <GridToolbarColumnsButton sx={{ color: "#8cbeef" }} />
-        <GridToolbarFilterButton sx={{ color: "#8cbeef" }} />
-        <GridToolbarDensitySelector sx={{ color: "#8cbeef" }} />
-        {/* <GridToolbarExport sx={{ color: "#8cbeef" }} /> */}
+        <GridToolbarColumnsButton sx={{ color: "#89ABE3" }} />
+        <GridToolbarFilterButton sx={{ color: "#89ABE3" }} />
+        <GridToolbarDensitySelector sx={{ color: "#89ABE3" }} />
+        {/* <GridToolbarExport sx={{ color: "#89ABE3" }} /> */}
 
         <GridToolbarQuickFilter sx={{ ml: "auto", width: "15%" }} />
       </GridToolbarContainer>
@@ -1267,7 +1267,7 @@ const Books = (props: Props) => {
             <div className="lg:flex justify-between items-center">
               <div className="lg:w-6/12 lg:p-0 p-7">
                 <h1 className="text-4xl font-medium leading-tight mb-5 capitalize">
-                  <span className="text-[#8cbeef] underline">Reading:</span> The
+                  <span className="text-[#89ABE3] underline">Reading:</span> The
                   artful lifestyle, the passionate pursuit.
                 </h1>
                 <p className="font-medium text-justify">
@@ -1321,7 +1321,7 @@ const Books = (props: Props) => {
                 background: "#EBF5FB",
               },
               "& .MuiDataGrid-cell:hover": {
-                color: "#8cbeef",
+                color: "#89ABE3",
               },
               ".MuiDataGrid-columnHeader": {
                 backgroundColor: "#D6EAF8",
@@ -1329,7 +1329,7 @@ const Books = (props: Props) => {
                 fontWeight: "bold",
               },
               ".MuiDataGrid-columnSeparator": {
-                color: "#8cbeef",
+                color: "#89ABE3",
               },
             }}
             pageSizeOptions={[10, 20, 50, 100]}

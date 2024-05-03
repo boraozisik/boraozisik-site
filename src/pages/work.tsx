@@ -21,7 +21,7 @@ const Work = (props: Props) => {
               src="/static/handDraw/undraw_command-line.svg"
               alt=""
             />
-            <h2 className="ml-2 relative mb-4 font-medium text-3xl tracking-tight text-[#8cbeef] sm:text-4xl sm:leading-none">
+            <h2 className="ml-2 relative mb-4 font-medium text-3xl tracking-tight text-[#89ABE3] sm:text-4xl sm:leading-none">
               My Work
             </h2>
           </Stack>
@@ -225,7 +225,7 @@ const Work = (props: Props) => {
           </div>
           <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
             <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-900 uppercase rounded-full bg-[#fde047]">
+              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-900 uppercase rounded-full bg-[#EA738D]">
                 More Work
               </p>
             </div>
@@ -246,7 +246,7 @@ const Work = (props: Props) => {
               <a href="https://github.com/boraozisik" target="_blank">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#8cbeef] hover:bg-blue-400 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#89ABE3] hover:bg-blue-400 focus:shadow-outline focus:outline-none"
                 >
                   My GitHub
                 </button>
@@ -255,7 +255,7 @@ const Work = (props: Props) => {
                 href="https://www.shipmind.tech/"
                 target="_blank"
                 aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-gray-900 hover:text-[#8cbeef]"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-gray-900 hover:text-[#89ABE3]"
               >
                 ShipMind
                 <svg
@@ -280,7 +280,7 @@ const Work = (props: Props) => {
                 <p className="text-body-color mb-7 text-base">
                   Designing the Extraordinary, Every Step of the Way.
                 </p>
-                <p className="text-dark flex items-center text-sm font-medium hover:text-[#8cbeef]">
+                <p className="text-dark flex items-center text-sm font-medium hover:text-[#]">
                   <span className="text-primary mr-3">
                     <svg
                       width="15"
@@ -299,7 +299,7 @@ const Work = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Quick Link
                 </h4>
                 <ul>
@@ -344,7 +344,7 @@ const Work = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   About
                 </h4>
                 <ul>
@@ -389,7 +389,7 @@ const Work = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Business
                 </h4>
                 <ul>
@@ -412,14 +412,14 @@ const Work = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Contact Me On
                 </h4>
                 <div className="mb-6 flex items-center">
                   <a
                     href="https://github.com/boraozisik"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -437,7 +437,7 @@ const Work = (props: Props) => {
                   <a
                     href="https://www.linkedin.com/in/boraozisik/"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="14"
@@ -450,7 +450,7 @@ const Work = (props: Props) => {
                   </a>
                   <a
                     href={"mailto:ozisikbora@gmail.com"}
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       fill="none"
@@ -469,7 +469,7 @@ const Work = (props: Props) => {
                   <a
                     href="https://www.instagram.com/borazsk_/"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -500,7 +500,7 @@ const Work = (props: Props) => {
             >
               <path
                 d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
-                fill="#8cbeef"
+                fill="#89ABE3"
               />
               <defs>
                 <linearGradient
@@ -527,7 +527,7 @@ const Work = (props: Props) => {
             >
               <path
                 d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-                fill="#fde047"
+                fill="#EA738D"
               />
               <defs>
                 <linearGradient

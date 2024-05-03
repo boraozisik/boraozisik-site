@@ -29,7 +29,7 @@ const HomeView = (props: Props) => {
                 /> */}
             </div>
             <div>
-              <p className="text-base font-medium tracking-wider text-[#8cbeef] uppercase">
+              <p className="text-base font-medium tracking-wider text-[#89ABE3] uppercase">
                 Full Stack Developer
               </p>
               <h1 className="mt-4 text-4xl font-bold text-gray-700 lg:mt-8 sm:text-6xl xl:text-6xl">
@@ -42,7 +42,7 @@ const HomeView = (props: Props) => {
               <a
                 onClick={() => router.push("/about")}
                 title=""
-                className="inline-flex items-center px-6 py-4 mt-8 font-medium text-white transition-all duration-200 bg-[#8cbeef]  rounded-full lg:mt-16 hover:bg-blue-400 focus:bg-blue-400"
+                className="inline-flex items-center px-6 py-4 mt-8 font-medium text-white transition-all duration-200 bg-[#89ABE3]  rounded-full lg:mt-16 hover:bg-red-500 focus:bg-blue-400"
                 role="button"
               >
                 About
@@ -64,7 +64,7 @@ const HomeView = (props: Props) => {
               <a
                 onClick={() => router.push("/work")}
                 title=""
-                className="ml-4 inline-flex items-center px-6 py-4 mt-8 font-medium text-black transition-all duration-200 bg-[#fde047] rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                className="ml-4 inline-flex items-center px-6 py-4 mt-8 font-medium text-black transition-all duration-200 bg-[#EA738D] rounded-full lg:mt-16 hover:bg-yellow-500 focus:bg-yellow-400"
                 role="button"
               >
                 My Work
@@ -95,7 +95,7 @@ const HomeView = (props: Props) => {
         <a href="#brabout" id={"brabout"}></a>
         <div className="container px-6 py-10 mx-auto">
           <div className="text-center">
-            <h1 className="text-2xl font-medium text-[#8cbeef] capitalize lg:text-3xl ">
+            <h1 className="text-2xl font-medium text-[#89ABE3] capitalize lg:text-3xl ">
               Greetings...
             </h1>
 
@@ -121,7 +121,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.shipmind.tech/"
                     target="_blank"
-                    className="font-medium text-[#8cbeef] hover:underline  md:text-xl underline"
+                    className="font-medium text-[#89ABE3] hover:underline  md:text-xl"
                   >
                     ShipMind
                   </a>
@@ -138,7 +138,7 @@ const HomeView = (props: Props) => {
                   your Freight&quot;.
                 </p>
 
-                <p className="mt-3 text-sm text-[#fde047] font-medium">
+                <p className="mt-3 text-sm text-[#EA738D] font-medium">
                   Mar 2022 - Present
                 </p>
               </div>
@@ -156,7 +156,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.mcbu.edu.tr/"
                     target="_blank"
-                    className="font-medium text-[#8cbeef] hover:underline md:text-xl underline"
+                    className="font-medium text-[#89ABE3] hover:underline md:text-xl"
                   >
                     Celal Bayar University
                   </a>
@@ -172,7 +172,7 @@ const HomeView = (props: Props) => {
                   Department of Computer Engineering.
                 </p>
 
-                <p className="mt-2 text-sm text-[#fde047] font-medium">
+                <p className="mt-2 text-sm text-[#EA738D] font-medium">
                   2019 - Present
                 </p>
               </div>
@@ -189,7 +189,7 @@ const HomeView = (props: Props) => {
             <div className="lg:w-1/2">
               <h2 className="max-w-md mb-6 font-medium text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none xl:max-w-lg">
                 <span className="relative inline-block px-2">
-                  <div className="absolute inset-0 transform -skew-x-12 bg-[#8cbeef]" />
+                  <div className="absolute inset-0 transform -skew-x-12 bg-[#89ABE3]" />
                   <span className="relative text-white">Skill</span>
                 </span>{" "}
                 and{" "}
@@ -215,8 +215,8 @@ const HomeView = (props: Props) => {
             </div> */}
           </div>
           <div className="grid gap-8 row-gap-10 sm:grid-cols-2 lg:grid-cols-2">
-            <fieldset className="text-xl max-w-sm border-4 border-[#8cbeef] rounded-lg p-2">
-              <legend className="px-2 text-xl font-semibold underline decoration-[#fde047] decoration-2">
+            <fieldset className="text-xl max-w-sm border-4 border-[#89ABE3] rounded-lg p-2">
+              <legend className="px-2 text-xl font-semibold underline decoration-[#EA738D] decoration-2">
                 Hard Skills
               </legend>
               <div className="flex flex-col gap-2 px-2 text-md font-serif">
@@ -228,7 +228,7 @@ const HomeView = (props: Props) => {
                     strokeWidth="1.5"
                     stroke="currentColor"
                     aria-hidden="true"
-                    className="mr-2 h-auto w-6 text-[#fde047] sm:w-7"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
                   >
                     <path
                       strokeLinecap="round"
@@ -239,56 +239,349 @@ const HomeView = (props: Props) => {
                   <a href="#">NextJS</a>
                 </div>
                 <hr />
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">React - TypeScript</a>
+                </div>
 
-                <a href="#">React - TypeScript</a>
                 <hr />
-                <a href="#">NestJS</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">NestJS</a>
+                </div>
+
                 <hr />
-                <a href="#">GraphQL</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">GraphQL</a>
+                </div>
+
                 <hr />
-                <a href="#">PostgreSQL</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">PostgreSQL</a>
+                </div>
+
                 <hr />
-                <a href="#">Tailwind CSS - Material UI</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">Tailwind CSS - Material UI</a>
+                </div>
               </div>
             </fieldset>
-            <fieldset className="text-xl max-w-sm border-4 border-[#8cbeef] rounded-lg p-2">
-              <legend className="px-2 text-xl font-semibold underline decoration-[#fde047] decoration-2">
+            <fieldset className="text-xl max-w-sm border-4 border-[#89ABE3] rounded-lg p-2">
+              <legend className="px-2 text-xl font-semibold underline decoration-[#EA738D] decoration-2">
                 Soft Skills
               </legend>
               <div className="flex flex-col gap-2 px-2 text-md font-serif">
-                <a href="#">Teamwork</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">Teamwork</a>
+                </div>
+
                 <hr />
-                <a href="#">Problem Solving</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">Problem Solving</a>
+                </div>
+
                 <hr />
-                <a href="#">Algorithms</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">Algorithms</a>
+                </div>
+
                 <hr />
-                <a href="#">Communication</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">Communication</a>
+                </div>
+
                 <hr />
-                <a href="#">Collaboration</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">Collaboration</a>
+                </div>
+
                 <hr />
-                <a href="#">Negotiation</a>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="mr-2 h-auto w-6 text-[#EA738D] sm:w-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                    ></path>
+                  </svg>
+                  <a href="#">Negotiation</a>
+                </div>
               </div>
             </fieldset>
           </div>
         </div>
       </div>
       {/* // -------------------Skills----------------------  */}
+      {/* // -------------------Timeline----------------------  */}
+      <section>
+        <a href="#timeline" id={"timeline"}></a>
+        <div className="bg-gray-800 text-white py-8">
+          <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+            <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+              <p className="ml-2 text-[#89ABE3]  uppercase tracking-loose font-medium">
+                My Working Process
+              </p>
+              <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-medium">
+                Process of Work
+              </p>
+              <p className="text-sm md:text-base text-gray-50 mb-4 font-medium">
+                Here’s my guide to the school and business process. Go through
+                all the steps to know the exact process of my work.
+              </p>
+              <button
+                onClick={() => router.push("/#brabout")}
+                className="font-medium bg-transparent mr-auto hover:bg-[#89ABE3] text-[#89ABE3]  hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-[#89ABE3] hover:border-transparent"
+              >
+                Explore Now
+              </button>
+            </div>
+            <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
+              <div className="container mx-auto w-full h-full">
+                <div className="relative wrap overflow-hidden p-10 h-full">
+                  <div className="border-2-2 border-[#89ABE3] absolute h-full border right-1/2 border-2 border-solid border-[#89ABE3] rounded-1"></div>
+                  <div className="border-2-2 border-[#89ABE3] absolute h-full border left-1/2 border-2 border-solid border-[#89ABE3] rounded-1"></div>
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                      <p className="mb-3 text-base text-[#89ABE3] font-medium">
+                        August, 2019
+                      </p>
+                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
+                        University Started
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-right">
+                        I started preparatory class at Celal Bayar University
+                        and I started to improve my foreign languages.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1  w-5/12 px-1 py-4 text-left">
+                      <p className="mb-3 text-base text-[#89ABE3] font-medium">
+                        September, 2020
+                      </p>
+                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
+                        Comp. Eng. Department Started
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-left">
+                        I started my first year in Computer Engineering
+                        Department and this year, I started to be busy with
+                        school lessons and also my extra study to improve
+                        myself.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                      <p className="mb-3 text-base text-[#89ABE3] font-medium">
+                        February, 2022
+                      </p>
+                      <h4 className="mb-3 font-bold text-lg md:text-2xl">
+                        Volunteer Internship
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-right">
+                        I started to work as a Full Stack Developer Intern at
+                        &apos;Nautilica Software Services&apos; and I gained
+                        expertise in various technologies, including TypeScript,
+                        React, Next.js, Nest.js, PostgreSQL, and GraphQL.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-5/12"></div>
+
+                    <div className="order-1  w-5/12 px-1 py-4">
+                      <p className="mb-3 text-base text-[#89ABE3] font-medium">
+                        August, 2022
+                      </p>
+                      <h4 className="mb-3 font-bold  text-lg md:text-2xl text-left">
+                        Started to Work
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-medium lg:text-left">
+                        After a long internship period of 6 months, I was
+                        offered a job and I happily and willingly accepted this
+                        job.Currently, while working at &apos;ShipMind&apos;, I
+                        continue to study at the Computer Engineering Department
+                        of Celal Bayar University.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="mx-auto -mt-24 lg:-mt-24 w-[24rem] h-[24rem]"
+                  src="../static/illustrations/rocket-maker.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* // -------------------Timeline----------------------  */}
       {/* // -------------------Languages----------------------  */}
       <a href="#languages" id={"languages"}></a>
       <section className="text-gray-100 body-font bg-gray-800">
         <div className="container px-5 py-12 mx-auto">
-          <h1 className="sm:text-4xl text-3xl font-medium text-center title-font text-[#8cbeef] mb-16">
-            <span className="relative inline-block">
-              <span className="relative text-[#8cbeef] font-medium">
-                LANGUAGES
-              </span>
-
-              <img
-                src="../static/handDraw/handdraw-doubleunderlinetiny.svg"
-                alt=""
-                className="w-32 mx-auto mt-1"
-              />
-            </span>
+          <h1 className="text-2xl font-medium lg:text-3xl  text-center title-font text-[#89ABE3] mb-16">
+            Languages
           </h1>
 
           <div className="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
@@ -300,21 +593,21 @@ const HomeView = (props: Props) => {
               />
             </div>
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#8cbeef] text-lg title-font font-medium mb-2">
+              <h2 className="text-[#89ABE3] text-lg title-font font-medium mb-2">
                 Turkish
               </h2>
               <p className="leading-relaxed text-base font-medium">
                 Turkish is my native language and also, since I live in Turkey,
                 I speak this language in my daily life.
               </p>
-              <a className="mt-3 text-[#fde047] inline-flex items-center font-medium">
+              <a className="mt-3 text-[#EA738D] inline-flex items-center font-medium">
                 Native or bilingual proficiency
               </a>
             </div>
           </div>
           <div className="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#8cbeef] text-lg title-font font-medium mb-2 font-medium">
+              <h2 className="text-[#89ABE3] text-lg title-font font-medium mb-2 font-medium">
                 English
               </h2>
               <p className="leading-relaxed text-base font-medium">
@@ -322,7 +615,7 @@ const HomeView = (props: Props) => {
                 confident in my English abilities.Also I&apos;m still constantly
                 trying to improve myself.
               </p>
-              <a className="mt-3 text-[#fde047] inline-flex items-center font-medium">
+              <a className="mt-3 text-[#EA738D] inline-flex items-center font-medium">
                 Professional working proficiency
               </a>
             </div>
@@ -339,7 +632,7 @@ const HomeView = (props: Props) => {
               />
             </div>
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-[#8cbeef] text-lg title-font font-medium mb-2 font-medium">
+              <h2 className="text-[#89ABE3] text-lg title-font font-medium mb-2 font-medium">
                 German
               </h2>
               <p className="leading-relaxed text-base font-medium">
@@ -347,7 +640,7 @@ const HomeView = (props: Props) => {
                 long since I started learning but I&apos;m working on improving
                 my German language skills.
               </p>
-              <a className="mt-3 text-[#fde047]  inline-flex items-center font-medium">
+              <a className="mt-3 text-[#EA738D]  inline-flex items-center font-medium">
                 Elementary proficiency
               </a>
             </div>
@@ -364,7 +657,7 @@ const HomeView = (props: Props) => {
                 <p className="text-body-color mb-7 text-base">
                   Designing the Extraordinary, Every Step of the Way.
                 </p>
-                <p className="text-dark flex items-center text-sm font-medium hover:text-[#8cbeef]">
+                <p className="text-dark flex items-center text-sm font-medium hover:text-[#89ABE3]">
                   <span className="text-primary mr-3">
                     <svg
                       width="15"
@@ -383,7 +676,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Quick Link
                 </h4>
                 <ul>
@@ -428,7 +721,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   About
                 </h4>
                 <ul>
@@ -473,7 +766,7 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Business
                 </h4>
                 <ul>
@@ -496,14 +789,14 @@ const HomeView = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#8cbeef]">
+                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Contact Me On
                 </h4>
                 <div className="mb-6 flex items-center">
                   <a
                     href="https://github.com/boraozisik"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -521,7 +814,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.linkedin.com/in/boraozisik/"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="14"
@@ -534,7 +827,7 @@ const HomeView = (props: Props) => {
                   </a>
                   <a
                     href={"mailto:ozisikbora@gmail.com"}
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       fill="none"
@@ -553,7 +846,7 @@ const HomeView = (props: Props) => {
                   <a
                     href="https://www.instagram.com/borazsk_/"
                     target="_blank"
-                    className="text-dark hover:bg-[#8cbeef] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -584,7 +877,7 @@ const HomeView = (props: Props) => {
             >
               <path
                 d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
-                fill="#8cbeef"
+                fill="#89ABE3"
               />
               <defs>
                 <linearGradient
@@ -611,7 +904,7 @@ const HomeView = (props: Props) => {
             >
               <path
                 d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-                fill="#fde047"
+                fill="#EA738D"
               />
               <defs>
                 <linearGradient
