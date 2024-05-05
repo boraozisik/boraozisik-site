@@ -12,85 +12,64 @@ const About = (props: Props) => {
       <AppHeader />
       {/* // -------------------Header----------------------  */}
       {/* // -------------------Story---------------------- */}
-      <section className="bg-white mt-8 lg:mt-0">
-        <div className="relative flex">
-          <div className="min-h-screen lg:w-1/3"></div>
-          <div className="hidden w-3/4 min-h-screen bg-gray-100 lg:block lg:h-[48rem]"></div>
+      <section className="bg-white dark:bg-gray-900 mt-12">
+        <div className="max-w-6xl px-6 py-10 mx-auto">
+          <h1 className="text-2xl text-gray-800 capitalize lg:text-3xl lg:ml-16 font-medium mt-8">
+            Embracing the Chapters of Life:{" "}
+            <span className="text-[#89ABE3]">My Story</span>
+            <div className="-mt-4">
+              <span className="inline-block w-40 h-1 bg-[#89ABE3] rounded-full"></span>
+              <span className="inline-block w-3 h-1 ml-1 bg-[#89ABE3] rounded-full"></span>
+              <span className="inline-block w-1 h-1 ml-1 bg-[#89ABE3] rounded-full"></span>
+            </div>
+          </h1>
 
-          <div className="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
-            <h1 className="text-2xl text-gray-800 capitalize lg:text-3xl lg:ml-16 font-medium mt-8">
-              Embracing the Chapters of Life:{" "}
-              <span className="text-[#89ABE3]">My Story</span>
-              <div className="-mt-4">
-                <span className="inline-block w-40 h-1 bg-[#89ABE3] rounded-full"></span>
-                <span className="inline-block w-3 h-1 ml-1 bg-[#89ABE3] rounded-full"></span>
-                <span className="inline-block w-1 h-1 ml-1 bg-[#89ABE3] rounded-full"></span>
-              </div>
-            </h1>
+          <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
+            <div className="absolute w-full bg-gray-800 -z-10 md:h-96 rounded-2xl"></div>
 
-            <div className="mt-10 lg:flex lg:items-center">
+            <div className="w-full p-6 bg-gray-700 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
               <img
-                className="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96 lg:ml-16"
-                src="/static/images/my-story.jpg"
-                alt=""
+                className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+                src="/static/images/my-image-hero.jpg"
+                alt="client photo"
               />
 
-              <div className="mt-8 lg:-mt-8 lg:px-40">
-                <p className="max-w-lg text-gray-500 lg:text-justify font-medium lg:mb-6">
+              <div className="mt-2 md:mx-6">
+                <p className="max-w-lg text-gray-300 lg:text-justify font-medium">
                   I was born on November 7, 2000, in the city of Aydın, Turkey.
-                  I attended primary school, middle school, and high school in
-                  Aydın. I graduated from high school with a GPA of 96.24 and
-                  ranked third in my school. After taking the university
-                  entrance exam, I earned the opportunity to study Computer
-                  Engineering at Celal Bayar University.
-                </p>
-                <p className="max-w-lg  text-gray-500 lg:text-justify font-medium lg:mb-6">
-                  I spent a year in preparatory school, improving my English
-                  skills and also took the initiative to learn German. Once I
-                  moved on to the first year of university, alongside my regular
-                  classes, I successfully completed two courses to learn the
-                  Java programming language. I then solidified my knowledge by
-                  working on several personal projects.Next, I pursued a similar
-                  path by taking courses to learn the Python language and
-                  developed applications.
-                </p>
-                <p className="max-w-lg text-gray-500 lg:text-justify font-medium lg:mb-6">
-                  By the middle of my second year, I realized that I wanted to
-                  put my skills into practice and work.Therefore, I started a
-                  voluntary internship at &apos;Nautilica Software
-                  Services&apos; company. During the six-month voluntary
-                  internship, I developed myself towards becoming a Fullstack
-                  Developer.I gained expertise in various technologies,
-                  including TypeScript, React, Next.js, Nest.js, PostgreSQL, and
-                  GraphQL.
-                </p>
-                <p className="max-w-lg text-gray-500 lg:text-justify font-medium">
-                  After this six-month journey, I was offered a job at the same
-                  company as a Full Stack Developer. Currently, I am working
-                  while continuing my studies. Additionally, I am actively
-                  working on improving my foreign language skills by my own
-                  initiative.
+                  I graduated from high school with a GPA of 96.24 and ranked
+                  third in my school. I spent a year in preparatory school,
+                  improving my English skills and also took the initiative to
+                  learn German. When I moved on to the first year of university,
+                  I learned Java and Python and consolidated my knowledge by
+                  working on a few personal projects. By the middle of my second
+                  year, I started a voluntary internship at &apos;Nautilica
+                  Software Services&apos; company. During the six-month
+                  voluntary internship, I developed myself towards becoming a
+                  Full Stack Developer. After this six-month journey, I was
+                  offered a job and currently, I am working while continuing my
+                  studies.
                 </p>
               </div>
             </div>
-          </div>
+          </main>
         </div>
       </section>
       {/* // -------------------Story----------------------  */}
 
       {/* // -------------------Passions----------------------  */}
-      <section className="body-font text-gray-600 bg-gray-100">
+      <section className="body-font text-gray-600 bg-gray-800">
         <a href="#passions" id={"passions"}></a>
         <div className="container mx-auto px-5 py-24">
           <div className="mb-20 flex w-full flex-wrap">
             <div className="mb-6 w-full lg:mb-0 lg:w-1/2">
-              <h1 className="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">
+              <h1 className="title-font mb-2 text-2xl font-medium text-gray-300 sm:text-3xl">
                 Beyond the Office:{" "}
                 <span className="text-[#89ABE3]">My Passions</span>
               </h1>
               <div className="h-1 w-20 rounded bg-[#89ABE3]"></div>
             </div>
-            <p className="w-full leading-relaxed text-gray-500 lg:w-1/2 lg:text-justify font-medium">
+            <p className="w-full leading-relaxed text-gray-300 lg:w-1/2 lg:text-justify font-medium">
               Beyond the confines of the office, I am a vibrant soul fueled by
               an array of passions. From exploring the great outdoors to diving
               into the world of literature, my life is a canvas painted with
@@ -103,29 +82,29 @@ const About = (props: Props) => {
           </div>
           <div className="-m-4 flex flex-wrap">
             <div className="p-4 md:w-1/3 xl:w-1/3">
-              <div className="rounded-lg bg-gray-100 p-6 lg:h-[30rem]">
+              <div className="rounded-lg bg-gray-600 p-6 lg:h-[30rem]">
                 <img
                   className="mb-6 h-64 w-full rounded object-cover object-center"
                   src="/static/images/travel.jpg"
                   alt="content"
                 />
 
-                <h2 className="title-font mb-4 text-lg font-medium text-gray-900">
+                <h2 className="text-[#89ABE3] title-font mb-4 text-lg font-medium">
                   Travel
                 </h2>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-300">
                   At the same time, I am interested in traveling and seeing
                   historical and beautiful places. I recently visited Italy.
                 </p>
                 <button
-                  className="text-[#89ABE3] inline-flex items-center font-medium"
+                  className="text-[#EA738D] inline-flex items-center font-medium"
                   onClick={() => router.push("/travel")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#89ABE3"
+                    stroke="#EA738D"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -138,29 +117,29 @@ const About = (props: Props) => {
               </div>
             </div>
             <div className="p-4 md:w-1/3 xl:w-1/3">
-              <div className="rounded-lg bg-gray-100 p-6 lg:h-[30rem]">
+              <div className="rounded-lg bg-gray-600 p-6 lg:h-[30rem]">
                 <img
                   className="mb-6 h-64 w-full rounded object-cover object-center"
                   src="/static/images/climbing-mountaineering.jpg"
                   alt="content"
                 />
 
-                <h2 className="title-font mb-4 text-lg font-medium text-gray-900">
+                <h2 className="title-font mb-4 text-lg font-medium text-[#89ABE3]">
                   Climbing - Mountaineering
                 </h2>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-300">
                   I do mountaineering and nature sports with the &apos;Aydın
                   Doğa Sporları&apos; club, of which I am an active member.
                 </p>
                 <button
-                  className="text-[#89ABE3] inline-flex items-center font-medium"
+                  className="text-[#EA738D] inline-flex items-center font-medium"
                   onClick={() => router.push("/naturesport")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#89ABE3"
+                    stroke="#EA738D"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -173,30 +152,30 @@ const About = (props: Props) => {
               </div>
             </div>
             <div className="p-4 md:w-1/3 xl:w-1/3">
-              <div className="rounded-lg bg-gray-100 p-6 lg:h-[30rem]">
+              <div className="rounded-lg bg-gray-600 p-6 lg:h-[30rem]">
                 <img
                   className="mb-6 h-64 w-full rounded object-cover object-center"
                   src="/static/images/lösev.jpg"
                   alt="content"
                 />
 
-                <h2 className="title-font mb-4 text-lg font-medium text-gray-900">
+                <h2 className="title-font mb-4 text-lg font-medium text-[#89ABE3]">
                   Lösev
                 </h2>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-300">
                   I voluntarily support &apos;Lösev&apos;, which is a foundation
                   that helps children and adults with leukemia and cancer and
-                  meets their many needs.
+                  meets their needs.
                 </p>
                 <button
-                  className="text-[#89ABE3] inline-flex items-center font-medium"
+                  className="text-[#EA738D] inline-flex items-center font-medium"
                   onClick={() => router.push("/losev")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#89ABE3"
+                    stroke="#EA738D"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -209,31 +188,30 @@ const About = (props: Props) => {
               </div>
             </div>
             <div className="p-4 md:w-1/3 xl:w-1/3">
-              <div className="rounded-lg bg-gray-100 p-6 lg:h-[30rem]">
+              <div className="rounded-lg bg-gray-600 p-6 lg:h-[30rem]">
                 <img
                   className="mb-6 h-64 w-full rounded object-cover object-center"
                   src="/static/images/swimming.jpg"
                   alt="content"
                 />
 
-                <h2 className="title-font mb-2 text-lg font-medium text-gray-900">
+                <h2 className="title-font mb-2 text-lg font-medium text-[#89ABE3]">
                   Swimming
                 </h2>
-                <p className="text-base leading-relaxed mb-2">
+                <p className="text-base leading-relaxed mb-2 text-gray-300">
                   Since my childhood, I have loved swimming and it has been an
                   integral part of my life. I also have great confidence in my
-                  swimming abilities and I demonstrate a competitive spirit. I
-                  make an effort to swim whenever I find the opportunity.
+                  swimming abilities and I demonstrate a competitive spirit.
                 </p>
                 <button
-                  className="text-[#89ABE3] inline-flex items-center font-medium"
+                  className="text-[#EA738D] inline-flex items-center font-medium"
                   onClick={() => router.push("/swimming")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#89ABE3"
+                    stroke="#EA738D"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -246,29 +224,29 @@ const About = (props: Props) => {
               </div>
             </div>
             <div className="p-4 md:w-1/3 xl:w-1/3">
-              <div className="rounded-lg bg-gray-100 p-6 lg:h-[30rem]">
+              <div className="rounded-lg bg-gray-600 p-6 lg:h-[30rem]">
                 <img
                   className="mb-6 h-64 w-full rounded object-cover object-center"
                   src="/static/images/passions-rb.jpg"
                   alt="content"
                 />
 
-                <h2 className="title-font mb-4 text-lg font-medium text-gray-900">
+                <h2 className="title-font mb-4 text-lg font-medium text-[#89ABE3]">
                   Reading Book
                 </h2>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-300">
                   In addition, I love reading books. I make it a point to read
                   books every day, unless there is a significant obstacle.
                 </p>
                 <button
-                  className="text-[#89ABE3] inline-flex items-center font-medium"
+                  className="text-[#EA738D] inline-flex items-center font-medium"
                   onClick={() => router.push("/books")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#89ABE3"
+                    stroke="#EA738D"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
@@ -281,30 +259,29 @@ const About = (props: Props) => {
               </div>
             </div>
             <div className="p-4 md:w-1/3 xl:w-1/3">
-              <div className="rounded-lg bg-gray-100 p-6 lg:h-[30rem]">
+              <div className="rounded-lg bg-gray-600 p-6 lg:h-[30rem]">
                 <img
                   className="mb-6 h-64 w-full rounded object-cover object-center"
                   src="/static/images/music.jpg"
                   alt="content"
                 />
 
-                <h2 className="title-font mb-4 text-lg font-medium text-gray-900">
+                <h2 className="title-font mb-4 text-lg font-medium text-[#89ABE3]">
                   Music
                 </h2>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-300">
                   I love listening to music and believe that it softens my soul
-                  and brings me calmness. I mostly listen to rock music, but
-                  there are also times when I enjoy listening to rap music.
+                  and brings me calmness. I mostly listen to rock music.
                 </p>
                 <button
-                  className="text-[#89ABE3] inline-flex items-center font-medium"
+                  className="text-[#EA738D] inline-flex items-center font-medium"
                   onClick={() => router.push("/music")}
                 >
                   Explore More
                   <svg
                     className="w-5 h-5 ml-2"
                     viewBox="0 0 24 24"
-                    stroke="#89ABE3"
+                    stroke="#EA738D"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
