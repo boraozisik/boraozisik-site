@@ -298,24 +298,24 @@ const About = (props: Props) => {
       </section>
       {/* // -------------------Passions----------------------  */}
       {/* // -------------------Contact----------------------  */}
-      <section className="bg-gray-800">
+      <section className="bg-gray-100">
         <a href="#contact" id={"contact"}></a>
         <div className="container px-6 py-12 mx-auto">
           <div>
             <p className="font-medium text-xl text-[#89ABE3]">Contact me</p>
 
-            <h1 className="mt-2 text-2xl font-medium md:text-3xl text-white">
+            <h1 className="mt-2 text-2xl font-medium md:text-3xl text-gray-800">
               I’d love to hear from you
             </h1>
 
-            <p className="mt-3 text-gray-400">
+            <p className="mt-3 text-gray-800">
               Feel free to reach out to me whenever you like; I&apos;m here to
               chat and help you unwind.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <div className="p-4 rounded-lg  md:p-6 bg-gray-700">
+          {/* <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="p-4 rounded-lg  md:p-6 bg-gray-800">
               <a
                 href={"mailto:ozisikbora@gmail.com"}
                 className="inline-block p-3 text-[#89ABE3] rounded-lg  bg-gray-600"
@@ -341,12 +341,12 @@ const About = (props: Props) => {
                 Reach to me on my mail.
               </p>
               <a href={"mailto:ozisikbora@gmail.com"}>
-                <p className="mt-2 text-sm text-[#89ABE3]">
+                <p className="mt-2 text-sm text-[#EA738D]">
                   ozisikbora@gmail.com
                 </p>
               </a>
             </div>
-            <div className="p-4 rounded-lg  md:p-6 bg-gray-700">
+            <div className="p-4 rounded-lg  md:p-6 bg-gray-800">
               <a
                 href="tel:0554-595-99-05"
                 className="inline-block p-3 text-[#89ABE3] rounded-lg bg-gray-600"
@@ -370,10 +370,10 @@ const About = (props: Props) => {
               <h2 className="mt-4 text-base font-medium text-white">Call me</h2>
               <p className="mt-2 text-sm text-gray-400">Every day 24/7</p>
               <a href="tel:0554-595-99-05">
-                <p className="mt-2 text-sm text-[#89ABE3]">+90 554 595 99 05</p>
+                <p className="mt-2 text-sm text-[#EA738D]">+90 554 595 99 05</p>
               </a>
             </div>
-            <div className="p-4 rounded-lg md:p-6 bg-gray-700">
+            <div className="p-4 rounded-lg md:p-6 bg-gray-800">
               <a
                 href="https://www.linkedin.com/in/boraozisik/"
                 target="_blank"
@@ -396,11 +396,11 @@ const About = (props: Props) => {
                 You can also check and chat to me on LinkedIn.
               </p>
               <a href="https://www.linkedin.com/in/boraozisik/" target="_blank">
-                <p className="mt-2 text-sm text-[#89ABE3]">Lets explore</p>
+                <p className="mt-2 text-sm text-[#EA738D]">Lets explore</p>
               </a>
             </div>
 
-            <div className="p-4 rounded-lg  md:p-6 bg-gray-700">
+            <div className="p-4 rounded-lg  md:p-6 bg-gray-800">
               <a
                 href="https://www.instagram.com/borazsk_/"
                 target="_blank"
@@ -427,28 +427,149 @@ const About = (props: Props) => {
                 Get to know the me outside of work as well.
               </p>
               <a href="https://www.instagram.com/borazsk_/" target="_blank">
-                <p className="mt-2 text-sm text-[#89ABE3]">
+                <p className="mt-2 text-sm text-[#EA738D]">
                   Follow me and message to me
                 </p>
               </a>
             </div>
-          </div>
+          </div> */}
+          <section
+            id="contact"
+            className="relative w-full min-h-screen bg-gray-100 text-[#89ABE3] mt-10"
+          >
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#EA738D] h-32 w-full"></div>
+
+            <div className="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center">
+              <div className="w-full md:w-1/2 p-5 md:px-0 mx-5">
+                <div className="bg-gray-900 border border-[#89ABE3] w-full lg:w-1/2 h-full p-5 pt-8">
+                  <h3 className="text-2xl font-semibold mb-5">
+                    My Social Media
+                  </h3>
+
+                  <div className="flex flex-col gap-3">
+                    <a
+                      href="#"
+                      className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
+                    >
+                      <svg
+                        fill="currentColor"
+                        className="w-6 h-6 m-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                      Github
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
+                    >
+                      <svg
+                        fill="currentColor"
+                        className="w-6 h-6 m-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z" />
+                      </svg>
+                      Linkedin
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
+                    >
+                      <svg
+                        fill="currentColor"
+                        className="w-6 h-6 m-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                      </svg>
+                      Youtube
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
+                    >
+                      <svg
+                        fill="currentColor"
+                        className="w-6 h-6 m-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12,0C5.373,0,0,5.373,0,12c0,6.016,4.432,10.984,10.206,11.852V15.18H7.237v-3.154h2.969V9.927c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L16.73,15.18h-3.106v8.697 C19.481,23.083,24,18.075,24,12C24,5.373,18.627,0,12,0z" />
+                      </svg>
+                      Facebook
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <form
+                action="#"
+                className="w-full md:w-1/2 border border-[#89ABE3] p-6 bg-gray-900"
+              >
+                <h2 className="text-2xl pb-3 font-semibold">Send Message</h2>
+                <div>
+                  <div className="flex flex-col mb-3">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-[#89ABE3] focus:outline-none focus:bg-gray-800 focus:text-[#89ABE3]"
+                    />
+                  </div>
+                  <div className="flex flex-col mb-3">
+                    <label>Email</label>
+                    <input
+                      type="text"
+                      id="email"
+                      className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-[#89ABE3] focus:outline-none focus:bg-gray-800 focus:text-[#89ABE3]"
+                    />
+                  </div>
+                  <div className="flex flex-col mb-3">
+                    <label>Message</label>
+                    <textarea
+                      rows={4}
+                      id="message"
+                      className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-[#89ABE3] focus:outline-none focus:bg-gray-800 focus:text-[#89ABE3]"
+                    ></textarea>
+                  </div>
+                </div>
+                <div className="w-full pt-3">
+                  <button
+                    type="submit"
+                    className="w-full bg-gray-900 border border-[#89ABE3] px-4 py-2 transition duration-50 focus:outline-none font-semibold hover:bg-[#89ABE3] hover:text-white text-xl cursor-pointer"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
         </div>
       </section>
+
       {/* // -------------------Contact----------------------  */}
       {/* // -------------------Footer----------------------  */}
-      <footer className="relative z-10 bg-gray-100 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <footer className="relative z-10 bg-gray-800 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
+          <div className=" flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
-                <p className="text-body-color mb-7 text-base">
+                <p className="text-gray-100 mb-7 text-base text-gray-100">
                   Designing the Extraordinary, Every Step of the Way.
                 </p>
-                <p className="text-dark flex items-center text-sm font-medium hover:text-[#89ABE3]">
+                <p className="text-gray-100 flex items-center text-sm font-medium hover:text-[#89ABE3]">
                   <span className="text-primary mr-3">
                     <svg
-                      width="19"
+                      width="15"
                       height="21"
                       viewBox="0 0 19 21"
                       className="fill-current"
@@ -458,19 +579,21 @@ const About = (props: Props) => {
                       <path d="M0.802807 6.05619C0.869358 7.52032 2.16711 8.11928 2.83263 8.11928H5.16193C5.19521 8.11928 5.19521 8.11928 5.19521 8.11928C6.19348 8.05273 7.19175 7.38722 7.19175 6.05619V5.25757C8.28985 5.25757 10.8188 5.25757 11.9169 5.25757V6.05619C11.9169 7.38722 12.9152 8.05273 13.9135 8.11928H13.9467H16.2428C16.9083 8.11928 18.206 7.52032 18.2726 6.05619C18.2726 5.95636 18.2726 5.59033 18.2726 5.25757C18.2726 4.99136 18.2726 4.75843 18.2726 4.72516C18.2726 4.69188 18.2726 4.6586 18.2726 4.6586C18.1727 3.72688 17.84 2.96154 17.2743 2.36258L17.241 2.3293C16.4091 1.56396 15.4109 1.13138 14.6455 0.865169C12.416 0 9.62088 0 9.48778 0C7.52451 0.0332757 6.26003 0.199654 4.36331 0.865169C3.63125 1.0981 2.63297 1.53068 1.80108 2.29603L1.7678 2.3293C1.20212 2.92827 0.869359 3.69361 0.769531 4.62533C0.769531 4.6586 0.769531 4.69188 0.769531 4.69188C0.769531 4.75843 0.769531 4.95809 0.769531 5.22429C0.802807 5.52377 0.802807 5.92308 0.802807 6.05619ZM2.5997 3.12792C3.26521 2.52896 4.09711 2.16292 4.7959 1.89672C6.52624 1.26448 7.65761 1.13138 9.55433 1.0981C9.68743 1.0981 12.2829 1.13138 14.2795 1.89672C14.9783 2.16292 15.8102 2.49568 16.4757 3.12792C16.8417 3.52723 17.0746 4.05964 17.1412 4.69188C17.1412 4.79171 17.1412 4.95809 17.1412 5.22429C17.1412 5.55705 17.1412 5.92308 17.1412 6.02291C17.1079 6.78825 16.3759 6.95463 16.276 6.95463H13.98C13.6472 6.92135 13.1148 6.78825 13.1148 6.05619V4.69188C13.1148 4.42567 12.9485 4.22602 12.7155 4.12619C12.5159 4.05964 6.69262 4.05964 6.49296 4.12619C6.26003 4.19274 6.09365 4.42567 6.09365 4.69188V6.05619C6.09365 6.78825 5.56124 6.92135 5.22848 6.95463H2.93246C2.83263 6.95463 2.10056 6.78825 2.06729 6.02291C2.06729 5.92308 2.06729 5.55705 2.06729 5.22429C2.06729 4.95809 2.06729 4.82498 2.06729 4.72516C2.00073 4.05964 2.23366 3.52723 2.5997 3.12792Z" />
                     </svg>
                   </span>
-                  <span className="font-medium">+90 554 595 99 05</span>
+                  <span className="font-medium text-gray-100">
+                    +90 554 595 99 05
+                  </span>
                 </p>
               </div>
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
+                <h4 className="text-gray-100 mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Quick Link
                 </h4>
                 <ul>
                   <li>
                     <a
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                       onClick={() => router.push("/")}
                       style={{ cursor: "pointer" }}
                     >
@@ -481,7 +604,7 @@ const About = (props: Props) => {
                     <a
                       onClick={() => router.push("/#brabout")}
                       style={{ cursor: "pointer" }}
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                     >
                       Who am I ?
                     </a>
@@ -490,7 +613,7 @@ const About = (props: Props) => {
                     <a
                       onClick={() => router.push("/#skills")}
                       style={{ cursor: "pointer" }}
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                     >
                       Skills
                     </a>
@@ -499,7 +622,7 @@ const About = (props: Props) => {
                     <a
                       onClick={() => router.push("/#languages")}
                       style={{ cursor: "pointer" }}
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                     >
                       Languages
                     </a>
@@ -509,7 +632,7 @@ const About = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
+                <h4 className="text-gray-100 mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   About
                 </h4>
                 <ul>
@@ -517,7 +640,7 @@ const About = (props: Props) => {
                     <a
                       onClick={() => router.push("/about")}
                       style={{ cursor: "pointer" }}
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                     >
                       Story
                     </a>
@@ -526,7 +649,7 @@ const About = (props: Props) => {
                     <a
                       onClick={() => router.push("/about#timeline")}
                       style={{ cursor: "pointer" }}
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                     >
                       Journey
                     </a>
@@ -535,7 +658,7 @@ const About = (props: Props) => {
                     <a
                       onClick={() => router.push("/about#passions")}
                       style={{ cursor: "pointer" }}
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                     >
                       Passions
                     </a>
@@ -544,7 +667,7 @@ const About = (props: Props) => {
                     <a
                       onClick={() => router.push("/about#contact")}
                       style={{ cursor: "pointer" }}
-                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
                     >
                       Contact
                     </a>
@@ -554,17 +677,21 @@ const About = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
+                <h4 className="text-gray-100 mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Business
                 </h4>
                 <ul>
                   <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
+                    <a
+                      onClick={() => router.push("/work")}
+                      style={{ cursor: "pointer" }}
+                      className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose"
+                    >
                       My Projects
                     </a>
                   </li>
                   <li>
-                    <a className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
+                    <a className="text-gray-100 hover:text-primary mb-2 inline-block text-base leading-loose">
                       My Resume
                     </a>
                   </li>
@@ -573,14 +700,14 @@ const About = (props: Props) => {
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="text-dark mb-4 text-lg font-medium hover:text-[#89ABE3]">
+                <h4 className="text-gray-100 mb-4 text-lg font-medium hover:text-[#89ABE3]">
                   Contact Me On
                 </h4>
                 <div className="mb-6 flex items-center">
                   <a
                     href="https://github.com/boraozisik"
                     target="_blank"
-                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-gray-100 hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
@@ -598,7 +725,7 @@ const About = (props: Props) => {
                   <a
                     href="https://www.linkedin.com/in/boraozisik/"
                     target="_blank"
-                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-gray-100 hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="14"
@@ -611,7 +738,7 @@ const About = (props: Props) => {
                   </a>
                   <a
                     href={"mailto:ozisikbora@gmail.com"}
-                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-gray-100 hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       fill="none"
@@ -630,7 +757,7 @@ const About = (props: Props) => {
                   <a
                     href="https://www.instagram.com/borazsk_/"
                     target="_blank"
-                    className="text-dark hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-gray-100 hover:bg-[#89ABE3] hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       className="w-5 h-5"
