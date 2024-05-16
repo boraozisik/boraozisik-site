@@ -12,7 +12,7 @@ const About = (props: Props) => {
       <AppHeader />
       {/* // -------------------Header----------------------  */}
       {/* // -------------------Story---------------------- */}
-      <section className="bg-white dark:bg-gray-900 mt-12">
+      <section className="bg-white  mt-12">
         <div className="max-w-6xl px-6 py-10 mx-auto">
           <h1 className="text-2xl text-gray-800 capitalize lg:text-3xl lg:ml-16 font-medium mt-8">
             Embracing the Chapters of Life:{" "}
@@ -307,135 +307,11 @@ const About = (props: Props) => {
             <h1 className="mt-2 text-2xl font-medium md:text-3xl text-gray-800">
               I’d love to hear from you
             </h1>
-
-            <p className="mt-3 text-gray-800">
-              Feel free to reach out to me whenever you like; I&apos;m here to
-              chat and help you unwind.
-            </p>
           </div>
 
-          {/* <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <div className="p-4 rounded-lg  md:p-6 bg-gray-800">
-              <a
-                href={"mailto:ozisikbora@gmail.com"}
-                className="inline-block p-3 text-[#89ABE3] rounded-lg  bg-gray-600"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                  />
-                </svg>
-              </a>
-
-              <h2 className="mt-4 text-base font-medium text-white">Mail</h2>
-              <p className="mt-2 text-sm text-gray-400">
-                Reach to me on my mail.
-              </p>
-              <a href={"mailto:ozisikbora@gmail.com"}>
-                <p className="mt-2 text-sm text-[#EA738D]">
-                  ozisikbora@gmail.com
-                </p>
-              </a>
-            </div>
-            <div className="p-4 rounded-lg  md:p-6 bg-gray-800">
-              <a
-                href="tel:0554-595-99-05"
-                className="inline-block p-3 text-[#89ABE3] rounded-lg bg-gray-600"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  />
-                </svg>
-              </a>
-
-              <h2 className="mt-4 text-base font-medium text-white">Call me</h2>
-              <p className="mt-2 text-sm text-gray-400">Every day 24/7</p>
-              <a href="tel:0554-595-99-05">
-                <p className="mt-2 text-sm text-[#EA738D]">+90 554 595 99 05</p>
-              </a>
-            </div>
-            <div className="p-4 rounded-lg md:p-6 bg-gray-800">
-              <a
-                href="https://www.linkedin.com/in/boraozisik/"
-                target="_blank"
-                className="inline-block p-3 text-[#89ABE3] rounded-lg bg-gray-600"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 14 14"
-                  className="fill-current"
-                >
-                  <path d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
-                </svg>
-              </a>
-
-              <h2 className="mt-4 text-base font-medium text-white">
-                LinkedIn
-              </h2>
-              <p className="mt-2 text-sm text-gray-400">
-                You can also check and chat to me on LinkedIn.
-              </p>
-              <a href="https://www.linkedin.com/in/boraozisik/" target="_blank">
-                <p className="mt-2 text-sm text-[#EA738D]">Lets explore</p>
-              </a>
-            </div>
-
-            <div className="p-4 rounded-lg  md:p-6 bg-gray-800">
-              <a
-                href="https://www.instagram.com/borazsk_/"
-                target="_blank"
-                className="inline-block p-3 text-[#89ABE3] rounded-lg bg-gray-600"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
-
-              <h2 className="mt-4 text-base font-medium text-white">
-                Instagram
-              </h2>
-              <p className="mt-2 text-sm text-gray-400">
-                Get to know the me outside of work as well.
-              </p>
-              <a href="https://www.instagram.com/borazsk_/" target="_blank">
-                <p className="mt-2 text-sm text-[#EA738D]">
-                  Follow me and message to me
-                </p>
-              </a>
-            </div>
-          </div> */}
           <section
             id="contact"
-            className="relative w-full min-h-screen bg-gray-100 text-[#89ABE3] mt-10"
+            className="relative w-full bg-gray-100 text-[#89ABE3] mt-10"
           >
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#EA738D] h-32 w-full"></div>
 
@@ -448,7 +324,8 @@ const About = (props: Props) => {
 
                   <div className="flex flex-col gap-3">
                     <a
-                      href="#"
+                      href="https://github.com/boraozisik"
+                      target="_blank"
                       className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
                     >
                       <svg
@@ -464,7 +341,8 @@ const About = (props: Props) => {
                       Github
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/boraozisik/"
+                      target="_blank"
                       className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
                     >
                       <svg
@@ -478,34 +356,42 @@ const About = (props: Props) => {
                       Linkedin
                     </a>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/borazsk_/"
+                      target="_blank"
                       className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
                     >
                       <svg
-                        fill="currentColor"
                         className="w-6 h-6 m-2"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
+                        fill="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
-                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        <path
+                          fillRule="evenodd"
+                          d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                          clipRule="evenodd"
+                        />
                       </svg>
-                      Youtube
+                      Instagram
                     </a>
                     <a
-                      href="#"
+                      href={"mailto:ozisikbora@gmail.com"}
                       className="flex items-center hover:text-white hover:bg-[#89ABE3] p-2"
                     >
                       <svg
-                        fill="currentColor"
+                        fill="none"
                         className="w-6 h-6 m-2"
-                        xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
+                        stroke="currentColor"
                       >
-                        <path d="M12,0C5.373,0,0,5.373,0,12c0,6.016,4.432,10.984,10.206,11.852V15.18H7.237v-3.154h2.969V9.927c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L16.73,15.18h-3.106v8.697 C19.481,23.083,24,18.075,24,12C24,5.373,18.627,0,12,0z" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
                       </svg>
-                      Facebook
+                      Mail
                     </a>
                   </div>
                 </div>
@@ -522,6 +408,7 @@ const About = (props: Props) => {
                     <input
                       type="text"
                       id="name"
+                      required
                       className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-[#89ABE3] focus:outline-none focus:bg-gray-800 focus:text-[#89ABE3]"
                     />
                   </div>
@@ -530,6 +417,7 @@ const About = (props: Props) => {
                     <input
                       type="text"
                       id="email"
+                      required
                       className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-[#89ABE3] focus:outline-none focus:bg-gray-800 focus:text-[#89ABE3]"
                     />
                   </div>
@@ -538,6 +426,7 @@ const About = (props: Props) => {
                     <textarea
                       rows={4}
                       id="message"
+                      required
                       className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-[#89ABE3] focus:outline-none focus:bg-gray-800 focus:text-[#89ABE3]"
                     ></textarea>
                   </div>
