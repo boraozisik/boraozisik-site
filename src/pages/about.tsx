@@ -1,10 +1,16 @@
 import { useRouter } from "next/router";
 import AppHeader from "./components/Header";
+import { FormEvent } from "react";
 
 type Props = {};
 
 const About = (props: Props) => {
   const router = useRouter();
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    console.log("submit worked", event.target);
+  };
 
   return (
     <>
@@ -400,6 +406,7 @@ const About = (props: Props) => {
               <form
                 action="#"
                 className="w-full md:w-1/2 border border-[#89ABE3] p-6 bg-gray-900"
+                onSubmit={handleSubmit}
               >
                 <h2 className="text-2xl pb-3 font-semibold">Send Message</h2>
                 <div>
